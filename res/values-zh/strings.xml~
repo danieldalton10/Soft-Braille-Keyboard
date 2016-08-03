@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Do not translate the following preference strings-->
+    <string name="btn_id_default_keyboard">BTN_DEFAULT_KEYBOARD</string>
+    <string name="btn_id_enable">BTN_ENABLED</string>
+    <string name="default_swipe_sensitivity">50</string>
+    <string name="txt_id_practice">TXT_PRACTICE</string>
+    <string name="pref_app_version_key">APP_VERSION</string>
+    <string name="pref_auto_match_keyboard_default">true</string>
+    <string name="pref_auto_match_keyboard_key">Auto_MATCH_KEYBOARD</string>
+    <string name="pref_auto_rotate_keyboard_default">false</string>
+    <string name="pref_auto_rotate_keyboard_key">Auto_ROTATE_KEYBOARD</string>
+    <string name="pref_braille_grade_default">0</string>
+    <string name="pref_braille_grade_key">BRAILLE_GRADE_KEY</string>
+    <string name="pref_braille_computer_table_default">en-US-comp8</string>
+    <string name="pref_braille_computer_table_key">BRAILLE_TABLE_0</string>
+    <string name="pref_braille_grade_1_table_default">en-ueb-g1</string>
+    <string name="pref_braille_grade_1_table_key">BRAILLE_TABLE_1</string>
+    <string name="pref_category_braille_key">BRAILLE_CATEGORY_KEY</string>
+    <string name="pref_category_feedback_key">KEYBOARD_FEEDBACK_Category</string>
+    <string name="pref_category_keyboard_key">KEYBOARD_CATEGORY</string>
+    <string name="pref_category_misc_key">MISC</string>
+    <string name="pref_default_keyboard_default">0</string>
+    <string name="pref_default_keyboard_key">DEFAULT_KEYBOARD</string>
+    <string name="pref_echo_feedback_key">KEYBOARD_ECHO</string>
+    <string name="pref_echo_passwords_default">false</string>
+    <string name="pref_echo_passwords_key">PASSWORD_ECHO</string>
+    <string name="pref_keyboard_feedback_key">KEYBOARD_FEEDBACK</string>
+    <string name="pref_keyboard_invert_default">false</string>
+    <string name="pref_keyboard_invert_key">KEYBOARD_INVERT</string>
+    <string name="pref_keyboard_save_horizontal_landscape_key">KEYBOARD_SAVE_HORIZONTAL_LANDSCAPE</string>
+    <string name="pref_keyboard_save_horizontal_portrait_key">KEYBOARD_SAVE_HORIZONTAL_PORTRAIT</string>
+    <string name="pref_keyboard_save_horizontal_landscape_invert_key">KEYBOARD_SAVE_HORIZONTAL_LANDSCAPE_INVERT</string>
+    <string name="pref_keyboard_save_horizontal_portrait_invert_key">KEYBOARD_SAVE_HORIZONTAL_PORTRAIT_INVERT</string>
+    <string name="pref_keyboard_save_vertical_landscape_key">KEYBOARD_SAVE_VERTICAL_LANDSCAPE</string>
+    <string name="pref_keyboard_save_vertical_portrait_key">KEYBOARD_SAVE_VERTICAL_PORTRAIT</string>
+    <string name="pref_keyboard_save_vertical_landscape_invert_key">KEYBOARD_SAVE_VERTICAL_LANDSCAPE_INVERT</string>
+    <string name="pref_keyboard_save_vertical_portrait_invert_key">KEYBOARD_SAVE_VERTICAL_PORTRAIT_INVERT</string>
+    <string name="pref_privacy_default">false</string>
+    <string name="pref_privacy_key">PRIVACY</string>
+    <string name="pref_show_circles_default">true</string>
+    <string name="pref_show_circles_key">SHOW_CIRCLE_KEY</string>
+    <string name="pref_swipe_sensitivity_key">SWIPE_SENSITIVITY_KEY</string>
+    <string name="pref_switch_tables_key">SWITCH_TABLES</string>
+    <string name="pref_two_hand_calibration_default">true</string>
+    <string name="pref_two_hand_calibration_key">TWO_HAND_CALIBRATE</string>
+    <string name="pref_trial_end_time_key">TRIAL_END_TIME</string>
+    <string name="pref_use_eight_dots_default">false</string>
+    <string name="pref_use_eight_dots_key">USE_EIGHT_DOT</string>
+    <string name="action_expired">ACTION_EXPIRED</string>
+    <!-- User interface strings go below here -->
+    <string name="action_settings">設定</string>
+    <string name="app_name">軟點點字鍵盤</string>
+    <string name="blank">空白</string>
+    <string name="braille_ime">軟點點字鍵盤</string>
+    <string name="button_choose_default_keyboard">設定軟點為預設鍵盤</string>
+    <string name="button_keyboard_settings">啟用軟點點字鍵盤</string>
+    <string name="button_more_info">閱讀快速入門指引</string>
+    <string name="capital">大寫 %s</string>
+    <string name="closing_keyboard">關閉鍵盤</string>
+    <string name="copied">複製完成</string>
+    <string name="copy_error">複製錯誤</string>
+    <string name="cut_error">剪下錯誤</string>
+    <string name="deleted">已刪除 %s</string>
+    <string name="delete_selection">移除選取</string>
+    <string name="end_of_text">文字結尾</string>
+    <string name="expand_keyboard">輕點此處擴展鍵盤</string>
+    <string name="expand_keyboard_talkback">雙點此處擴展鍵盤</string>
+    <string name="grade">預設縮寫等級</string>
+    <string name="grade_computer">電腦點字</string>
+    <string name="grade_literary">書面點字</string>
+    <string name="grade_table">%s 級</string>
+    <string name="hide_keyboard">隱藏鍵盤.</string>
+    <string name="high">高</string>
+    <string name="info_url">https://docs.google.com/document/d/1OX6yFjkK61VfROdU9uQNxjEZ_QNWxiMnUY_1ECnIyRQ/pub</string>
+    <string name="keyboard_auto">自動</string>
+    <string name="keyboard_echo_all">字元與字詞</string>
+    <string name="keyboard_echo_character">字元</string>
+    <string name="keyboard_echo_none">無</string>
+    <string name="keyboard_echo_word">字詞</string>
+    <string name="keyboard_error">無法設定鍵盤.</string>
+    <string name="keyboard_feedback_none">無</string>
+    <string name="keyboard_feedback_vibrate">只有振動</string>
+    <string name="keyboard_feedback_sound">只有聲音</string>
+    <string name="keyboard_feedback_all">聲音與振動</string>
+    <string name="keyboard_full_screen">鍵盤已擴展</string>
+    <string name="keyboard_horizontal">橫向</string>
+    <string name="keyboard_next_three">現在請用其他三指按住螢幕.</string>
+    <string name="keyboard_not_set">請把手指都放在螢幕上來設定點字鍵盤</string>
+    <string name="keyboard_shrink">鍵盤已隱藏</string>
+    <string name="keyboard_vertical">直向</string>
+    <string name="low">低</string>
+    <string name="mark_not_set">標記未設定</string>
+    <string name="medium">中</string>
+    <string name="newline">換行</string>
+    <string name="no_password_echo">不說出密碼</string>
+    <string name="no_braille_table">沒有點字對照表</string>
+    <string name="no_rotate_keyboard">不旋轉鍵盤</string>
+    <string name="no_suggestions">沒有可用的建議</string>
+    <string name="nothing_to_delete">沒有內容可刪除</string>
+    <string name="pad_horizontal">設定鍵盤為橫向排列</string>
+    <string name="pad_vertical">設定鍵盤為直向排列</string>
+    <string name="paste_error">貼上文字發生錯誤</string>
+    <string name="pasted">已貼上</string>
+    <string name="pref_app_version_title">軟體版本: %s.</string>
+    <string name="pref_auto_match_keyboard_summary">手動校正鍵盤市根據手指的位置來啟用鍵盤.</string>
+    <string name="pref_auto_match_keyboard_title">自動選擇按照手指位置的鍵盤排列</string>
+    <string name="pref_braille_grade_summary">設定最愛的縮寫等級.</string>
+    <string name="pref_category_braille_title">點字對照表</string>
+    <string name="pref_category_feedback_title">鍵盤回饋設定</string>
+    <string name="pref_category_keyboard_title">鍵盤設定</string>
+    <string name="pref_category_misc_title">其他設定</string>
+    <string name="pref_default_computer_braille_table_summary"></string>
+    <string name="pref_default_computer_braille_table_title">電腦點字對照表</string>
+    <string name="pref_default_keyboard_summary">選擇預設的鍵盤排列.</string>
+    <string name="pref_default_keyboard_title">預設的鍵盤排列</string>
+    <string name="pref_default_literary_braille_table_summary"></string>
+    <string name="pref_default_literary_braille_table_title">書面點字對照表</string>    
+    <string name="pref_echo_feedback_summary">選擇鍵盤回應方式.</string>
+    <string name="pref_echo_feedback_title">鍵盤回應</string>
+    <string name="pref_keyboard_feedback_summary">選擇鍵盤回饋的觸感與聲音.</string>
+    <string name="pref_keyboard_feedback_title">鍵盤回饋</string>
+    <string name="pref_keyboard_invert_summary">當手機上的鍵盤沒有旋轉可用此設定將鍵盤的方向翻轉180度</string>
+    <string name="pref_keyboard_invert_title">反轉鍵盤</string>
+    <string name="pref_echo_passwords_summary">啟用此鍵盤會說出輸入的密碼.</string>
+    <string name="pref_privacy_summary">啟用後輸入十螢幕會便黑以保護隱私.</string>
+    <string name="pref_privacy_title">隱私畫面</string>
+    <string name="pref_show_circles_summary">啟用後會在螢幕上顯示小圓圈代表每個點字的點位</string>
+    <string name="pref_show_circles_title">是否在螢幕上顯示小圓圈?</string>
+    <string name="pref_swipe_sensitivity_summary">選擇滑動手勢的敏感度.</string>
+    <string name="pref_swipe_sensitivity_title">滑動敏感度</string>
+    <string name="pref_switch_tables_summary">選擇某些語言打字十可以臨時切換語言.</string>
+    <string name="pref_switch_tables_title">啟用可以臨時切換的點字對照表.</string>
+    <string name="pref_two_hand_calibration_summary">啟用後允許用觸碰兩次的方式校正鍵盤</string>
+    <string name="pref_two_hand_calibration_title">雙觸校正</string>
+    <string name="pref_use_eight_dots_summary">啟用後會顯示7,8點.</string>
+    <string name="pref_use_eight_dots_title">顯示八點鍵盤</string>
+    <string name="privacy_disabled">隱私畫面關閉</string>
+    <string name="privacy_enabled">隱私畫面開啟</string>
+    <string name="ready">鍵盤準備就緒</string>
+    <string name="return_key">返回</string>
+    <string name="rotate_keyboard">以設備旋轉鍵盤</string>
+    <string name="rotate_summary">啟用後鍵盤的方向會比照設備的方向.</string>
+    <string name="select_all">全選</string>
+    <string name="selected_all">全部文字都被選取</string>
+    <string name="set_mark">標記設定</string>
+    <string name="settings_name">軟點設定</string>
+    <string name="show_input_switcher">顯示輸入切換器</string>
+    <string name="show_settings">顯示軟點設定</string>
+    <string name="space">空格</string>
+    <string name="speak_passwords">說出密碼</string>
+    <string name="speak_selection">說出選取</string>
+    <string name="start_of_text">文字開頭</string>
+    <string name="swipe_confirm">再滑一次確認</string>
+    <string name="swipe_confirm_input">再滑一次顯示鍵盤選擇器</string>
+    <string name="swipe_confirm_settings">再滑一次顯示軟點設定</string>
+    <string name="switch_off_talkback">請停用 talkback. 要這麼做可以畫 l 的手勢, 先往下再往右滑，然後觸摸螢幕左上角的暫停回應。Talkback 可以隨時按兩次電源鍵來重啟。</string>
+    <string name="translator_error">點字服務有一個問題</string>
+    <string name="trial_buy">購買</string>
+    <string name="trial_expired_message">這個測試版已經過期. 如果您想繼續使用本軟體請從 Google play 商店下載, 或聯絡開發者 Daniel Dalton 的信箱 daniel.dalton10@gmail.com 索取更新的測試版本.\n感謝您的 beta 測試!</string>
+    <string name="trial_expired_title">是用版過期</string>
+    <string name="try_box">請在這裡打字.</string>
+    <string name="unknown_character">未知的字元</string>
+    <string name="unset_mark">標記取消</string>
+
+    <!-- PUNCTUATION -->
+
+    <!--
+      Source: A value for announcing a question mark.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_questionmark">問號</string>
+
+    <!--
+      Source: A value for announcing a space.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_space">空格</string>
+
+    <!--
+      Source: A value for announcing a comma.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_comma">逗號</string>
+
+    <!--
+      Source: A value for announcing a dot.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_dot">點</string>
+
+    <!--
+      Source: A value for announcing an exclamation.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_exclamation">驚嘆號</string>
+
+    <!--
+      Source: A value for announcing an opening parenthesis.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_open_paren">左括號</string>
+
+    <!--
+      Source: A value for announcing a closing parenthesis.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_close_paren">右括號</string>
+
+    <!--
+      Source: A value for announcing a double quote.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_double_quote">雙引號</string>
+
+    <!--
+      Source: A value for announcing a single quote.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_single_quote">撇號</string>
+
+    <!--
+      Source: A value for announcing a slash.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_slash">斜線</string>
+
+    <!--
+      Source: A value for announcing a backslash.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_backslash">反斜線</string>
+
+    <!--
+      Source: A value for announcing a semicolon.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_semicolon">分號</string>
+
+    <!--
+      Source: A value for announcing a colon.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_colon">冒號</string>
+    
+    <!--
+      Source: A value for announcing a left brace.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_left_brace">左大括號</string>
+    
+    <!--
+      Source: A value for announcing a right brace.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_right_brace">右大括號</string>
+</resources>

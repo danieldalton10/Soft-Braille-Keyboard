@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- User interface strings go below here -->
+    <string name="action_settings">Nastavenia</string>
+    <string name="app_name">Soft Braille Keyboard</string>
+    <string name="auto_caps_disabled">Automatické veľké písmená vypnuté</string>
+    <string name="auto_caps_enabled">Automatické veľké písmená</string>
+    <string name="blank">Prázdny</string>
+    <string name="braille_ime">Soft Braille Keyboard</string>
+    <string name="button_choose_default_keyboard">Nastaviť Soft Braille Keyboard ako predvolenú metódu vstupu</string>
+    <string name="button_keyboard_settings">Povoliť Soft Braille Keyboard</string>
+    <string name="button_more_info">Prečítať príručku rýchleho spustenia</string>
+    <string name="capital">Veľké %s</string>
+    <string name="closing_keyboard">Klávesnica zatvorená</string>
+    <string name="copied">Skopírované</string>
+    <string name="copy_error">Chyba pri kopírovaní</string>
+    <string name="cut_error">Chyba pri vystrihnutí</string>
+    <string name="deleted">Vymazané %s</string>
+    <string name="delete_selection">Vymazať výber</string>
+    <string name="end_of_text">Koniec textu</string>
+    <string name="expand_keyboard">Klepnutím sem roztiahnete klávesnicu</string>
+    <string name="expand_keyboard_talkback">Dvojitým klepnutím sem roztiahnete klávesnicu</string>
+    <string name="grade_computer">Počítačové Braillovo písmo</string>
+    <string name="grade_literary">Literárne Braillovo písmo</string>
+    <string name="grade">Predvolený typ Braillovho písma</string>
+    <string name="grade_table">Stupeň %s</string>
+    <string name="hide_keyboard">Skryť klávesnicu.</string>
+    <string name="high">Vysoká</string>
+    <string name="info_url">https://docs.google.com/document/d/1j-Vc15z9xRt9ULTZcNIVCvUBshBeXZkttVidSaaBePg/pub</string>
+    <string name="keyboard_auto">Automaticky</string>
+    <string name="keyboard_echo_all">Oboje, znaky aj slová</string>
+    <string name="keyboard_echo_character">Znaky</string>
+    <string name="keyboard_echo_none">Nič</string>
+    <string name="keyboard_echo_word">Slová</string>
+    <string name="keyboard_error">Nie je možné nastaviť klávesnicu.</string>
+    <string name="keyboard_feedback_all">Oboje, zvuk aj vybrácia</string>
+    <string name="keyboard_feedback_none">Nič</string>
+    <string name="keyboard_feedback_sound">Len zvuk</string>
+    <string name="keyboard_feedback_vibrate">Len vybrácia</string>
+    <string name="keyboard_full_screen">Klávesnica je roztiahnutá</string>
+    <string name="keyboard_horizontal">Vodorovné</string>
+    <string name="keyboard_next_three">Prosím pridržte na obrazovke ďalšie tri prsty.</string>
+    <string name="keyboard_not_set">Prosím, pridržte na obrazovke všetkých 6 prstov, aby Ste nastavili rozloženie klávesov Braillovho písma</string>
+    <string name="keyboard_shrink">Klávesnica je skrytá</string>
+    <string name="keyboard_style_normal">Normálny</string>
+    <string name="keyboard_style_slate">Režim bodiatkovej tabuľky</string>
+    <string name="keyboard_style_top_bottom">Vymeniť body 1 a 4 s bodmi 3 a 6</string>
+    <string name="keyboard_vertical">Zvislé</string>
+    <string name="low">Nízka</string>
+    <string name="mark_not_set">Značka nebola nastavená</string>
+    <string name="medium">Stredná</string>
+    <string name="newline">Nový riadok</string>
+    <string name="no_braille_table">Žiadne tabuľky</string>
+    <string name="no_more_misspellings">Žiadne ďalšie preklepy</string>
+    <string name="no_password_echo">Neoznamovať heslá</string>
+    <string name="no_rotate_keyboard">Neotáčať klávesnicu</string>
+    <string name="no_suggestions">Nie sú dostupné žiadne návrhy</string>
+    <string name="nothing_to_delete">Nie je čo vymazať</string>
+    <string name="pad_horizontal">Nastavené vodorovné rozloženie klávesov</string>
+    <string name="pad_vertical">Nastavené zvislé rozloženie klávesov</string>
+    <string name="pasted">Vložené</string>
+    <string name="paste_error">Pri pokuse vložiť text sa vyskytla chyba</string>
+    <string name="pref_app_version_title">Verzia aplikácie: %s.</string>
+    <string name="pref_auto_caps_summary">Prvé slovo každej vety automaticky veľkým písmom.</string>
+    <string name="pref_auto_caps_title">Automatické veľké písmená</string>
+    <string name="pref_auto_match_keyboard_summary">Ak je povolené, rozloženie klávesov je nastavené podľa priložených prstov počas ručne vykonanej kalibrácie.</string>
+    <string name="pref_auto_match_keyboard_title">Automaticky určiť rozloženie klávesov podľa umiestnenia prstov na obrazovke</string>
+    <string name="pref_braille_grade_summary">Nastaví predvolený typ Braillovho písma.</string>
+    <string name="pref_category_braille_title">Prekladové tabuľky Braillovho písma</string>
+    <string name="pref_category_feedback_title">Nastavenia spätnej väzby klávesnice</string>
+    <string name="pref_category_keyboard_title">Nastavenia klávesnice</string>
+    <string name="pref_category_misc_title">Rôzne Nastavenia</string>
+    <string name="pref_default_computer_braille_table_summary"></string>
+    <string name="pref_default_computer_braille_table_title">Tabuľka počítačového Braillovho písma</string>
+    <string name="pref_default_keyboard_summary">Vyberte rozloženie klávesov, ktoré je zobrazené v predvolenej konfigurácii.</string>
+    <string name="pref_default_keyboard_title">Predvolené rozloženie klávesov</string>
+    <string name="pref_default_literary_braille_table_summary"></string>
+    <string name="pref_default_literary_braille_table_title">Tabuľka literárneho Braillovho písma</string>
+    <string name="pref_double_space_period_summary">Dvojitým švihnutím príkazu medzerník vložiť bodku nasledovanú medzerníkom.</string>
+    <string name="pref_double_space_period_title">Bodku dvojitým švihnutím medzerníka</string>    
+    <string name="pref_echo_feedback_summary">Vyberte typ odozvy klávesov.</string>
+    <string name="pref_echo_feedback_title">Odozva Klávesov</string>
+    <string name="pref_echo_misspellings_summary">Ak je zapnuté, klávesnica oznámi preklepy po napísaní medzerníka</string>
+    <string name="pref_echo_misspellings_title">Oznamovať preklepy počas písania</string>
+    <string name="pref_echo_passwords_summary">Keď je zapnuté, aplikácia bude hovoriť počas písania hesiel.</string>
+    <string name="pref_keyboard_feedback_summary">Nastavte vybračnú alebo zvukovú spätnú väzbu klávesnice.</string>
+    <string name="pref_keyboard_feedback_title">Spätná väzba klávesnice</string>
+    <string name="pref_keyboard_invert_summary">Ak sa rozloženie klávesov neotáča podľa orientácii zariadenia, použite toto nastavenie na prevrátenie rozloženia klávesov o 180 stupňov</string>
+    <string name="pref_keyboard_invert_title">Obrátiť rozloženie klávesov</string>
+    <string name="pref_keyboard_style_summary">Predvoľby určujúce umiestnenie bodov na klávesnici.</string>
+    <string name="pref_keyboard_style_title">Štýl klávesnice</string>
+    <string name="pref_privacy_summary">Ak je zapnuté, počas písania bude zobrazená len čierna obrazovka na zachovanie súkromia.</string>
+    <string name="pref_privacy_title">Súkromná obrazovka</string>
+    <string name="pref_show_circles_summary">Ak je zapnuté, umiestnenie každého bodu Braillovho písma v rozložení klávesov je znázornené malými krúžkami.</string>
+    <string name="pref_show_circles_title">Znázorniť body Braillovho písma?</string>
+    <string name="pref_swipe_sensitivity_summary">Vyberte citlivosť švihania.</string>
+    <string name="pref_swipe_sensitivity_title">Citlivosť švihania</string>
+    <string name="pref_switch_tables_summary">Vybrať jazyky, medzi ktorými je možné rýchlo prepínať počas písania.</string>
+    <string name="pref_switch_tables_title">Nastaviť tabuľky Braillovho písma na rýchle prepínanie.</string>
+    <string name="pref_text_to_speech_engine_title">Hlasový výstup</string>
+    <string name="pref_text_to_speech_title">Nastavenia prevodu textu na reč</string>
+    <string name="pref_two_hand_calibration_summary">Keď je zapnuté, ručnú kalibráciu rozloženia klávesov je možné vykonať priložením prstov každej ruky zvlášť.</string>
+    <string name="pref_two_hand_calibration_title">Dvoj-dotyková kalibrácia</string>
+    <string name="pref_use_eight_dots_summary">Ak je zapnuté, pod bodmi 3 a 6 sa zobrazia body 7 a 8.</string>
+    <string name="pref_use_eight_dots_title">Zobraziť 8 bodovú klávesnicu</string>
+    <string name="pref_vibrate_on_exit_title">Vybrovať pri zatvorení klávesnice</string>
+    <string name="pref_voice_shortcut_summary">Ak je zapnuté, pri spustenom programe Talkback je možné dvojitým klepnutím a pridržaním spustiť hlasové zadávanie textu.</string> 
+    <string name="pref_voice_shortcut_title">Skratka hlasového zadávania textu</string>
+    <string name="privacy_disabled">Súkromná obrazovka vypnutá</string>
+    <string name="privacy_enabled">Súkromná obrazovka zapnutá</string>
+    <string name="ready">Klávesnica je pripravená</string>
+    <string name="return_key">Enter</string>
+    <string name="rotate_keyboard">Otáčať rozloženie klávesov podľa orientácii zariadenia</string>
+    <string name="rotate_summary">Ak je zapnuté, rozloženie klávesov sa bude otáčať podľa orientácii zariadenia.</string>
+    <string name="select_all">Vybrať všetko</string>
+    <string name="selected_all">Vybratý celý text</string>
+    <string name="set_mark">Značka nastavená</string>
+    <string name="settings_name">Nastavenia Soft Braille Keyboard</string>
+    <string name="show_input_switcher">Zobrazený výber metódy vstupu</string>
+    <string name="show_settings">Zobrazené nastavenia soft braille keyboard</string>
+    <string name="space">Medzera</string>
+    <string name="speak_passwords">Oznamovať heslá</string>
+    <string name="speak_selection">Prečítať výber</string>
+    <string name="spellcheck_not_supported">Kontrola preklepov nie je podporovaná v tejto verzii systému Android.</string>
+    <string name="start_of_text">začiatok textu</string>
+    <string name="swipe_confirm_input">Švihnite ešte raz ak si želáte zobraziť výber metódy vstupu</string>
+    <string name="swipe_confirm">Potvrďte ďalším švihnutím</string>
+    <string name="swipe_confirm_settings">Švihnite ešte raz ak si želáte zobraziť nastavenia Soft Braille Keyboard</string>
+    <string name="switch_off_talkback">Prosím pozastavte Talkback. Môžete to urobiť vykonaním gesta pripomínajúceho písmeno L, švihnite dolu a hneď vpravo, zobrazí sa kontextová ponuka, v ktorej vľavo hore nájdete položku Pozastaviť spätnú väzbu. Spätnú väzbu Talkback obnovíte dvojitým stlačením tlačidla určeného na zapínanie a vypýnanie zariadenia.</string>
+    <string name="translator_error">Vyskytla sa chyba v súvislosti s prekladovou službou z Braillovho písma</string>
+    <string name="trial_buy">Kúpiť</string>
+    <string name="trial_expired_message">Platnosť tejto beta verzie vypršala. Ak si naďalej želáte používať túto aplikáciu, prosím stiahnite si aktuálnu verziu z obchodu Google Play, alebo kontaktujte vývojára Daniel Dalton na adrese daniel.dalton10@gmail.com aby ste získali aktualizovanú skúšobnú verziu.\nVďaka za odskúšanie klávesnice!</string>
+    <string name="trial_expired_title">Skúšobná doba vypršala</string>
+    <string name="try_box">Klávesnicu odskúšajte písaním do tohoto poľa.</string>
+    <string name="unknown_character">Neznámy znak</string>
+    <string name="unset_mark">Nastavená značka zrušená</string>
+    <string name="voice_input_enable">Prosím zopakujte toto gesto 2 krát rýchlo za sebou. Zobrazí sa dialógové okno systému, kde pomocou spusteného programu Talkback akceptujte povolenie používať mikrofón, aby správne fungovalo hlasové zadávanie textu.</string>
+    <string name="voice_input_error">Vyskytla sa chyba nástroja hlasového zadávania textu, kód: %d</string>
+    <string name="voice_input_is_not_available">Hlasové zadávanie textu nie je k dispozícii na tomto zariadení.</string>
+    <string name="voice_input_permission_message">Pre správne fungovanie hlasového zadávania textu musíte schváliť oprávnenie nahrávania zvuku.</string>
+    <string name="voice_input_permission_title">Oprávnenie pre hlasové zadávanie textu</string>
+    <string name="word_correction_misspelled">%s preklep</string>
+    <string name="word_correct">Slovo je napísané správne</string>
+    <string name="word_count">%1$d riadkov, %2$d slov, %3$d znakov</string>
+    <string name="word_misspelled">Preklep</string>
+
+    <!-- PUNCTUATION -->
+
+    <!--
+      Source: A value for announcing a question mark.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_questionmark">Otáznik</string>
+
+    <!--
+      Source: A value for announcing a space.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_space">Medzera</string>
+
+    <!--
+      Source: A value for announcing a comma.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_comma">Čiarka</string>
+
+    <!--
+      Source: A value for announcing a dot.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_dot">Bodka</string>
+
+    <!--
+      Source: A value for announcing an exclamation.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_exclamation">Výkričník</string>
+
+    <!--
+      Source: A value for announcing an opening parenthesis.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_open_paren">Zátvorka</string>
+
+    <!--
+      Source: A value for announcing a closing parenthesis.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_close_paren">Zátvorka zatvoriť</string>
+
+    <!--
+      Source: A value for announcing a double quote.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_double_quote">úvodzovky</string>
+
+    <!--
+      Source: A value for announcing a single quote.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_single_quote">Apostrof</string>
+
+    <!--
+      Source: A value for announcing a slash.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_slash">Lomka</string>
+
+    <!--
+      Source: A value for announcing a backslash.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_backslash">Opačná lomka</string>
+
+    <!--
+      Source: A value for announcing a semicolon.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_semicolon">Bodkočiarka</string>
+
+    <!--
+      Source: A value for announcing a colon.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_colon">Dvojbodka</string>
+    
+    <!--
+      Source: A value for announcing a left brace.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_left_brace">Zložená zátvorka</string>
+    
+    <!--
+      Source: A value for announcing a right brace.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_right_brace">Zložená zatvoriť</string>
+</resources>

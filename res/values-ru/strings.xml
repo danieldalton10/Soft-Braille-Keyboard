@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- User interface strings go below here -->
+    <string name="action_settings">Настройки</string>
+    <string name="app_name">Soft Braille Keyboard</string>
+    <string name="auto_caps_disabled">Автоматическая смена регистра отключена</string>
+    <string name="auto_caps_enabled">Автоматическая смена регистра включена</string>
+    <string name="blank">Пусто</string>
+    <string name="braille_ime">Soft Braille Keyboard</string>
+    <string name="button_choose_default_keyboard">Установите Soft Braille Keyboard в качестве клавиатуры по умолчанию</string>
+    <string name="button_keyboard_settings">Активировать Soft Braille Keyboard</string>
+    <string name="button_more_info">Прочитать краткое руководство</string>
+    <string name="capital">Заглавное %s</string>
+    <string name="closing_keyboard">Клавиатура закрывается</string>
+    <string name="copied">Скопировано</string>
+    <string name="copy_error">Ошибка копирования</string>
+    <string name="cut_error">Ошибка вырезания</string>
+    <string name="deleted">Удалено %s</string>
+    <string name="delete_selection">Удалить выделение</string>
+    <string name="end_of_text">Конец текста</string>
+    <string name="expand_keyboard_talkback">Коснитесь дважды здесь, чтобы развернуть клавиатуру</string>
+    <string name="expand_keyboard">Коснитесь здесь, чтобы развернуть клавиатуру</string>
+    <string name="grade_computer">Компьютерный Брайль</string>
+    <string name="grade_literary">Литературный Брайль</string>
+    <string name="grade_table">Степень %s</string>
+    <string name="grade">Степень Брайля по умолчанию</string>
+    <string name="hide_keyboard">клавиатура сворачивается.</string>
+    <string name="high">Высокая</string>
+    <string name="info_url">https://docs.google.com/document/d/1OX6yFjkK61VfROdU9uQNxjEZ_QNWxiMnUY_1ECnIyRQ/pub</string>
+    <string name="keyboard_auto">Автоматически</string>
+    <string name="keyboard_echo_all">Слова и символы</string>
+    <string name="keyboard_echo_character">Символы</string>
+    <string name="keyboard_echo_none">Ничего</string>
+    <string name="keyboard_echo_word">Слова</string>
+    <string name="keyboard_error">Не удалось установить клавиатуру.</string>
+    <string name="keyboard_feedback_all">Звук и вибрация</string>
+    <string name="keyboard_feedback_none">Нет</string>
+    <string name="keyboard_feedback_sound">Только звук</string>
+    <string name="keyboard_feedback_vibrate">Только вибрация</string>
+    <string name="keyboard_full_screen">Клавиатура развёрнута</string>
+    <string name="keyboard_horizontal">Горизонтальная</string>
+    <string name="keyboard_next_three">А теперь приложите к экрану три пальца другой руки.</string>
+    <string name="keyboard_not_set">Приложите, пожалуйста, к экрану все шесть пальцев, чтобы установить клавиатуру</string>
+    <string name="keyboard_shrink">Клавиатура свёрнута</string>
+    <string name="keyboard_style_normal">Обычный</string>
+    <string name="keyboard_style_slate">Прибор и грифель</string>
+    <string name="keyboard_style_top_bottom">Поменять точки 1 и 4 местами с точками 3 и 6</string>
+    <string name="keyboard_vertical">Вертикальная</string>
+    <string name="low">Низкая</string>
+    <string name="mark_not_set">Метка не была установлена</string>
+    <string name="medium">Средняя</string>
+    <string name="newline">Новая строка</string>
+    <string name="no_braille_table">Таблиц нет</string>
+    <string name="no_more_misspellings"> Орфографических ошибок больше нет</string>
+    <string name="no_password_echo">Не произносить пароли</string>
+    <string name="no_rotate_keyboard">Не поворачивать клавиатуру</string>
+    <string name="no_suggestions">Нет доступных вариантов</string>
+    <string name="nothing_to_delete">нечего удалять</string>
+    <string name="pad_horizontal">Установить клавиатуру на горизонтальную раскладку</string>
+    <string name="pad_vertical">Установить клавиатуру на вертикальную раскладку</string>
+    <string name="pasted">Вставлено</string>
+    <string name="paste_error">Произошла ошибка при вставке текста</string>
+    <string name="pref_app_version_title">Версия программы: %s.</string>
+    <string name="pref_auto_caps_summary">Делать заглавной букву в начале первого слова каждого предложения.</string>
+    <string name="pref_auto_caps_title">Автоматическая смена регистра</string>
+    <string name="pref_auto_match_keyboard_summary">При выборе этой настройки клавиатура устанавливается в зависимости от положения ваших пальцев при ручной калибровке.</string>
+    <string name="pref_auto_match_keyboard_title">Автоматически устанавливать раскладку клавиатуры в зависимости от положения ваших пальцев</string>
+    <string name="pref_braille_grade_summary">Устанавливает желаемую степень Брайля.</string>
+    <string name="pref_category_braille_title">Брайлевские таблицы</string>
+    <string name="pref_category_feedback_title">Настройки эха клавиатуры</string>
+    <string name="pref_category_keyboard_title">Настройки клавиатуры</string>
+    <string name="pref_category_misc_title">Прочие настройки</string>
+    <string name="pref_default_computer_braille_table_summary"></string>
+    <string name="pref_default_computer_braille_table_title">Компьютерная Брайлевская таблица</string>
+    <string name="pref_default_keyboard_summary">Выберите раскладку клавиатуры, отображающуюся по умолчанию.</string>
+    <string name="pref_default_keyboard_title">Раскладка клавиатуры по умолчанию</string>
+    <string name="pref_default_literary_braille_table_summary"></string>
+    <string name="pref_default_literary_braille_table_title">Литературная Брайлевская таблица</string>    
+    <string name="pref_double_space_period_summary">Смахнув дважды пробел, можно поставить точку со следующим за ней пробелом.</string>
+    <string name="pref_double_space_period_title">Точка с пробелом</string>    
+    <string name="pref_echo_feedback_summary">Выберите тип эха клавиатуры.</string>
+    <string name="pref_echo_feedback_title">Эха клавиатуры</string>
+    <string name="pref_echo_misspellings_summary">При выборе этой настройки объявляются орфографические ошибки после того, как вы поставили пробел</string>
+    <string name="pref_echo_misspellings_title">Уведомлять об орфографических ошибках при наборе текста </string>    
+    <string name="pref_echo_passwords_summary">При выборе этой настройки клавиатура будет проговаривать символы при вводе пароля.</string>
+    <string name="pref_keyboard_feedback_summary">Выберите тип тактильного и звукового отклика клавиатуры.</string>
+    <string name="pref_keyboard_feedback_title">Отклик клавиатуры</string>
+    <string name="pref_keyboard_invert_summary">Когда клавиатура не поворачивается с телефоном Воспользуйтесь этой настройкой, чтобы менять ориентацию клавиатуры на 180 градусов</string>
+    <string name="pref_keyboard_invert_title">Перевернуть клавиатуру</string>
+    <string name="pref_keyboard_style_summary">Измените положение  точек на клавиатуре.</string>
+    <string name="pref_keyboard_style_title">Стиль клавиатуры</string>
+    <string name="pref_privacy_summary">При выборе этой настройки при вводе данных экран погасает в целях приватности.</string>
+    <string name="pref_privacy_title">Окно приватности</string>
+    <string name="pref_show_circles_summary">При выборе этой настройки появятся маленькие кружочки, указывающие место расположения каждой Брайлевской точки на экране</string>
+    <string name="pref_show_circles_title">Показать кружочки на экране?</string>
+    <string name="pref_swipe_sensitivity_summary">Выберите чувствительность смахивания.</string>
+    <string name="pref_swipe_sensitivity_title">Чувствительность смахивания</string>
+    <string name="pref_switch_tables_summary">Выберите несколько языков, между которыми можно переключаться в реальном времени при вводе текста.</string>
+    <string name="pref_switch_tables_title">Активировать Брайлевские таблицы для переключения между ними в реальном времени.</string>
+    <string name="pref_text_to_speech_engine_title">Синтезатор речи</string>
+    <string name="pref_text_to_speech_title">Настройки преобразования текста в речь</string>
+    <string name="pref_two_hand_calibration_summary">При выборе этой настройки клавиатура калибруется двумя отдельными прикосновениями</string>
+    <string name="pref_two_hand_calibration_title">Калибровка двумя прикосновениями</string>
+    <string name="pref_use_eight_dots_summary">При выборе этой настройки появляются точки 7 и 8.</string>
+    <string name="pref_use_eight_dots_title">Показать восьмиточечную клавиатуру</string>
+    <string name="pref_vibrate_on_exit_title">Вибрация при закрытии клавиатуры</string>
+    <string name="pref_voice_shortcut_summary">При выборе этой настройки коснитесь дважды с удержанием, чтобы начать голосовой ввод при включённом talkback.</string> 
+    <string name="pref_voice_shortcut_title">Команда для голосового ввода</string>
+    <string name="privacy_disabled">Режим приватности отключён</string>
+    <string name="privacy_enabled">Режим приватности включён</string>
+    <string name="ready">клавиатура готова</string>
+    <string name="return_key">Вернуться</string>
+    <string name="rotate_keyboard">Поворачивать клавиатуру с устройством</string>
+    <string name="rotate_summary">При выборе этой настройки клавиатура будет направлена в зависимости от ориентации устройства.</string>
+    <string name="select_all">Выделить всё</string>
+    <string name="selected_all">Весь текст выделен</string>
+    <string name="set_mark">Метка поставлена</string>
+    <string name="settings_name">Настройки Soft Braille Keyboard</string>
+    <string name="show_input_switcher">Показывается переключатель ввода</string>
+    <string name="show_settings">Показываются настройки soft braille keyboard</string>
+    <string name="space">Пробел</string>
+    <string name="speak_passwords">Произносить пароли</string>
+    <string name="speak_selection">Произносить выделение</string>
+    <string name="spellcheck_not_supported">Проверка орфографии в этой версии Android не поддерживается.</string>
+    <string name="start_of_text">Начало текста</string>
+    <string name="swipe_confirm_input">смахните ещё раз, чтобы показать настройку выбора клавиатуры</string>
+    <string name="swipe_confirm_settings">Смахните ещё раз, чтобы показать настройки Soft Braille Keyboard</string>
+    <string name="swipe_confirm">Для подтверждения смахните снова</string>
+    <string name="switch_off_talkback">Пожалуйста, отключите talkback. Вы можете это сделать, смахнув сначала вниз, потом вправо, как бы описав английскую букву l, и обследуйте круг, чтобы найти функцию приостановки озвучивания в левой верхней части. Talkback можно перезапустить в любой момент, нажав дважды на кнопку включения устройства</string>
+    <string name="translator_error">Обнаружена ошибка службы Брайля</string>
+    <string name="trial_buy">Купить</string>
+    <string name="trial_expired_message">Срок использования этой бета-версии истёк. Если вы хотите продолжить использовать это приложение, пожалуйста, скачайте его с магазина Google play или свяжитесь с разработчиком Дэниелом Дальтоном по электронному адресу: daniel.dalton10@gmail.com, чтобы получить обновлённую тестовую версию.\nСпасибо, что тестируете эту бета-версию!</string>
+    <string name="trial_expired_title">Срок пробной версии истёк</string>
+    <string name="try_box">Попробуйте напечатать что-нибудь здесь.</string>
+    <string name="unknown_character">Неизвестный символ</string>
+    <string name="unset_mark">Метка снята</string>
+    <string name="voice_input_enable">Пожалуйста, сделайте этот жест быстро два раза. Откроется диалог. С включённым talkback подтвердите разрешение на запись аудио, чтобы активировать голосовой ввод.</string>
+    <string name="voice_input_error">Произошла ошибка при голосовом вводе, код: %d</string>
+    <string name="voice_input_is_not_available">Голосовой ввод недоступен на этом устройстве.</string>
+    <string name="voice_input_permission_message">чтобы голосовой ввод работал,  вам необходимо дать разрешение на запись аудио.</string>
+    <string name="voice_input_permission_title">Разрешение на голосовой ввод</string>
+    <string name="word_correction_misspelled">орфографическая ошибка %s</string>
+    <string name="word_correct">Слово написано правильно</string>
+    <string name="word_count">%1$d строки, %2$d слова, %3$d символы</string>
+    <string name="word_misspelled">Орфографическая ошибка</string>
+
+    <!-- PUNCTUATION -->
+
+    <!--
+      Source: A value for announcing a question mark.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_questionmark">Вопросительный знак</string>
+
+    <!--
+      Source: A value for announcing a space.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_space">Пробел</string>
+
+    <!--
+      Source: A value for announcing a comma.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_comma">Запятая</string>
+
+    <!--
+      Source: A value for announcing a dot.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_dot">Точка</string>
+
+    <!--
+      Source: A value for announcing an exclamation.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_exclamation">Восклицательный знак</string>
+
+    <!--
+      Source: A value for announcing an opening parenthesis.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_open_paren">Левая круглая</string>
+
+    <!--
+      Source: A value for announcing a closing parenthesis.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_close_paren">Правая круглая</string>
+
+    <!--
+      Source: A value for announcing a double quote.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_double_quote">Двойные кавычки</string>
+
+    <!--
+      Source: A value for announcing a single quote.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_single_quote">апостроф</string>
+
+    <!--
+      Source: A value for announcing a slash.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_slash">Косая черта</string>
+
+    <!--
+      Source: A value for announcing a backslash.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_backslash">Обратная косая черта</string>
+
+    <!--
+      Source: A value for announcing a semicolon.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_semicolon">Точка с запятой</string>
+
+    <!--
+      Source: A value for announcing a colon.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_colon">Двоеточие</string>
+    
+    <!--
+      Source: A value for announcing a left brace.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_left_brace">Левая квадратная</string>
+    
+    <!--
+      Source: A value for announcing a right brace.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_right_brace">Правая квадратная</string>
+</resources>

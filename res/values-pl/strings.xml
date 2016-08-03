@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- User interface strings go below here -->
+    <string name="action_settings">Ustawienia</string>
+    <string name="app_name">Soft Braille Keyboard</string>
+    <string name="auto_caps_disabled">Automatyczne wstawianie wielkich liter wyłączone</string>
+    <string name="auto_caps_enabled">Automatyczne wstawianie wielkich liter włączone</string>
+    <string name="blank">Puste</string>
+    <string name="braille_ime">Soft Braille Keyboard</string>
+    <string name="button_choose_default_keyboard">Ustaw Soft Braille Keyboard jako klawiaturę domyślną</string>
+    <string name="button_keyboard_settings">Włącz Soft Braille Keyboard</string>
+    <string name="button_more_info">Przeczytaj krótkie wprowadzenie</string>
+    <string name="capital">Duże %s</string>
+    <string name="closing_keyboard">Zamknięto klawiaturę</string>
+    <string name="copied">Skopiowano</string>
+    <string name="copy_error">Błąd kopiowania</string>
+    <string name="cut_error">Błąd wycinania</string>
+    <string name="deleted">Usunięto %s</string>
+    <string name="delete_selection">Usuń zaznaczenie</string>
+    <string name="end_of_text">Koniec tekstu</string>
+      <string name="expand_keyboard">Stuknij tutaj, aby rozwinąć klawiaturę</string>
+        <string name="expand_keyboard_talkback">Stuknij dwukrotnie tutaj, aby rozwinąć klawiaturę</string>
+    <string name="grade_computer">Brajl Komputerowy</string>
+    <string name="grade">Domyślny stopień brajla</string>
+        <string name="grade_literary">Brajl Literacki</string>
+        <string name="grade_table">Stopień %s</string>
+    <string name="hide_keyboard">Ukrywanie klawiatury.</string>
+    <string name="high">Wysoka</string>
+    <string name="info_url">https://docs.google.com/document/d/1OX6yFjkK61VfROdU9uQNxjEZ_QNWxiMnUY_1ECnIyRQ/pub</string>
+    <string name="keyboard_auto">Automatyczna</string>
+    <string name="keyboard_echo_all">Znaki i słowa</string>
+    <string name="keyboard_echo_character">Znaki</string>
+    <string name="keyboard_echo_none">Brak</string>
+    <string name="keyboard_echo_word">Słowa</string>
+    <string name="keyboard_error">Nie udało się ustawić klawiatury.</string>
+    <string name="keyboard_feedback_all">Dźwięk i wibracja</string>
+    <string name="keyboard_feedback_none">Brak</string>
+    <string name="keyboard_feedback_sound">Tylko dźwięk</string>
+    <string name="keyboard_feedback_vibrate">Tylko wibracja</string>
+    <string name="keyboard_full_screen">Rozwinięto klawiaturę</string>
+    <string name="keyboard_horizontal">Pozioma</string>
+    <string name="keyboard_next_three">Teraz połóż trzy palce drugiej ręki na ekranie i przytrzymaj.</string>
+    <string name="keyboard_not_set">Połóż wszystkie 6 palców na ekranie, aby skalibrować klawiaturę</string>
+    <string name="keyboard_shrink">Ukryto klawiaturę</string>
+    <string name="keyboard_style_normal">Normalny</string>
+    <string name="keyboard_style_slate">Tryb tabliczki i dłutka</string>
+    <string name="keyboard_style_top_bottom">Zamień punkty 1 i 4 z 3 i 6</string>
+    <string name="keyboard_vertical">Pionowa</string>
+    <string name="low">Niska</string>
+    <string name="mark_not_set">Zaznaczenie nie zostało ustawione</string>
+    <string name="medium">Średnia</string>
+    <string name="newline">Nowy wiersz</string>
+    <string name="no_braille_table">Brak tablic</string>
+    <string name="no_more_misspellings">Nie ma więcej błędów pisowni</string>
+    <string name="no_password_echo">Nie wypowiadaj haseł</string>
+    <string name="no_rotate_keyboard">Nie obracaj klawiatury</string>
+    <string name="no_suggestions">Brak dostępnych sugestii</string>
+    <string name="nothing_to_delete">Nic do usunięcia</string>
+    <string name="pad_horizontal">Skalibrowano klawiaturę w orientacji poziomej</string>
+    <string name="pad_vertical">Ustawiono klawiaturę w orientacji pionowej</string>
+    <string name="pasted">Wklejono</string>
+    <string name="paste_error">Wystąpił błąd podczas wklejania tekstu</string>
+    <string name="pref_app_version_title">Wersja aplikacji: %s.</string>
+    <string name="pref_auto_caps_summary">Zaczynaj zdania od wielkiej litery.</string>
+    <string name="pref_auto_caps_title">Automatyczne wstawianie wielkich liter</string>
+    <string name="pref_auto_match_keyboard_summary">Gdy włączone, klawiatura jest ustawiana automatycznie zgodnie z ułożeniem palców podczas ręcznej kalibracji.</string>
+    <string name="pref_auto_match_keyboard_title">Automatycznie wybierz klawiaturę zgodną z ułożeniem palców</string>
+    <string name="pref_braille_grade_summary">Ustaw preferowany stopień brajla.</string>
+    <string name="pref_category_braille_title">Tablice brajlowskie</string>
+    <string name="pref_category_feedback_title">Ustawienia informacji zwrotnej klawiatury</string>
+    <string name="pref_category_keyboard_title">Ustawienia Klawiatury</string>
+    <string name="pref_category_misc_title">Pozostałe Ustawienia</string>
+    <string name="pref_default_computer_braille_table_summary"></string>
+    <string name="pref_default_computer_braille_table_title">Tablica brajla komputerowego</string>
+    <string name="pref_default_keyboard_summary">Wybierz układ klawiatury, który będzie wyświetlany domyślnie.</string>
+    <string name="pref_default_keyboard_title">Domyślny Układ Klawiatury</string>
+    <string name="pref_default_literary_braille_table_summary"></string>
+    <string name="pref_default_literary_braille_table_title">Tablica brajla literacki</string>    
+    <string name="pref_double_space_period_summary">Wstawienie podwójnej spacji wstawia kropkę i spację.</string>
+    <string name="pref_double_space_period_title">Kropka przy podwójnej spacji</string>    
+    <string name="pref_echo_feedback_summary">Wybierz rodzaj echa klawiatury.</string>
+    <string name="pref_echo_feedback_title">Echo Klawiatury</string>
+    <string name="pref_echo_misspellings_summary">Gdy włączone, błędy pisowni są oznajmiane po wstawieniu spacji</string>
+    <string name="pref_echo_misspellings_title">Echo błędów pisowni podczas wpisywania</string>
+    <string name="pref_echo_passwords_summary">Gdy włączone, klawiatura będzie mówić podczas wpisywania haseł.</string>
+    <string name="pref_keyboard_feedback_summary">Wybierz rodzaj dźwiękowej lub wibracyjnej informacji zwrotnej.</string>
+    <string name="pref_keyboard_feedback_title">Informacja Zwrotna Klawiatury</string>
+    <string name="pref_keyboard_invert_summary">Gdy klawiatura nie jest obracana wraz z telefonem, użyj tego ustawienia, by obrócić ją o 180 stopni</string>
+    <string name="pref_keyboard_invert_title">Obróć klawiaturę</string>
+    <string name="pref_keyboard_style_summary">Skonfiguruj układ punktów na klawiaturze.</string>
+    <string name="pref_keyboard_style_title">Styl klawiatury</string>
+    <string name="pref_privacy_summary">Gdy włączone, wyciemniaj ekran podczas pisania, by zachować prywatność.</string>    
+    <string name="pref_privacy_title">Ekran prywatny</string>
+    <string name="pref_show_circles_summary">Gdy włączone, małę kółka będą wyświetlane wskazując pozycję poszczególnych punktów na ekranie</string>
+    <string name="pref_show_circles_title">Pokazywać kółka na ekranie?</string>
+    <string name="pref_swipe_sensitivity_summary">Wybierz czułość gestów przesuwania.</string>
+    <string name="pref_swipe_sensitivity_title">Czułość przesuwania</string>
+    <string name="pref_switch_tables_summary">Wybierz te języki, pomiędzy którymi chcesz się przełączać w locie podczas pisania.</string>
+    <string name="pref_switch_tables_title">Włącz tablice brajlowskie do przełączania w locie.</string>
+    <string name="pref_text_to_speech_engine_title">Silnik Syntezy Mowy</string>
+    <string name="pref_text_to_speech_title">Ustawienia Syntezy Mowy</string>
+    <string name="pref_two_hand_calibration_summary">Gdy włączone  pozwala na kalibrację klawiatury dwoma osobnymi dotknięciami</string>
+    <string name="pref_two_hand_calibration_title">Kalibracja dwoma dotknięciami</string>
+    <string name="pref_use_eight_dots_summary">Gdy włączone, pokazuj punkty 7 i 8.</string>
+    <string name="pref_use_eight_dots_title">Pokazuj 8-punktową klawiaturę</string>
+    <string name="pref_vibrate_on_exit_title">Wibracja przy zamykaniu klawiatury</string>
+    <string name="pref_voice_shortcut_summary">Gdy włączone, stuknij dwukrotnie z przytrzymaniem,by rozpocząć dyktowanie głosowe kiedy Talkback jest włączony.</string> 
+    <string name="pref_voice_shortcut_title">Skrót wprowadzania głosowego</string>
+    <string name="privacy_disabled">Ekran prywatny wyłączony</string>
+    <string name="privacy_enabled">Ekran prywatny włączony</string>
+    <string name="ready">klawiatura gotowa</string>
+    <string name="return_key">Enter</string>
+    <string name="rotate_keyboard">Obracaj klawiaturę wraz z urządzeniem</string>
+    <string name="rotate_summary">Gdy włączone, klawiatura będzie obracana zgodnie z orientacją urządzenia.</string>
+    <string name="select_all">Zaznacz wszystko</string>
+    <string name="selected_all">Zaznaczono cały tekst</string>
+    <string name="set_mark">Zaznaczenie ustawione</string>
+    <string name="settings_name">Ustawienia Soft Braille Keyboard</string>
+    <string name="show_input_switcher">Pokazywanie przełączania metody wprowadzania</string>
+    <string name="show_settings">Pokazywanie ustawień klawiatury brajlowskiej</string>
+    <string name="space">Spacja</string>
+    <string name="speak_passwords">Wypowiadaj hasła</string>
+    <string name="speak_selection">Odczytaj zaznaczenie</string>
+    <string name="spellcheck_not_supported">Sprawdzanie pisowni jest niedostępne w tej wersji systemu Android.</string>
+    <string name="start_of_text">Początek tekstu</string>
+    <string name="swipe_confirm_input">Przesuń ponownie, aby wyświetlić wybór klawiatury</string>
+    <string name="swipe_confirm">Przesuń ponownie, by potwierdzić</string>
+    <string name="swipe_confirm_settings">Przesuń ponownie, aby wyświetlić ustawienia Soft Braille Keyboard</string>
+    <string name="switch_off_talkback">Wyłącz Talkback. Możesz to zrobić wykonując gest w kształcie litery L, przesuń w dół, a następnie w prawo; , na ekranie znajdź opcję "Wstrzymaj reagowanie" w lewym górnym rogu. Talkback może zosta wznowiony w każdej chwili poprzez podwójne wciśnięcie przycisku zasilania</string>
+    <string name="translator_error">Wystąpił błąd usługi brajla</string>
+    <string name="trial_buy">Kup</string>
+    <string name="trial_expired_message">Ta wersja beta już wygasła. Jeżeli chciałbyś nadal korzystać z aplikacji, pobierz ją ze sklepu Play lub skontaktuj się z twórcą Danielem Daltonem pod adresem daniel.dalton10@gmail.com, aby otrzymać uaktualnioną wersję testową.\nDzięki za testowanie klawiatury!</string>
+    <string name="trial_expired_title">Wersja próbna wygasła</string>
+    <string name="try_box">Tutaj spróbuj pisać za pomocą klawiatury.</string>
+    <string name="unknown_character">Nieznany znak</string>
+    <string name="unset_mark">Zaznaczenie usunięte</string>    
+    <string name="voice_input_enable">Proszę wykonać ten gest szybko dwa razy . Zostanie wyświetlone okno. Proszę użyć Talkbacka, aby zaakceptować prośbę o udzielenie zezwolenia, aby wprowadzanie głosowe mogło działać poprawnie.</string>
+    <string name="voice_input_error">Wystąpił błąd silnika wprowadzania głosowego, kod: %d</string>
+    <string name="voice_input_is_not_available">Wprowadzanie głosowe nie jest dostępne na urządzeniu.</string>
+    <string name="voice_input_permission_message">Musisz włączyć zezwolenie na nagrywanie dźwięku, aby wprowadzanie głosowe mogło działać.</string>
+    <string name="voice_input_permission_title">Zezwolenie na Wprowadzanie Głosowe</string>
+    <string name="word_correction_misspelled">%s błąd pisowni</string>
+    <string name="word_correct">Słowo jest poprawne</string>
+    <string name="word_count">%1$d linii, %2$d słów, %3$d znaków</string>
+    <string name="word_misspelled">Błąd Pisowni</string>
+    <!-- PUNCTUATION -->
+
+    <!--
+      Source: A value for announcing a question mark.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_questionmark">Pytajnik</string>
+
+    <!--
+      Source: A value for announcing a space.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_space">Spacja</string>
+
+    <!--
+      Source: A value for announcing a comma.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_comma">Przecinek</string>
+
+    <!--
+      Source: A value for announcing a dot.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_dot">Kropka</string>
+
+    <!--
+      Source: A value for announcing an exclamation.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_exclamation">Wykrzyknik</string>
+
+    <!--
+      Source: A value for announcing an opening parenthesis.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_open_paren">Lewy nawias</string>
+
+    <!--
+      Source: A value for announcing a closing parenthesis.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_close_paren">Prawy nawias</string>
+
+    <!--
+      Source: A value for announcing a double quote.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_double_quote">Cudzysłów</string>
+
+    <!--
+      Source: A value for announcing a single quote.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_single_quote">apostrof</string>
+
+    <!--
+      Source: A value for announcing a slash.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_slash">Slesz</string>
+
+    <!--
+      Source: A value for announcing a backslash.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_backslash">Bekslesz</string>
+
+    <!--
+      Source: A value for announcing a semicolon.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_semicolon">Średnik</string>
+
+    <!--
+      Source: A value for announcing a colon.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_colon">Dwókropek</string>
+    
+    <!--
+      Source: A value for announcing a left brace.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_left_brace">Lewy nawias klamrowy</string>
+    
+    <!--
+      Source: A value for announcing a right brace.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_right_brace">Prawy nawias klamrowy</string>
+</resources>

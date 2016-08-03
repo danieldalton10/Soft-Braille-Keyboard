@@ -1,0 +1,83 @@
+diff --git a/braille/service/res/xml/tablelist.xml b/braille/service/res/xml/tablelist.xml
+index 7314486..1500770 100644
+--- a/braille/service/res/xml/tablelist.xml
++++ b/braille/service/res/xml/tablelist.xml
+@@ -344,6 +344,11 @@
+ 
+     <!-- Polish -->
+     <table
++         id="pl-comp"
++         locale="pl"
++         dots="8"
++         fileName="pl-pl-comp8.ctb" />
++    <table
+          id="pl-g1"
+          locale="pl"
+          dots="6"
+@@ -369,6 +374,25 @@
+          grade="2"
+          fileName="pt-pt-g2.ctb" />
+ 
++    <!-- Portugese BR -->
++    <table
++         id="pt-BR-comp8"
++         locale="pt_BR"
++         dots="8"
++         fileName="pt-br-comp8.ctb" />
++    <table
++         id="pt-BR-g1"
++         locale="pt_BR"
++         dots="6"
++         grade="1"
++         fileName="pt-br-g1.utb" />
++    <table
++         id="pt-BR-g2"
++         locale="pt_BR"
++         dots="6"
++         grade="2"
++         fileName="pt-pt-g2.ctb" />
++
+     <!-- Romainan -->
+     <table
+          id="ro-comp8"
+@@ -387,7 +411,7 @@
+          locale="ru"
+          dots="6"
+          grade="1"
+-         fileName="ru-litbrl.ctb" />
++         fileName="ru-ru-g1.utb" />
+ 
+     <!-- Serbian -->
+     <table
+@@ -404,7 +428,7 @@
+          locale="sk"
+          dots="6"
+          grade="1"
+-         fileName="sk-sk-g1.utb" />
++         fileName="sk-g1.ctb" />
+ 
+     <!-- Slovene -->
+     <table
+@@ -430,7 +454,7 @@
+          locale="es"
+          dots="6"
+          grade="1"
+-         fileName="es-g1.ctb" />
++         fileName="Es-Es-g1.utb" />
+ 
+     <!-- Swedish -->
+     <table
+@@ -458,7 +482,12 @@
+          locale="vi"
+          dots="8"
+          fileName="vi.ctb" />
+-
++    <table
++         id="vi-g1"
++         locale="vi"
++         dots="6"
++	 grade="1"
++         fileName="vi-g1.ctb" />
+     <!-- Chinese -->
+     <table
+          id="zh-comp8"

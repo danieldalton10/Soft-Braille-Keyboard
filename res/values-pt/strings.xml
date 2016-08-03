@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- User interface strings go below here -->
+    <string name="action_settings">Definições</string>
+    <string name="app_name">Soft Braille Keyboard</string>
+    <string name="auto_caps_disabled">Sem maiúsculas automáticas</string>
+    <string name="auto_caps_enabled">Maiúsculas automáticas</string>
+    <string name="blank">Em branco</string>
+    <string name="braille_ime">Soft Braille Keyboard</string>
+    <string name="button_choose_default_keyboard">Definir Soft Braille Keyboard como teclado predefinido</string>
+    <string name="button_keyboard_settings">Seleccionar Soft Braille Keyboard</string>
+    <string name="button_more_info">Ler o guia rápido de iniciação</string>
+    <string name="capital">%s maiúsculo</string>
+    <string name="closing_keyboard">A fechar o teclado</string>
+    <string name="copied">Copiado</string>
+    <string name="copy_error">Erro ao copiar</string>
+    <string name="cut_error">Erro ao cortar</string>
+    <string name="deleted">%s Eliminado</string>
+    <string name="delete_selection">Eliminar selecção</string>
+    <string name="end_of_text">Fim do texto</string>
+    <string name="expand_keyboard_talkback">Toque duas vezes para expandir o teclado</string>
+    <string name="expand_keyboard">Toque aqui para expandir o teclado</string>
+    <string name="grade_computer">Braille de computador (8 pontos)</string>
+    <string name="grade_literary">Braille literário</string>
+    <string name="grade">Tabela Braille predefinida</string>
+    <string name="grade_table">Grau %s</string>
+    <string name="hide_keyboard">A ocultar o teclado.</string>
+    <string name="high">Alta</string>
+    <string name="info_url">https://dl.dropboxusercontent.com/u/4967121/SBK.html</string>
+    <string name="keyboard_auto">Automático</string>
+    <string name="keyboard_echo_all">Caracteres e palavras</string>
+    <string name="keyboard_echo_character">Caracteres</string>
+    <string name="keyboard_echo_none">Nenhum</string>
+    <string name="keyboard_echo_word">Palavras</string>
+    <string name="keyboard_error">Não foi possível seleccionar o teclado.</string>
+    <string name="keyboard_feedback_all">Som e vibração</string>
+    <string name="keyboard_feedback_none">Nenhum</string>
+    <string name="keyboard_feedback_sound">Somente som</string>
+    <string name="keyboard_feedback_vibrate">Somente vibração</string>
+    <string name="keyboard_full_screen">Teclado expandido</string>
+    <string name="keyboard_horizontal">Horizontal</string>
+    <string name="keyboard_next_three">Por favor, coloque agora os seus outros três dedos no ecrã.</string>
+    <string name="keyboard_not_set">Por favor, coloque todos os 6 dedos no ecrã para configurar o teclado Braille</string>
+    <string name="keyboard_shrink">Teclado reduzido</string>
+    <string name="keyboard_style_normal">Normal</string>
+    <string name="keyboard_style_slate">Modo de pauta e punção</string>
+    <string name="keyboard_style_top_bottom">Trocar pontos 1 e 4 pelos pontos 3 e 6</string>
+    <string name="keyboard_vertical">Vertical</string>
+    <string name="low">Baixa</string>
+    <string name="mark_not_set">A marca de selecção não foi definida</string>
+    <string name="medium">Média</string>
+    <string name="newline">Nova linha</string>
+    <string name="no_braille_table">Sem tabelas</string>
+    <string name="no_more_misspellings">Não há mais erros ortográficos</string>
+    <string name="no_password_echo">Não anunciar passwords</string>
+    <string name="no_rotate_keyboard">Não rodar o teclado</string>
+    <string name="no_suggestions">Sem sugestões</string>
+    <string name="nothing_to_delete">Não há nada para eliminar</string>
+    <string name="pad_horizontal">Definir layout horizontal para o teclado</string>
+    <string name="pad_vertical">Definir layout vertical para o teclado</string>
+    <string name="pasted">Colado</string>
+    <string name="paste_error">Erro ao colar o texto</string>
+    <string name="pref_app_version_title">Versão da aplicação: %s.</string>
+    <string name="pref_auto_caps_summary">Insere uma letra maiúscula na primeira palavra de cada frase.</string>
+    <string name="pref_auto_caps_title">Maiúsculas automáticas</string>
+    <string name="pref_auto_match_keyboard_summary">Quando estiver activado, o teclado é apresentado com base na posição dos seus dedos quando o calibrar manualmente</string>
+    <string name="pref_auto_match_keyboard_title">Seleccionar automaticamente o layout do teclado com base na posição dos seus dedos</string>
+    <string name="pref_braille_grade_summary">Seleccione a tabela Braille da sua preferência.</string>
+    <string name="pref_category_braille_title">Tabelas Braille</string>
+    <string name="pref_category_feedback_title">Definições do feedback do teclado</string>
+    <string name="pref_category_keyboard_title">Definições do teclado</string>
+    <string name="pref_category_misc_title">Definições adicionais</string>
+    <string name="pref_default_computer_braille_table_summary"></string>
+    <string name="pref_default_computer_braille_table_title">Tabela Braille de computador</string>
+    <string name="pref_default_keyboard_summary">Seleccione o layout do teclado que é apresentado por defeito.</string>
+    <string name="pref_default_keyboard_title">Layout do teclado predefinido</string>
+    <string name="pref_default_literary_braille_table_summary"></string>
+    <string name="pref_default_literary_braille_table_title">Tabela Braille literário</string>    
+    <string name="pref_double_space_period_summary">Dois espaços consecutivos inserem um ponto seguido de espaço.</string>
+    <string name="pref_double_space_period_title">Ponto quando escrever dois espaços</string>    
+    <string name="pref_echo_feedback_summary">Escolha o eco do teclado.</string>
+    <string name="pref_echo_feedback_title">Eco do teclado</string>
+    <string name="pref_echo_misspellings_summary">Se estiver activado, os erros ortográficos serão anunciados quando for introduzido um espaço</string>
+    <string name="pref_echo_misspellings_title">Informar erros ortográficos enquanto escreve</string>
+    <string name="pref_echo_passwords_summary">Quando estiver activado, os caracteres serão anunciados ao introduzir passwords</string>
+    <string name="pref_keyboard_feedback_summary">Escolha o feedback de som e vibração do teclado.</string>
+    <string name="pref_keyboard_feedback_title">Feedback do teclado</string>
+    <string name="pref_keyboard_invert_summary">Quando o teclado não estiver a rodar com o telefone, utilize esta opção para alterar a orientação do mesmo em 180 graus.</string>
+    <string name="pref_keyboard_invert_title">Inverter teclado</string>
+    <string name="pref_keyboard_style_summary">Configure o layout dos pontos no teclado.</string>
+    <string name="pref_keyboard_style_title">Estilo do teclado</string>
+    <string name="pref_privacy_summary">Quando estiver activado, o ecrã ficará escuro para manter a sua privacidade.</string>
+    <string name="pref_privacy_title">Ecrã escuro</string>
+    <string name="pref_show_circles_summary">Quando estiver activado, são apresentados pequenos círculos no ecrã, indicando a posição de cada ponto Braille.</string>
+    <string name="pref_show_circles_title">Mostrar círculos no ecrã?</string>
+    <string name="pref_swipe_sensitivity_summary">Escolha a sensibilidade dos gestos ao deslizar.</string>
+    <string name="pref_swipe_sensitivity_title">Sensibilidade de deslizar</string>
+    <string name="pref_switch_tables_summary">Seleccione os idiomas para serem alternados facilmente durante a introdução de texto.</string>
+    <string name="pref_switch_tables_title">Selecionar tabelas Braille para alternar</string>
+    <string name="pref_text_to_speech_engine_title">Motor de Texto para Voz</string>
+    <string name="pref_text_to_speech_title">Definições de Texto para Voz</string>
+    <string name="pref_two_hand_calibration_summary">Quando estiver activado, permite que o teclado seja calibrado em duas etapas</string>
+    <string name="pref_two_hand_calibration_title">Calibração em dois toques</string>
+    <string name="pref_use_eight_dots_summary">Quando estiver activado, apresenta os pontos 7 e 8.</string>
+    <string name="pref_use_eight_dots_title">Mostrar teclado de oito pontos</string>
+    <string name="pref_vibrate_on_exit_title">Vibrar ao fechar o teclado</string>
+    <string name="pref_voice_shortcut_summary">Quando estiver activado, dê dois toques e mantenha pressionado para iniciar o ditado por voz enquanto o TalkBack estiver activo.</string> 
+    <string name="pref_voice_shortcut_title">Atalho de introdução por voz</string>
+    <string name="privacy_disabled">Ecrã escuro desactivado</string>
+    <string name="privacy_enabled">Ecrã escuro activado</string>
+    <string name="ready">Teclado apresentado</string>
+    <string name="return_key">Enter</string>
+    <string name="rotate_keyboard">Rodar o teclado com o dispositivo</string>
+    <string name="rotate_summary">Quando estiver activado, o teclado seguirá a orientação do dispositivo.</string>
+    <string name="select_all">Seleccionar tudo</string>
+    <string name="selected_all">Foi seleccionado todo o texto</string>
+    <string name="set_mark">Marca de selecção</string>
+    <string name="settings_name">Definições do Soft Braille Keyboard</string>
+    <string name="show_input_switcher">A apresentar o alternador de entrada</string>
+    <string name="show_settings">A apresentar as definições do soft braille keyboard</string>
+    <string name="space">Espaço</string>
+    <string name="speak_passwords">Anunciar passwords</string>
+    <string name="speak_selection">Anunciar selecção</string>
+    <string name="spellcheck_not_supported">A verificação ortográfica não é suportada nesta versão do Android.</string>
+    <string name="start_of_text">Início do texto</string>
+    <string name="swipe_confirm">Deslize novamente para confirmar</string>
+    <string name="swipe_confirm_input">Deslize novamente para mostrar o selector de teclado</string>
+    <string name="swipe_confirm_settings">Deslize novamente para mostrar as definições do Soft Braille Keyboard</string>
+    <string name="switch_off_talkback">Por favor, suspenda o TalkBack. Pode fazer isto se fizer o gesto em L, ou seja, deslizando o dedo para baixo e para a direita. Explore o círculo para encontrar a opção para suspender o TalkBack que se encontra no canto superior esquerdo. O TalkBack pode ser retomado a qualquer momento se pressionar o botão de alimentação duas vezes</string>
+    <string name="translator_error">Há um problema com o serviço de Braille</string>
+    <string name="trial_buy">Comprar</string>
+    <string name="trial_expired_message">Esta versão beta expirou. Se gostaria de continuar a utilizar a aplicação, por favor transfira-a directamente da Play Store da Google ou contacte o programador Daniel Dalton pelo e-mail daniel.dalton10@gmail.com para uma versão actualizada de testes. Obrigado por ser beta tester do teclado!</string>
+    <string name="trial_expired_title">A versão de testes expirou</string>
+    <string name="try_box">Tente introduzir texto  com o teclado aqui.</string>
+    <string name="unknown_character">Caracter desconhecido</string>
+    <string name="unset_mark">Sem marca de selecção</string>
+    <string name="voice_input_enable">Por favor faça este gesto duas vezes rapidamente. Será apresentado um diálogo. Utilize o TalkBack para aceitar a permissão, só assim funcionará a introdução por voz.</string>
+    <string name="voice_input_error">Ocorreu um erro com o motor da introdução por voz, código: %d</string>
+    <string name="voice_input_is_not_available">A introdução por voz não está disponível neste dispositivo.</string>
+    <string name="voice_input_permission_message">Terá que activar a permissão da gravação de áudio para que a introdução por voz funcione.</string>
+    <string name="voice_input_permission_title">Permissão da Introdução por Voz</string>
+    <string name="word_correct">A palavra está correcta</string>
+    <string name="word_correction_misspelled">%s com erro ortográfico</string>
+    <string name="word_count">%1$d linhas, %2$d palavras, %3$d caracteres</string>
+    <string name="word_misspelled">Erro ortográfico</string>
+
+    <!-- PUNCTUATION -->
+
+    <!--
+      Source: A value for announcing a question mark.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_questionmark">Interrogação</string>
+
+    <!--
+      Source: A value for announcing a space.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_space">Espaço</string>
+
+    <!--
+      Source: A value for announcing a comma.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_comma">Vírgula</string>
+
+    <!--
+      Source: A value for announcing a dot.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_dot">Ponto</string>
+
+    <!--
+      Source: A value for announcing an exclamation.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_exclamation">Exclamação</string>
+
+    <!--
+      Source: A value for announcing an opening parenthesis.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_open_paren">Abrir parêntesis</string>
+
+    <!--
+      Source: A value for announcing a closing parenthesis.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_close_paren">Fechar parêntesis</string>
+
+    <!--
+      Source: A value for announcing a double quote.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_double_quote">Aspas</string>
+
+    <!--
+      Source: A value for announcing a single quote.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_single_quote">apóstrofo</string>
+
+    <!--
+      Source: A value for announcing a slash.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_slash">Barra</string>
+
+    <!--
+      Source: A value for announcing a backslash.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_backslash">Barra invertida</string>
+
+    <!--
+      Source: A value for announcing a semicolon.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_semicolon">Ponto e vírgula</string>
+
+    <!--
+      Source: A value for announcing a colon.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_colon">Dois pontos</string>
+    
+    <!--
+      Source: A value for announcing a left brace.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_left_brace">Abrir chavetas</string>
+    
+    <!--
+      Source: A value for announcing a right brace.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_right_brace">Fechar chavetas</string>
+</resources>

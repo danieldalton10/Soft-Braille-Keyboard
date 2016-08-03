@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- User interface strings go below here -->
+    <!-- Please translate the following strings -->
+    <string name="word_count">%1$d lines, %2$d words, %3$d characters</string>
+    <string name="pref_double_space_period_summary">Double swiping space inserts a period followed by a space.</string>
+    <string name="pref_double_space_period_title">Double-space period</string>    
+    <string name="pref_auto_caps_summary">Capitalise the first word of each sentence.</string>
+    <string name="pref_auto_caps_title">Auto-capitalisation</string>
+    <string name="keyboard_style_normal">Normal</string>
+    <string name="keyboard_style_slate">Slate and stylus mode</string>
+    <string name="keyboard_style_top_bottom">Swap dots 1 and 4 with dots 3 and 6</string>
+    <string name="auto_caps_disabled">No auto-capitalisation</string>
+    <string name="auto_caps_enabled">Auto-capitalisation</string>
+    <string name="no_more_misspellings">No more misspelings</string>
+    <string name="pref_echo_misspellings_summary">When enabled misspellings are announced when a space is typed</string>
+    <string name="pref_echo_misspellings_title">Echo misspellings as you type</string>
+    <string name="pref_keyboard_style_title">Keyboard style</string>
+    <string name="pref_keyboard_style_summary">Configure the layout of the dots on the keyboard.</string>
+    <string name="pref_text_to_speech_title">Text To Speech Settings</string>
+    <string name="pref_text_to_speech_engine_title">Text To Speech Engine</string>
+    <string name="pref_vibrate_on_exit_title">Vibrate when keyboard closes</string>
+    <string name="pref_voice_shortcut_summary">When enabled double tap and hold to start voice dictation while talkback is enabled.</string> 
+    <string name="pref_voice_shortcut_title">Voice input shortcut</string>
+    <string name="spellcheck_not_supported">Spell check is not supported on this version of Android.</string>
+    <string name="voice_input_enable">Please perform this gesture twice quickly. A dialog will be displayed use talkback to accept the permission, so that voice input will work.</string>
+    <string name="voice_input_error">An error occurred with the voice input engine, code: %d</string>
+    <string name="voice_input_is_not_available">Voice input is not available on the device.</string>
+    <string name="voice_input_permission_title">Voice Input Permission</string>
+    <string name="voice_input_permission_message">You need to enable the record audio permission for voice input to work.</string>
+    <string name="word_correct">Word is correct</string>
+    <string name="word_correction_misspelled">%s misspelled</string>
+    <string name="word_misspelled">Misspelled</string>
+    <string name="action_settings">Cài Đặt</string>
+    <string name="app_name">Bàn Phím Chữ Braille</string>
+    <string name="blank">Quãng Trắng</string>
+    <string name="braille_ime">Bàn Phím Chữ Braille</string>
+    <string name="button_choose_default_keyboard">Chọn Bàn Phím Chữ Braille Là Bàn Phím Mặc Định</string>
+    <string name="button_keyboard_settings">Bật bàn phím chữ Braille</string>
+    <string name="button_more_info">Xem Phần Hướng Dẫn Nhanh</string>
+    <string name="capital">Hoa %s</string>
+    <string name="closing_keyboard">Bàn Phím Đang Đóng</string>
+    <string name="copied">Đã Chép</string>
+    <string name="copy_error">Lỗi Khi Đang Chép</string>
+    <string name="cut_error">Lỗi Khi Đang Cắt</string>
+    <string name="deleted">Đã Xóa %s</string>
+    <string name="delete_selection">Xóa Vùng Chọn</string>
+    <string name="end_of_text">Cuối văn bản</string>
+    <string name="expand_keyboard">Chạm Vào Đây Để Mở Rộng Bàn Phím</string>
+    <string name="expand_keyboard_talkback">Chạm Hai Lần Vào Đây Để Mở Rộng Bàn Phím</string>
+    <string name="grade">Chữ Braille Cấp Mặc Định</string>
+    <string name="grade_computer">Chữ Braille Máy Tính</string>
+    <string name="grade_literary">Chữ Braille Văn Học</string>
+    <string name="grade_table">Cấp %s</string>
+    <string name="hide_keyboard">Bàn Phím Đang Ẩn.</string>
+    <string name="high">Cao</string>
+    <string name="info_url">https://docs.google.com/document/d/1OX6yFjkK61VfROdU9uQNxjEZ_QNWxiMnUY_1ECnIyRQ/pub</string>
+    <string name="keyboard_auto">Tự Động</string>
+    <string name="keyboard_echo_all">Từ VÀ Ký Tự</string>
+    <string name="keyboard_echo_character">Ký Tự</string>
+    <string name="keyboard_echo_none">Không Đọc</string>
+    <string name="keyboard_echo_word">Từ</string>
+    <string name="keyboard_error">Không Thể Chọn Bàn Phím</string>
+    <string name="keyboard_feedback_none">Không</string>
+    <string name="keyboard_feedback_vibrate">Chỉ Rung</string>
+    <string name="keyboard_feedback_sound">Chỉ Âm Thanh</string>
+    <string name="keyboard_feedback_all">Rung VÀ Âm Thanh</string>
+    <string name="keyboard_full_screen">Bàn Phím Đã Mở Rộng</string>
+    <string name="keyboard_horizontal">Ngang</string>
+    <string name="keyboard_next_three">Hãy Ấn Giữ BA Ngón Tay Còn Lại Lên Màn Hình</string>
+    <string name="keyboard_not_set">Hãy Đặt Sáu Ngón Tay Lên Màn Hình Để Chọn kiểu Bàn Phím</string>
+    <string name="keyboard_shrink">Bàn Phím Đã Ẩn</string>
+    <string name="keyboard_vertical">Dọc</string>
+    <string name="low">Thấp</string>
+    <string name="mark_not_set">Chưa Đánh Dấu Chọn</string>
+    <string name="medium">Trung Bình</string>
+    <string name="newline">Dòng Mới</string>
+    <string name="no_password_echo">Không Đọc Mật Khẩu</string>
+    <string name="no_braille_table">Không Có Bảng Mã</string>
+    <string name="no_rotate_keyboard">Không Chuyển Kiểu Bàn Phím</string>
+    <string name="no_suggestions">Không Có Gợi Ý Hữu dụng</string>
+    <string name="nothing_to_delete">Không Có Gì Để Xóa</string>
+    <string name="pad_horizontal">Chọn Kiểu Bàn phím Ngang</string>
+    <string name="pad_vertical">Chọn Kiểu Bàn Phím Dọc</string>
+    <string name="paste_error">Có Lỗi Khi dán Văn bản</string>
+    <string name="pasted">Đã dán</string>
+    <string name="pref_app_version_title">Phiên Bản Ứng Dụng: %s.</string>
+    <string name="pref_auto_match_keyboard_summary">Khi bàn phím được kích hoạt, dựa vào vị trí ngón tay của bạn để định cỡ bàn phím</string>
+    <string name="pref_auto_match_keyboard_title">Tự động chọn kiểu bàn phím dựa vào vị trí các ngón tay của bạn</string>
+    <string name="pref_braille_grade_summary">Chọn cấp chữ Braille ưu tiên</string>
+    <string name="pref_category_braille_title">Các bảng mã Braille</string>
+    <string name="pref_category_feedback_title">Cài đặt phản hồi bàn phím</string>
+    <string name="pref_category_keyboard_title">Cài đặt bàn phím</string>
+    <string name="pref_category_misc_title">Cài đặt hỗn hợp</string>
+    <string name="pref_default_computer_braille_table_summary"></string>
+    <string name="pref_default_computer_braille_table_title">Bảng mã Braille máy tính</string>
+    <string name="pref_default_keyboard_summary">Chọn kiểu bàn phím được hiển thị mặc định</string>
+    <string name="pref_default_keyboard_title">Kiểu Bàn Phím Mặc Định</string>
+    <string name="pref_default_literary_braille_table_summary"></string>
+    <string name="pref_default_literary_braille_table_title">Bảng mã Braille văn học</string>    
+    <string name="pref_echo_feedback_summary">Chọn kiểu đọc khi nhập liệu</string>
+    <string name="pref_echo_feedback_title">Kiểu đọc bàn phím</string>
+    <string name="pref_keyboard_feedback_summary">Chọn kiểu phản hồi bàn phím âm thanh và xúc giác.</string>
+    <string name="pref_keyboard_feedback_title">Phản hồi bàn phím</string>
+    <string name="pref_keyboard_invert_summary">Khi bàn phím không xoay theo điện thoại, sử dụng cài đặt này để chuyển hướng bàn phím 180 độ</string>
+    <string name="pref_keyboard_invert_title">Đảo ngược bàn phím</string>
+    <string name="pref_echo_passwords_summary">Đọc bàn phím khi nhập mật khẩu.</string>
+    <string name="pref_privacy_summary">Khi kích hoạt sẽ làm mờ màn hình trong lúc nhập liệu để bảo đảm tính riêng tư</string>
+    <string name="pref_privacy_title">Màn hình riêng tư</string>
+    <string name="pref_show_circles_summary">Khi kích hoạt, các chấm Braille sẽ được biểu thị bằng những vòng tròn nhỏ trên màn hình</string>
+    <string name="pref_show_circles_title">Hiện vòng tròn trên màn hình không?</string>
+    <string name="pref_swipe_sensitivity_summary">Chọn độ nhạy khi thao tác</string>
+    <string name="pref_swipe_sensitivity_title">Độ nhạy thao tác</string>
+    <string name="pref_switch_tables_summary">Chọn vài ngôn ngữ cần chuyển đổi nhanh trong khi nhập liệu.</string>
+    <string name="pref_switch_tables_title">Chọn những bảng mã Braille cần chuyển đổi nhanh.</string>
+    <string name="pref_two_hand_calibration_summary">Khi bật, cho phép định cỡ bàn phím bằng hai lần chạm</string>
+    <string name="pref_two_hand_calibration_title">Định cỡ hai lần chạm</string>
+    <string name="pref_use_eight_dots_summary">Khi bật, hiện thêm chấm 7 và chấm 8.</string>
+    <string name="pref_use_eight_dots_title">Chuyển sang bàn phím tám chấm</string>
+    <string name="privacy_disabled">Màn hình riêng tư tắt</string>
+    <string name="privacy_enabled">Màn hình riêng tư bật</string>
+    <string name="ready">Bàn phím sẵn sàng</string>
+    <string name="return_key">Quay về</string>
+    <string name="rotate_keyboard">Xoay bàn phím theo thiết bị</string>
+    <string name="rotate_summary">Khi bật, bàn phím sẽ được định hướng theo hướng của thiết bị.</string>
+    <string name="select_all">Chọn tất cả</string>
+    <string name="selected_all">Đã chọn tất cả</string>
+    <string name="set_mark">Đã đánh dấu</string>
+    <string name="settings_name">Cài đặt bàn phím chữ Braille</string>
+    <string name="show_input_switcher">Hiện chuyển đổi nhập liệu</string>
+    <string name="show_settings">Hiện Cài đặt bàn phím chữ Braille</string>
+    <string name="space">Quãng trắng</string>
+    <string name="speak_passwords">Đọc mật khẩu</string>
+    <string name="speak_selection">Đọc vùng chọn</string>
+    <string name="start_of_text">Bắt đầu văn bản</string>
+    <string name="swipe_confirm">Vuốt lần nữa để xác nhận</string>
+    <string name="swipe_confirm_input">Vuốt lần nữa để hiển thị mục chọn bàn phím</string>
+    <string name="swipe_confirm_settings">Vuốt lần nữa để hiển thị cài đặt bàn phím chữ Braille</string>
+    <string name="switch_off_talkback">Hãy tạm ngưng Talkback: vuốt xuống rồi qua phải như hình chữ l ngược,  lướt ngón tay theo hình tròn tìm mục tạm dừng phản hồi. Nhấn nút nguồn hai lần để bật lại Talkback</string>
+    <string name="translator_error">Có sự cố với dịch vụ Braille</string>
+    <string name="trial_buy">Mua</string>
+        <string name="trial_expired_message">Bản thử nghiệm này đã hết hạn. Nếu bạn muốn tiếp tục sử dụng, mời tải tại CH Play hoặc liên hệ nhà phát triển Daniel Dalton theo daniel.dalton10@gmail.com để có bản thử nghiệm nâng cấp.\nCảm ơn đã thử nghiệm ứng dụng!</string>
+    <string name="trial_expired_title">Bản dùng thử đã hết hạn</string>
+    <string name="try_box">Thử nhập liệu tại đây.</string>
+    <string name="unknown_character">Ký tự không xác định</string>
+    <string name="unset_mark">Dấu chọn chưa xác lập</string>
+
+    <!-- PUNCTUATION -->
+
+    <!--
+      Source: A value for announcing a question mark.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_questionmark">Chấm hỏi</string>
+
+    <!--
+      Source: A value for announcing a space.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_space">Quãng trắng</string>
+
+    <!--
+      Source: A value for announcing a comma.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_comma">Phẩy</string>
+
+    <!--
+      Source: A value for announcing a dot.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_dot">Chấm</string>
+
+    <!--
+      Source: A value for announcing an exclamation.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_exclamation">Chấm than</string>
+
+    <!--
+      Source: A value for announcing an opening parenthesis.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_open_paren"> đơn mở</string>
+
+    <!--
+      Source: A value for announcing a closing parenthesis.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_close_paren">Ngoặc đơn đóng</string>
+
+    <!--
+      Source: A value for announcing a double quote.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_double_quote">Ngoặc kép</string>
+
+    <!--
+      Source: A value for announcing a single quote.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_single_quote">Phẩy trên</string>
+
+    <!--
+      Source: A value for announcing a slash.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_slash">Chéo</string>
+
+    <!--
+      Source: A value for announcing a backslash.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_backslash">Chéo Ngược</string>
+
+    <!--
+      Source: A value for announcing a semicolon.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_semicolon">Chấm phẩy</string>
+
+    <!--
+      Source: A value for announcing a colon.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_colon">Hai chấm</string>
+    
+    <!--
+      Source: A value for announcing a left brace.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_left_brace">Ngoặc móc mở</string>
+    
+    <!--
+      Source: A value for announcing a right brace.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_right_brace">Ngoặc móc đóng</string>
+</resources>

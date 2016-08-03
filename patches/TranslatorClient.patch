@@ -1,0 +1,50 @@
+diff --git a/braille/client/src/com/googlecode/eyesfree/braille/translate/TranslatorClient.java b/braille/client/src/com/googlecode/eyesfree/braille/translate/TranslatorClient.java
+index 4aeb0ed..7e85e15 100644
+--- a/braille/client/src/com/googlecode/eyesfree/braille/translate/TranslatorClient.java
++++ b/braille/client/src/com/googlecode/eyesfree/braille/translate/TranslatorClient.java
+@@ -75,13 +75,13 @@ public class TranslatorClient {
+         public void onInit(int status);
+     }
+ 
+-    private final Context mContext;
+-    private final TranslatorClientHandler mHandler =
++    protected Context mContext;
++    protected final TranslatorClientHandler mHandler =
+             new TranslatorClientHandler();
+     private final ServiceCallback mServiceCallback = new ServiceCallback();
+ 
+-    private OnInitListener mOnInitListener;
+-    private Connection mConnection;
++    protected OnInitListener mOnInitListener;
++    protected Connection mConnection;
+     private int mNumFailedBinds = 0;
+ 
+     /**
+@@ -96,6 +96,9 @@ public class TranslatorClient {
+         doBindService();
+     }
+ 
++    protected TranslatorClient() {
++    }
++    
+     /**
+      * Destroys this instance, deallocating any global resources it is using.
+      * Any {@link BrailleTranslator} objects that were created using this
+@@ -189,7 +192,7 @@ public class TranslatorClient {
+         return null;
+     }
+ 
+-    private class Connection implements ServiceConnection {
++    public class Connection implements ServiceConnection {
+         // Read in application threads, written in main thread.
+         private volatile ITranslatorService mService;
+ 
+@@ -285,7 +288,7 @@ public class TranslatorClient {
+         }
+     }
+ 
+-    private class TranslatorClientHandler extends Handler {
++    public class TranslatorClientHandler extends Handler {
+         private static final int MSG_ON_INIT = 1;
+         private static final int MSG_REBIND_SERVICE = 2;
+ 

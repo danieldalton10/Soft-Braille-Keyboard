@@ -1,0 +1,2770 @@
+diff --git a/ANNOUNCEMENT b/ANNOUNCEMENT
+index 3c3b95e..c5b5029 100644
+--- a/ANNOUNCEMENT
++++ b/ANNOUNCEMENT
+@@ -113,4 +113,3 @@ Footnotes
+ 
+ [1]  See https://github.com/liblouis/liblouis/tree/master/tables
+ [2]  See http://code.google.com/p/liblouisutdml/ 
+-
+diff --git a/autogen.sh b/autogen.sh
+index 0116169..98854f8 100755
+--- a/autogen.sh
++++ b/autogen.sh
+@@ -1,25 +1,5 @@
+ #!/bin/sh
+ #
+-#  Copyright 2008 Eitan Isaacson
+-#  Copyright 2008 Christian Egli
+-#  Copyright 2012 Michael Whapples
+-#
+-#  This file is part of Liblouis.
+-#
+-#  Liblouis is free software: you can redistribute it and/or modify it
+-#  under the terms of the GNU Lesser General Public License as
+-#  published by the Free Software Foundation, either version 3 of the
+-#  License, or (at your option) any later version.
+-#
+-#  Liblouis is distributed in the hope that it will be useful, but
+-#  WITHOUT ANY WARRANTY; without even the implied warranty of
+-#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+-#  Lesser General Public License for more details.
+-#
+-#  You should have received a copy of the GNU Lesser General Public
+-#  License along with Liblouis. If not, see
+-#  <http://www.gnu.org/licenses/>.
+-#
+ # autogen.sh glue for liblouis
+ #
+ # Requires: automake 1.9, autoconf 2.57+
+diff --git a/liblouis/logging.c b/liblouis/logging.c
+index 0c764a3..92d8c9b 100644
+--- a/liblouis/logging.c
++++ b/liblouis/logging.c
+@@ -1,20 +1,16 @@
+ /* liblouis Braille Translation and Back-Translation  Library
+-
+    Copyright (C) 2014 ViewPlus Technologies, Inc. www.viewplus.com
+    and the liblouis team. http://liblouis.org
+    All rights reserved
+-
+    This file is free software; you can redistribute it and/or modify it
+    under the terms of the Lesser or Library GNU General Public License 
+    as published by the
+    Free Software Foundation; either version 3, or (at your option) any
+    later version.
+-
+    This file is distributed in the hope that it will be useful, but
+    WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
+    Library GNU General Public License for more details.
+-
+    You should have received a copy of the Library GNU General Public 
+    License along with this program; see the file COPYING.  If not, write to
+    the Free Software Foundation, 51 Franklin Street, Fifth Floor,
+diff --git a/liblouis/wrappers.c b/liblouis/wrappers.c
+index 9ea8c83..26496db 100644
+--- a/liblouis/wrappers.c
++++ b/liblouis/wrappers.c
+@@ -93,7 +93,7 @@ other_translate (const char *trantab, const widechar
+   switch (action)
+     {
+     case -1:
+-      logMessage (LOG_ERROR, "There is no translator called '%s'", transSpec);
++      //logMessage (LOG_ERROR, "There is no translator called '%s'", transSpec);
+       return 0;
+     case 1:
+       return 1;
+@@ -123,7 +123,7 @@ other_backTranslate (const char *trantab, const widechar
+   switch (action)
+     {
+     case -1:
+-      logMessage (LOG_ERROR, "There is no translator called '%s'", transSpec);
++     // logMessage (LOG_ERROR, "There is no translator called '%s'", transSpec);
+       return 0;
+     case 1:
+       return 1;
+diff --git a/tables/Es-Es-g1.utb b/tables/Es-Es-g1.utb
+index e51dc07..b9c32a8 100644
+--- a/tables/Es-Es-g1.utb
++++ b/tables/Es-Es-g1.utb
+@@ -13,19 +13,20 @@ space \s 0 blank					# 32
+ punctuation ! 235					# 33
+ punctuation " 236					# 34
+ sign # 3456								# 35
+-sign $ 256								# 36
++sign $ 6-256								# 36
++sign / 256
+ sign % 456								# 37
+ sign & 123456							# 38
+ punctuation ' 5						# 39 apostrophe
+ punctuation ( 126					# 40
+ punctuation ) 345					# 41
+ sign * 35									# 42
+-math + 235								# 43
++math + 6-235								# 43
+ punctuation , 2						# 44
+ punctuation - 36					# 45
+ punctuation . 3						# 46
+-math / 34									# 47
+-include digits6Dots.uti
++#math / 34									# 47
++include litdigits6Dots.uti
+ punctuation : 25				colon													x003A
+ punctuation ; 23				semicolon											x003B
+ math < 56								less-than sign								x003C
+@@ -36,19 +37,19 @@ sign @ 4								commercial at									x0040
+ 
+ include latinLetterDef6Dots.uti
+ 
+-punctuation [ 12356		left square bracket			x005B
++punctuation [ 6-12356		left square bracket			x005B
+ sign \\ 2							reverse solidus					x005C
+-punctuation ] 23456		right square bracket		x005D
++punctuation ] 6-23456		right square bracket		x005D
+ sign ^ 5							circumflex accent				x005E
+ sign _ 6							low line								x005F
+-sign ` 45							grave accent						x0060
++sign ` 6-45							grave accent						x0060
+ 
+ # a - z								# 97 - 122							x0061 - x007A
+ 
+-punctuation { 246			left curly bracket			x007B
++punctuation { 456-2			left curly bracket			x007B
+ sign | 46							vertical line						x007C
+-punctuation } 12456		right curly bracket			x007D
+-sign ~ 256						tilde										x007E
++punctuation } 5-123		right curly bracket			x007D
++sign ~ 46-256						tilde										x007E
+ sign \x0080 15-136-1235-135										x0080
+ 
+ space \X00A0 0				# no-break space													x00A0
+@@ -56,38 +57,39 @@ sign ¢ 4-14						cent sign																	x00A2
+ sign £ 45-123					pound sign																x00A3
+ sign ¤ 45-15					currency sign															x00A4
+ sign ¥ 45-13456				yen	sign																	x00A5
+-sign § 346						paragraph	sign														x00A7
++#sign § 346						paragraph	sign														x00A7
+ sign © 6-14-135-1234-13456-1235-24-1245-125-2345		copyright		x00A9
+ punctuation « 45-2356		left-pointing double quotation mark			x00AB
+ sign ° 4-356					degree sign																x00B0
+ sign ² 4-6-126				superscript 2 sign												x00B2
+ sign ³ 4-6-146				superscript 3 sign												x00B3
+-sign \x00B5 46-134		# 181				µ micro sign									x00B5
+-sign \x00B6 346				#						¶ pilcrow sign								x00B6
++#sign \x00B5 46-134		# 181				µ micro sign									x00B5
++#sign \x00B6 346				#						¶ pilcrow sign								x00B6
+ sign ¹ 4-6-16					superscript 1 sign												x00B9
+ punctuation » 2356-12		right-pointing double quotation mark		x00BB
+ sign ¼ 6-16-34-1456		vulgar fraction one quarter								x00BC
+ sign ½ 6-16-34-126		vulgar fraction one half									x00BD
+ sign ¾ 6-126-34-1456					vulgar fraction 3 quarters				x00BE
+ 
+-uplow \x00C0\x00E0 12356			a with grave						x00C0 / 00E0
++#uplow \x00C0\x00E0 12356			a with grave						x00C0 / 00E0
+ uplow Áá 12356								A with acute						x00C1 / 00E1
+ uplow Ââ 16										a with circumflex				x00C2 / 00E2
+-uplow \x00C3\x00E3 345				a with tilde						x00C3 / 00E3
+-uplow Ää 345									A with diaeresis				x00C4 / 00E4
++#uplow \x00C3\x00E3 345				a with tilde						x00C3 / 00E3
++#uplow Ää 345									A with diaeresis				x00C4 / 00E4
+ uplow Åå 16										A with ring above				x00C5 / 00C4
+-uplow \x00C6\x00E6 345				ae											x00C6 / 00E6
+-uplow Çç 12346								letter c with cedilla		x00C7 / 00E7
++#uplow \x00C6\x00E6 345				ae											x00C6 / 00E6
++#uplow Çç 12346								letter c with cedilla		x00C7 / 00E7
++uplow Ëë 1246
+ uplow Éé 2346									E with acute						x00C9 / 00E9
+-uplow \x00CA\x00EA 126				e with circumflex				x00CA / 00EA
++#uplow \x00CA\x00EA 126				e with circumflex				x00CA / 00EA
+ uplow Íí 34										i with acute						x00CD / 00ED
+ uplow \x00D1\x00F1 12456			N with tilde						x00D1 / 00F1
+ uplow Óó 346									o with acute						x00D3 / 00F3
+ uplow Ôô 1456									o with circumflex				x00D4 / 00F4
+-uplow \x00D5\x00F5 246				o with tilde						x00D5 / 00F5
++#uplow \x00D5\x00F5 246				o with tilde						x00D5 / 00F5
+ uplow Öö 246									O with diaeresis				x00D6 / 00F6
+-math × 236										multiplication sign			x00D7
+-uplow \x00D8\x00F8 246				o with stroke						x00D8 //00F8
++math × 6-236										multiplication sign			x00D7
++#uplow \x00D8\x00F8 246				o with stroke						x00D8 //00F8
+ #	uplow Úú 46-23456							U with acute						x00DA / 00FA
+ uplow Úú 23456								U with acute						x00DA / 00FA
+ #	uplow Üü 46-1256							U with diaeresis				x00DC / 00FC
+@@ -100,9 +102,9 @@ math	\x2013 36									# 8211			smart minus sign
+ punctuation	\x2018 3						# 8216			smart single left quotation mark
+ punctuation	\x2019 3						# 8217			smart single right quotation mark
+ 
+-punctuation	\x201C 236					# 8220			smart opening double quote
+-punctuation	\x201D 356					# 8221			smart closing double quote
+-punctuation	\x201E 236					# 8222			smart double low quotation mark
++#punctuation	\x201C 236					# 8220			smart opening double quote
++#punctuation	\x201D 356					# 8221			smart closing double quote
++#punctuation	\x201E 236					# 8222			smart double low quotation mark
+ punctuation	\x201F 356					# 8223			double high reverse quotation mark
+ 
+ punctuation \x2026 256-256-256	# 8230	smart ellipsis
+@@ -115,7 +117,7 @@ begcaps 46-46
+ numsign 3456
+ midnum , 2
+ midnum . 3
+-midnum + 235
++midnum + 6-235
+ midnum - 36
+ midnum / 256
+ midnum : 25
+diff --git a/tables/Pl-Pl-g1.utb b/tables/Pl-Pl-g1.utb
+index 4063c8a..2623982 100644
+--- a/tables/Pl-Pl-g1.utb
++++ b/tables/Pl-Pl-g1.utb
+@@ -10,46 +10,51 @@ space \x000A 0
+ space \x000D 0
+ space \s 0 blank					# 32
+ punctuation ! 235			exclamation sign   						x0021
+-punctuation " 356			double quote									x0022
+-sign # 3456						number sign										x0023
+-sign $ 256						dollar sign										x0024
+-sign % 4-356					percent sign									x0025
+-sign & 456-12346			ampersand											z0026
+-punctuation ' 3				apostrophe										x0027
++#punctuation " 356			double quote									x0022
++#punctuation \x07E2 236
++#punctuation \x07E3 356
++
++sign # 3456-3456						number sign										x0023
++sign $ 46-256						dollar sign										x0024
++sign / 256
++sign \\ 1256
++sign % 123456					percent sign									x0025
++sign & 3456-12346				456-12346			ampersand											z0026
++punctuation ' 4				apostrophe										x0027
+ punctuation ( 2356			left parenthesis						x0028
+-punctuation ) 2356			right parenthesis						x0029
++punctuation ) 46-2356			right parenthesis						x0029
+ sign * 35-35						asterisk										x002A
+-math + 235							plus												002B
++math + 3456-235							plus												002B
+ punctuation , 2					coma												002C
+ punctuation - 36				hyphen-minus								002D
+ punctuation . 3					point												002E
+ math / 456-34						solidus											002F
+ 
+-include digits6Dots.uti
++include litdigits6Dots.uti
+ 
+ punctuation : 25				colon								x003A
+ punctuation ; 23				semicolon						x003B
+-punctuation < 5-13			less-than sign			x003C
+-math = 2356			equal sign					x003D
+-math > 46-2			greater-than sign		x003E
++punctuation < 45			less-than sign			x003C
++math = 3456-2356			equal sign					x003D
++math > 56			greater-than sign		x003E
+ punctuation ? 26				question mark				x003F
+-sign @ 4-1			commercial at				x0040
++sign @ 345			commercial at				x0040
+ 
+ include latinLetterDef6Dots.uti
+ 
+ punctuation [ 12356		left square bracket						x005B
+-sign \\ 2				reverse solidus								x005C
++#sign \\ 2				reverse solidus								x005C
+ punctuation ] 23456		right square bracket					x005D
+ sign ^ 5				circumflex accent							x005E
+-sign _ 46				low line											x005F
++sign _ 6				low line											x005F
+ sign ` 4				grave accent									x0060
+ 
+ # a - z								# 97 - 122								x0061-x007A
+ 
+-punctuation { 246				left curly bracket					x007B
+-sign | 56					vertical line								x007C
+-punctuation } 12456			right curly bracket					x007D
+-math ~ 256				tilde												x007E
++punctuation { 3456-246				left curly bracket					x007B
++#sign | 56					vertical line								x007C
++punctuation } 3456-135 				12456			right curly bracket					x007D
++#math ~ 46-256				tilde												x007E
+ sign \x0080 15-136-1235-135										x0080
+ 
+ space \X00A0 0		no-break space																x00A0
+@@ -57,50 +62,49 @@ sign ¢ 4-14				cent sign																			x00A2
+ sign £ 45-123			pound sign																		x00A3
+ sign ¤ 45-15			currency sign																	x00A4
+ sign ¥ 45-13456		yen	sign																			x00A5
+-sign § 346				section sign																	x00A7
++#sign § 346				section sign																	x00A7
+ sign © 2356-6-14-2356		copyright																x00A9
+-punctuation « 236				left-pointing double angle quotation 		x00AB
+-punctuation \x00AD 36 soft hyphen
+-sign ° 4-356			degree sign																		x00B0
++#punctuation « 236				left-pointing double angle quotation 		x00AB
++#sign ° 4-356			degree sign																		x00B0
+ sign ² 4-6-126		superscript 2 sign														x00B2
+ sign ³ 4-6-146		superscript 3 sign														x00B3
+-sign µ 46-134			micro sign																		x00B5
++#sign µ 46-134			micro sign																		x00B5
+ sign ¶ 4-1234-345 pilcrow sign (paragraph)											x00B6
+ sign ¹ 1-27				superscript 1 sign														x00B9
+-punctuation » 356			right-pointing double angle quotation		x00BB
++#punctuation » 356			right-pointing double angle quotation		x00BB
+ math ¼ 6-16-34-1456		vulgar fraction one quarter								x00BC
+ math ½ 6-16-34-126		vulgar fraction one half									x00BD
+ math ¾ 6-126-34-1456	vulgar fraction 3 quarters								x00BE
+ 
+-uplow \x00C0\x00E0 12356	letter a with grave							x00C0 / 00E0
+-uplow \x00C1\x00E1 12356			letter a with acute									x00E1
+-uplow \x00C2\x00E2 16					letter a with circumflex						x00E2
+-uplow \x00C3\x00E3 126		letter a with tilde											x00E3
+-uplow Ää 345				A with diaeresis											x00C4 / 00E4
+-uplow Åå 16					A with ring above											x00C5 / 00E5
++#uplow \x00C0\x00E0 12356	letter a with grave							x00C0 / 00E0
++#uplow \x00C1\x00E1 12356			letter a with acute									x00E1
++#uplow \x00C2\x00E2 16					letter a with circumflex						x00E2
++#uplow \x00C3\x00E3 126		letter a with tilde											x00E3
++#uplow Ää 345				A with diaeresis											x00C4 / 00E4
++#uplow Åå 16					A with ring above											x00C5 / 00E5
+ uplow \x00C6\x00E6 6-345	ae															x00C6
+-uplow Çç 12346			letter c with cedilla									x00C7 / 00E7
+-uplow Èè 2346				e with grave													x00C8 / 00E8
+-uplow \x00C9\x00E9 123456		e with acute													x00E9
+-uplow \x00CA\x00EA 126			e with circumflex											x00EA
++#uplow Çç 12346			letter c with cedilla									x00C7 / 00E7
++#uplow Èè 2346				e with grave													x00C8 / 00E8
++#uplow \x00C9\x00E9 123456		e with acute													x00E9
++#uplow \x00CA\x00EA 126			e with circumflex											x00EA
+ uplow \x00CB\x00EB 1246		e with diaeresis												x00EB
+ uplow \x00CD\x00ED 34			i with acute													x00ED
+-uplow \x00CE\x00EE 146		i with circumflex											x00EE
++#uplow \x00CE\x00EE 146		i with circumflex											x00EE
+ uplow \x00CF\x00EF 12456	i with diaeresis								x00CF / 00EF
+ 
+ uplow	\x00D3\x00F3	346 O with acute											x00D3 / 00F3
+-uplow \x00D4\x00F4 1456	o with circumflex													x00F4
+-uplow \x00D5\x00F5 246		o with tilde														x00F5
+-uplow Öö 246						O with diaeresis									x00D6 / 00F6
+-math × 236				multiplication sign											x00D7
+-uplow \x00D8\x00F8 246		o with stroke										x00D8 / 00F8
++#uplow \x00D4\x00F4 1456	o with circumflex													x00F4
++#uplow \x00D5\x00F5 246		o with tilde														x00F5
++#uplow Öö 246						O with diaeresis									x00D6 / 00F6
++math × 3456-3				multiplication sign											x00D7
++#uplow \x00D8\x00F8 246		o with stroke										x00D8 / 00F8
+ 
+-math ÷ 256				division sign										x00F7
++math ÷ 3456-256				division sign										x00F7
+ 
+ uplow \x00DA\x00FA 23456			u with acute							x00DA / 00FA
+-uplow \x00DB\x00FB 156				u with circumflex					x00FB
+-uplow \x00DC\x00FC 1256				u with diaeresis					x00FC
+-uplow \x00DD\x00FD 12346			y with acute							x00DD / 00FD
++#uplow \x00DB\x00FB 156				u with circumflex					x00FB
++#uplow \x00DC\x00FC 1256				u with diaeresis					x00FC
++#uplow \x00DD\x00FD 12346			y with acute							x00DD / 00FD
+ 
+ # the letter a with ogonek -----------------------------------
+ uplow \x0104\x0105 16
+@@ -135,81 +139,35 @@ uplow \x017B\x017C 12346
+ punctuation	\x2010 36		 # 8208			hyphen
+ punctuation	\x2011 36		 # 8209			non-breaking hyphen
+ punctuation	\x2013 36		 # 8211			smart minus sign
+-punctuation	\x2018 3		 # 8216			smart single left quotation mark
+-punctuation	\x2019 3		 # 8217			smart single right quotation mark
++#punctuation	\x2018 236		 # 8216			smart single left quotation mark
++#punctuation	\x2019 356		 # 8217			smart single right quotation mark
+ 
+ punctuation	\x201C 236	 # 8220			smart opening double quote
+ punctuation	\x201D 356	 # 8221			smart closing double quote
+-punctuation	\x201E 236	 # 8222			smart double low quotation mark
+-punctuation	\x201F 356	 # 8223			smart double high reverse quotation mark
++#punctuation	\x201E 236	 # 8222			smart double low quotation mark
++#punctuation	\x201F 356	 # 8223			smart double high reverse quotation mark
+ punctuation  \x2026 3-3-3 # 8230		smart ellipsis
+ 
+ # ------------------------------------------------------
+ 
+ 
+ capsign 46			# single capital letter indicator
+-begcaps 4-6			# a block of consecutive capital letters indicator
++begcaps 46-46			# a block of consecutive capital letters indicator
+ 
+ numsign 3456		#	number sign, just one operand
+ midnum , 3
+ midnum . 2
+-midnum + 235
++midnum + 3456-235
+ midnum - 36
+-midnum / 256
++#midnum / 256
+ midnum : 25
+-midnum = 2356
++midnum = 3456-2356
+ 
+-endnum # 56-3456
+-
+-prepunc " 236
+-postpunc " 356
+-
+-prepunc ' 6-236
++#prepunc " 236
++#postpunc " 356
++prepunc ' 4
+ postpunc ' 356-3
+-postpunc '' 356
++#postpunc '' 356
+ postpunc ''' 356-3-356
+-
+-repeated *** 16-16-16
+-
+-prepunc `` 236
++#prepunc `` 236
+ prepunc ` 6-236
+-
+-
+-repeated --- 36-36-36
+-
+-repeated ___ 46-46-46
+-
+-repeated ::: 25-25-25
+-repeated === 46-13-46-13-46-13
+-repeated ~~~ 4-156-4-156-4-156
+-always \s-\s 36-36
+-always \s-\scom 36-36-14-135-134
+-always ... 3-3-3
+-always .\s.\s. 3-3-3 . . .
+-
+-always \s­\s 36-36
+-
+-# special character sequences
+-literal :// URLs
+-literal www.
+-
+-literal .com
+-literal .edu
+-literal .gov
+-literal .mil
+-literal .net
+-literal .org
+-
+-literal .doc
+-literal .htm
+-literal .html
+-literal .tex
+-literal .txt
+-
+-literal .gif
+-literal .jpg
+-literal .png
+-literal .wav
+-
+-literal .tar
+-literal .zip
+diff --git a/tables/en-ueb-chardefs.uti b/tables/en-ueb-chardefs.uti
+index 2fc9541..166a67a 100644
+--- a/tables/en-ueb-chardefs.uti
++++ b/tables/en-ueb-chardefs.uti
+@@ -50,7 +50,7 @@ punctuation ) 23456
+ punctuation ! 2346
+ punctuation { 246
+ punctuation [ 2467
+-noback punctuation ' 3
++punctuation ' 3
+ punctuation - 36
+ punctuation . 256
+ punctuation " 5
+@@ -75,24 +75,85 @@ math + 346
+ math ~ 45
+ 
+ # Accented letters
+-# TODO: please look these up in the formal ueb documentation and insert here.
++lowercase \x00E0 45-16-1 LATIN SMALL LETTER A WITH GRAVE 0061 0300 LATIN 
++lowercase \x00E1 45-34-1 LATIN SMALL LETTER A WITH ACUTE 0061 0301 LATIN 
++lowercase \x00E2 45-146-1 LATIN SMALL LETTER A WITH CIRCUMFLEX 0061 0302 
++lowercase \x00E3 45-12456-1 LATIN SMALL LETTER A WITH TILDE 0061 0303 LATIN 
++lowercase \x00E4 45-25-1 LATIN SMALL LETTER A WITH DIAERESIS 0061 0308 LATIN 
++lowercase \x00E5 45-1246-1 LATIN SMALL LETTER A WITH RING ABOVE 0061 030A 
++lowercase \x00E6 1-45-235-15 LATIN SMALL LETTER AE LATIN SMALL LETTER A E ash * 
++lowercase \x00E7 45-12346-14 LATIN SMALL LETTER C WITH CEDILLA 0063 0327 LATIN 
++lowercase \x00E8 45-16-15 LATIN SMALL LETTER E WITH GRAVE 0065 0300 LATIN 
++lowercase \x00E9 45-34-15 LATIN SMALL LETTER E WITH ACUTE 0065 0301 LATIN 
++lowercase \x00EA 45-146-15 LATIN SMALL LETTER E WITH CIRCUMFLEX 0065 0302 
++lowercase \x00EB 45-25-15 LATIN SMALL LETTER E WITH DIAERESIS 0065 0308 
++lowercase \x00EC 45-16-24 LATIN SMALL LETTER I WITH GRAVE 0069 0300 LATIN 
++lowercase \x00ED 45-34-24 LATIN SMALL LETTER I WITH ACUTE 0069 0301 LATIN 
++lowercase \x00EE 45-146-24 LATIN SMALL LETTER I WITH CIRCUMFLEX 0069 0302 
++lowercase \x00EF 45-25-24 LATIN SMALL LETTER I WITH DIAERESIS 0069 0308 
++lowercase \x00F0 3456-1246 LATIN SMALL LETTER ETH Icelandic 00D0 00D0
++lowercase \x00F1 45-12456-1345 LATIN SMALL LETTER N WITH TILDE 006E 0303 LATIN 
++lowercase \x00F2 45-16-135 LATIN SMALL LETTER O WITH GRAVE 006F 0300 LATIN 
++lowercase \x00F3 45-34-135 LATIN SMALL LETTER O WITH ACUTE 006F 0301 LATIN 
++lowercase \x00F4 45-146-135 LATIN SMALL LETTER O WITH CIRCUMFLEX 006F 0302 
++lowercase \x00F5 45-12456-135 LATIN SMALL LETTER O WITH TILDE 006F 0303 LATIN 
++lowercase \x00F6 45-25-135 LATIN SMALL LETTER O WITH DIAERESIS 006F 0308 
++lowercase \x00F8 4-16-135 LATIN SMALL LETTER O WITH STROKE LATIN SMALL 
++lowercase \x00F9 45-16-136 LATIN SMALL LETTER U WITH GRAVE 0075 0300 LATIN 
++lowercase \x00FA 45-34-136 LATIN SMALL LETTER U WITH ACUTE 0075 0301 LATIN 
++lowercase \x00FB 45-146-136 LATIN SMALL LETTER U WITH CIRCUMFLEX 0075 0302 
++lowercase \x00FC 45-25-136 LATIN SMALL LETTER U WITH DIAERESIS 0075 0308 
++lowercase \x00FD 45-34-13456 LATIN SMALL LETTER Y WITH ACUTE 0079 0301 LATIN 
++lowercase \x00FE 3456-2346 LATIN SMALL LETTER THORN Icelandic 00DE 00DE
++lowercase \x00FF 45-25-13456 LATIN SMALL LETTER Y WITH DIAERESIS 0079 0308 
++uppercase \x00C0 45-16-1 LATIN CAPITAL LETTER A WITH GRAVE 0041 0300 LATIN 
++uppercase \x00C1 45-34-1 LATIN CAPITAL LETTER A WITH ACUTE 0041 0301 LATIN 
++uppercase \x00C2 45-146-1 LATIN CAPITAL LETTER A WITH CIRCUMFLEX 0041 0302 
++uppercase \x00C3 45-12456-1 LATIN CAPITAL LETTER A WITH TILDE 0041 0303 LATIN 
++uppercase \x00C4 45-25-1 LATIN CAPITAL LETTER A WITH DIAERESIS 0041 0308 
++uppercase \x00C5 45-1246-1 LATIN CAPITAL LETTER A WITH RING ABOVE 0041 030A 
++uppercase \x00C6 1-6-45-235-15 LATIN CAPITAL LETTER AE LATIN CAPITAL LETTER A E 
++uppercase \x00C7 45-12346-14 LATIN CAPITAL LETTER C WITH CEDILLA 0043 0327 
++uppercase \x00C8 45-16-15 LATIN CAPITAL LETTER E WITH GRAVE 0045 0300 LATIN 
++uppercase \x00C9 45-34-15 LATIN CAPITAL LETTER E WITH ACUTE 0045 0301 LATIN 
++uppercase \x00CA 45-146-15 LATIN CAPITAL LETTER E WITH CIRCUMFLEX 0045 0302 
++uppercase \x00CB 45-25-15 LATIN CAPITAL LETTER E WITH DIAERESIS 0045 0308 
++uppercase \x00CC 45-16-24 LATIN CAPITAL LETTER I WITH GRAVE 0049 0300 LATIN 
++uppercase \x00CD 45-34-24 LATIN CAPITAL LETTER I WITH ACUTE 0049 0301 LATIN 
++uppercase \x00CE 45-146-24 LATIN CAPITAL LETTER I WITH CIRCUMFLEX 0049 0302 
++uppercase \x00CF 45-25-24 LATIN CAPITAL LETTER I WITH DIAERESIS 0049 0308 
++uppercase \x00D0 3456-1246 LATIN CAPITAL LETTER ETH Icelandic 00F0 
++uppercase \x00D1 45-12456-1345 LATIN CAPITAL LETTER N WITH TILDE 004E 0303 
++uppercase \x00D2 45-16-135 LATIN CAPITAL LETTER O WITH GRAVE 004F 0300 LATIN 
++uppercase \x00D3 45-34-135 LATIN CAPITAL LETTER O WITH ACUTE 004F 0301 LATIN 
++uppercase \x00D4 45-146-135 LATIN CAPITAL LETTER O WITH CIRCUMFLEX 004F 0302 
++uppercase \x00D5 45-12456-135 LATIN CAPITAL LETTER O WITH TILDE
++uppercase \x00D6 45-25-135 LATIN CAPITAL LETTER O WITH DIAERESIS 004F 0308 
++uppercase \x00D8 4-16-135 LATIN CAPITAL LETTER O WITH STROKE LATIN CAPITAL 
++uppercase \x00D9 45-16-136 LATIN CAPITAL LETTER U WITH GRAVE 0055 0300 LATIN 
++uppercase \x00DA 45-34-136 LATIN CAPITAL LETTER U WITH ACUTE 0055 0301 LATIN 
++uppercase \x00DB 45-146-136 LATIN CAPITAL LETTER U WITH CIRCUMFLEX 0055 0302 
++uppercase \x00DC 45-25-136 LATIN CAPITAL LETTER U WITH DIAERESIS 0055 0308 
++uppercase \x00DD 45-34-13456 LATIN CAPITAL LETTER Y WITH ACUTE 0059 0301 
++uppercase \x00DE 3456-2346 LATIN CAPITAL LETTER THORN Icelandic 00FE 
+ 
+ # Miscellaneous
+-math \x00B1 346-36 PLUS-MINUS SIGN PLUS-OR-MINUS SIGN 
++math \x00B1 456-235 PLUS-MINUS SIGN PLUS-OR-MINUS SIGN 
+ math \x00B7 4-16 MIDDLE DOT 
+-math \x00BC 1456-2-34-256-3456 VULGAR FRACTION ONE QUARTER No 0031 2044 
+-math \x00BD 1456-2-34-23-3456 VULGAR FRACTION ONE HALF No 0031 2044 0032 
+-math \x00BE 1456-25-34-23-3456 VULGAR FRACTION THREE QUARTERS No 0033 
+-math \x00D7 16 MULTIPLICATION SIGN 
+-math \x00F7 4-34 DIVISION SIGN 
++math \x00BC 3456-1-34-145 VULGAR FRACTION ONE QUARTER No 0031 2044 
++math \x00BD 3456-1-34-12 VULGAR FRACTION ONE HALF No 0031 2044 0032 
++math \x00BE 3456-14-34-145 VULGAR FRACTION THREE QUARTERS No 0033 
++math \x00D7 5-236 MULTIPLICATION SIGN 
++math \x00F7 5-34 DIVISION SIGN 
+ punctuation \x0092 3
+ punctuation \x0097 36-36
+ punctuation \x00A1 235 INVERTED EXCLAMATION MARK 
+ punctuation \x00ad 36
+ punctuation \x00BF 236 INVERTED QUESTION MARK 
+ punctuation \x2011 36
+-punctuation \x2013 6-36
+-punctuation \x2014 5-6-36
++punctuation \x2013 6-36 N-DASH
++punctuation \x2014 6-36 M-DASH
++punctuation \x2015 5-6-36 HORIZONTAL BAR
+ noback punctuation \x2018 6-236
+ noback punctuation \x2019 3
+ noback punctuation \x2019 356-3
+@@ -106,19 +167,19 @@ sign \x00A4 1246 CURRENCY SIGN
+ sign \x00A7 4-234 SECTION SIGN 
+ sign \x00A9 45-14 COPYRIGHT SIGN 
+ sign \x00AE 45-1235 REGISTERED SIGN REGISTERED TRADE MARK SIGN 
+-sign \x00B0 56-145-1245 DEGREE SIGN 
+-sign \x00B4 b4 ACUTE ACCENT 0020 0301 SPACING ACUTE 
++sign \x00B0 45-245 DEGREE SIGN 
++sign \x00B4 45-34 ACUTE ACCENT 0020 0301 SPACING ACUTE 
+ sign \x00B5 46-134 MICRO SIGN 03BC 039C 039C
+ # sign \x00A5 YEN SIGN 
+ punctuation \x00A6 456-1256 BROKEN BAR BROKEN VERTICAL BAR 
+ punctuation \x0093 236
+ punctuation \x0094 356
+ punctuation \x0096 36
+-# sign \x00A8 DIAERESIS 0020 0308 SPACING DIAERESIS 
++sign \x00A8 45-25 DIAERESIS 0020 0308 SPACING DIAERESIS 
+ # sign \x00AA FEMININE ORDINAL INDICATOR 0061 
+ # punctuation \x00AB LEFT-POINTING DOUBLE ANGLE QUOTATION MARK LEFT 
+ # sign \x00AC NOT SIGN 
+-# sign \x00AF MACRON 0020 0304 SPACING MACRON 
++sign \x00AF 4-36 MACRON 0020 0304 SPACING MACRON 
+ # math \x00B2 SUPERSCRIPT TWO 0032 2 2 SUPERSCRIPT DIGIT TWO 
+ # math \x00B3 SUPERSCRIPT THREE 0033 3 3 SUPERSCRIPT DIGIT THREE 
+ # sign \x00B6 PILCROW SIGN PARAGRAPH SIGN 
+@@ -127,3 +188,4 @@ punctuation \x0096 36
+ # sign \x00BA MASCULINE ORDINAL INDICATOR 006F 
+ # punctuation \x00BB RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK Pf Y 
+ 
++
+diff --git a/tables/en-ueb-g1.ctb b/tables/en-ueb-g1.ctb
+index 3b795c4..6d5986f 100644
+--- a/tables/en-ueb-g1.ctb
++++ b/tables/en-ueb-g1.ctb
+@@ -22,7 +22,8 @@
+ #  Boston, MA 02110-1301, USA.
+ #
+ #  Maintained by John J. Boyer john.boyer@jjb-software.com
+-
++sign $ 4-234
++always $ 4-234
+ include en-ueb-chardefs.uti UEB specific char defs.
+ 
+ # Braille indicators
+diff --git a/tables/en-us-g1.ctb b/tables/en-us-g1.ctb
+index 528bffe..f46be8e 100644
+--- a/tables/en-us-g1.ctb
++++ b/tables/en-us-g1.ctb
+@@ -27,9 +27,8 @@
+ #  Boston, MA 02110-1301, USA.
+ #
+ #  Maintained by John J. Boyer john.boyer@jjb-software.com
+-
+-include chardefs.cti All character definition opcodes
+-
++include chardefs-us.cti All character definition opcodes
++sign $ 4-256
+ # Braille indicators
+ numsign 3456  number sign, just a dots operand
+ letsign 56
+diff --git a/tables/it-it-comp6.utb b/tables/it-it-comp6.utb
+index 5a3cf89..6076371 100644
+--- a/tables/it-it-comp6.utb
++++ b/tables/it-it-comp6.utb
+@@ -8,23 +8,22 @@ space \s 0 blank					# 32
+ 
+ punctuation ! 235						33
+ punctuation " 4						34
+-sign # 3456								35
+-sign $ 46									36
+-sign % 123456							37
+-sign & 12346							38
++sign # 5-3456								35
++sign $ 5-46									36
++sign % 5-123456							37
++sign & 45-12346							38
+ punctuation ' 3	  				39
+ punctuation ( 236					40
+ punctuation ) 356					41
+ punctuation *	35					42
+-sign + 235								43
++sign + 5-235								43
+ midnum + 235							43
+ punctuation , 2						44
+-punctuation ­ 36					45  the hyphen-minus
++punctuation - 36					45  the hyphen-minus
+ punctuation . 256						46
+-sign / 256								47
+-
+-include digits6Dots.uti
++sign / 5-256								47
+ 
++include litdigits6Dots.uti
+ punctuation : 25			colon					58		x003A
+ punctuation ;	23			semicolon			59		x003B
+ math < 56														60		x003C
+@@ -34,104 +33,81 @@ punctuation ? 26										63		x003F
+ sign @ 345						commercial at	64		x0040
+ 
+ include latinLetterDef6Dots.uti
+-punctuation [ 12356			91
++punctuation [ 5-12356			91
+ sign \\ 6								92
+-punctuation ] 23456			93
+-sign ^ 2346							94
++punctuation ] 5-23456			93
++sign ^ 45-2346							94
+ sign _ 456							95 underscore
+-sign ` 345							96
++sign ` 5-345							96
+ 
+ # a - z								# 97 - 122							x0061 - x007A
+ 
+-punctuation { 12356			123
+-sign | 34				124
+-punctuation } 23456			125
+-sign ~ 2346			126
+-sign \x0080 15-136-1235-135										x0080
+-
+-space \X00A0 0				# no-break space													x00A0
+-sign ¢ 4-14						cent sign																	x00A2
+-sign £ 45-123					pound sign																x00A3
++punctuation { 5-12346			123
++sign | 5-34				124
++punctuation } 5-13456			125
++sign ~ 5-2346			126
++sign  \x20AC  5-15   #Euro sign
++space \X00A0 5				# no-break space													x00A0
++sign ¢ 5-14						cent sign																	x00A2
++sign £ 5-123					pound sign																x00A3
+ sign ¤ 45-15					currency sign															x00A4
+ sign ¥ 45-13456				yen	sign																	x00A5
+-sign § 234-234				paragraph	sign														x00A7
+-sign © 2356-6-14-2356 copyright																	x00A9
+-punctuation « 236		left-pointing double quotation mark				x00AB
+-sign ° 356						degree sign																x00B0
+-sign ² 4-6-126				superscript 2 sign												x00B2
+-sign ³ 4-6-146				superscript 3 sign												x00B3
+-sign \x00B4 1256			acute accent
+-sign \x00B5 46-134		# 181				µ micro sign									x00B5
+-sign \x00B6 4-1234-345						¶ pilcrow sign								x00B6
+-sign ¹ 4-6-16					superscript 1 sign												x00B9
+-punctuation » 356		right-pointing double quotation mark			x00BB
+-sign ¼ 6-16-34-1456		vulgar fraction one quarter								x00BC
+-sign ½ 6-16-34-126		vulgar fraction one half									x00BD
+-sign ¾ 6-126-34-1456	vulgar fraction 3 quarters								x00BE
+-uplow	\x00D3\x00F3 346
+-math × 46-16 multiplication sign														hex 0x00d7
+-math ÷ 46-34 division sign																	hex 0x00f7
+-
+-uplow	\x0104\x0105 16
+-uplow \x0106\x0107 146
+-uplow	\x0118\x0119 156
+-uplow	\x0141\x0142 126
+-uplow	\x0143\x0144 1456
++sign § 5-346				paragraph	sign														x00A7
++sign © 45-14 copyright																	x00A9
++punctuation « 5-236		left-pointing double quotation mark				x00AB
++sign ° 45-135						degree sign																x00B0
++sign ² 3456-12-16				superscript 2 sign												x00B2
++sign ³ 3456-14-16				superscript 3 sign												x00B3
++sign \x00B4 5-1256			acute accent
++sign \x00B5 5-134		# 181				µ micro sign									x00B5
++sign \x00B6 5-1234-345						¶ pilcrow sign								x00B6
++sign ¹ 3456-1-16					superscript 1 sign												x00B9
++punctuation » 5-356		right-pointing double quotation mark			x00BB
++sign ¼ 3456-2-145		vulgar fraction one quarter								x00BC
++sign ½ 3456-2-12		vulgar fraction one half									x00BD
++sign ¾ 3456-25-145	vulgar fraction 3 quarters								x00BE
++uplow Ââ 16				a accent circonflexe
++uplow Êê 126			e accent circonflexe
++uplow Îî 146			i accent circonflexe
++uplow Ôô 1456			o accent circonflexe
++uplow Ûû 156			u accent circonflexe
++uplow Ëë 1246			e tréma
++uplow Ïï 12456		i tréma
++uplow Üü 1256			u tréma
++uplow \X0152\X0153 246    oe liés
++uplow \X00D1\x00F1 5-12456     n tilde
++math × 46-236 multiplication sign														hex 0x00d7
++math ÷ 46-256 division sign																	hex 0x00f7
+ uplow \x00C0\x00E0 12356				# a with grave
+ uplow \x00C8\x00E8 2346				# e with grave
+ uplow \x00C9\x00E9 123456				# e with acute
+ uplow \x00CC\x00EC 34				# i with grave above
+ uplow \x00D2\x00F2 346			# o with grave above
+ uplow \x00D9\x00F9 23456			# u with grave above
+-
++uplow Çç 12346		c cédille
++uplow \x00DD\x00FD 5-2456   #y with acute
++sign ™ 5-2345 trademark
++sign ® 5-1235 registered
++sign  \x207F  5-1346   #Superscript n
++sign  \x201C  45-236   #Left double quotation mark
++sign  \x201D  45-356   #Right double quotation mark
++sign  \x00AA  5-1    #Feminine ordinal indicator
++sign  \x00BA  5-135    #Masculine ordinal indicator
++sign  \x2013  45-256   #En dash
++sign  \x2014  5-36    #EM dash
++sign  \x2018  5-3   #Left single quotation mark
++sign  \x2019  5-6   #Right single quotation mark
++sign  \x2022  5-35    #Bullet
++sign  \x2026  3-3-3   #Horizontal ellipsis
++sign  \x2030  3456-13456   #Per mille sign
+ #----------------------------------------------------------------------------
+ numsign 3456		#	number sign, just one operand
+ capsign 46
+-begcaps 4-6
+-
+-repeated *** 16-16-16
+-prepunc `` 236
+-prepunc " 236
+-postpunc " 356
+-
+-repeated ___ 46-46-46
+-
+-repeated ::: 25-25-25
+-repeated === 46-13-46-13-46-13
+-repeated ~~~ 4-156-4-156-4-156
+-always \s­\s 36-36
+-always \s­\scom 36-36-14-135-134
+-always ... 3-3-3
+-always .\s.\s. 3-3-3 . . .
+-
+-repeated ­­­ 36-36-36
+-always \s­\s 36-36
+-
+-
++begcaps 46-46
++endcaps 46-3
++repeated ___ 456-456-456
++repeated --- 36-36-36
+ # mathematical symbols
+-midnum ­ 36
+-endnum % 46
+-# special character sequences
+-literal :// URLs
+-literal www.
+-
+-literal .com
+-literal .edu
+-literal .gov
+-literal .mil
+-literal .net
+-literal .org
+-
+-literal .doc
+-literal .htm
+-literal .html
+-literal .tex
+-literal .txt
+-
+-literal .gif
+-literal .jpg
+-literal .png
+-literal .wav
++midnum - 36
++include braille-patterns.cti
+ 
+-literal .tar
+-literal .zip
+diff --git a/tables/it-it-comp8.utb b/tables/it-it-comp8.utb
+index 17a7c5e..06ff70b 100644
+--- a/tables/it-it-comp8.utb
++++ b/tables/it-it-comp8.utb
+@@ -22,39 +22,39 @@
+ 
+ #--------------------- All chars definitions ------------------------------
+ 
+-space \x0000  34578   #NULL
+-space \x0001  178 #Start of heading
+-space \x0002  1278  #Start of text
+-space \x0003  1478  #End of text
+-space \x0004  14578 #End of transmission
+-space \x0005  1578  #Enquiry
+-space \x0006  12478 #Acknowledge
+-space \x0007  124578  #Bell
+-space \x0008  12578 #Backspace
++#space \x0000  34578   #NULL
++#space \x0001  178 #Start of heading
++#space \x0002  1278  #Start of text
++#space \x0003  1478  #End of text
++#space \x0004  14578 #End of transmission
++#space \x0005  1578  #Enquiry
++#space \x0006  12478 #Acknowledge
++#space \x0007  124578  #Bell
++#space \x0008  12578 #Backspace
+ #space \x0009  2478
+ space \t  0 #Tab  \x0009
+-space \x000A  24578 #Line feed
+-space \x000B  1378  #Line tabulation
+-space \x000C  12378 #Form feed
+-space \x000D  13478 #Carriage return
+-space \x000E  134578  #Shift out
+-space \x000F  13578 #Shift in
+-space \x0010  123478    #Data link escape
+-space \x0011  1234578   #Device control one
+-space \x0012  123578    #Device control two
+-space \x0013  23478   #Device control three
+-space \x0014  234578    #Device control four
+-space \x0015  13678   #Negative acknoledgement
+-space \x0016  123678    #Synchronous idle
+-space \x0017  245678    #End of transmission block
+-space \x0018  134678    #Cancel
+-space \x0019  1345678   #End of medium
+-space \x001A  135678    #Substitute
+-space \x001B  1235678   #Escape
+-space \x001C  3478    #Information separator four
+-space \x001D  2345678   #Information separator three
+-space \x001E  234678    #Information separator two
+-space \x001F  45678   #Information separator one
++#space \x000A  24578 #Line feed
++#space \x000B  1378  #Line tabulation
++#space \x000C  12378 #Form feed
++#space \x000D  13478 #Carriage return
++#space \x000E  134578  #Shift out
++#space \x000F  13578 #Shift in
++#space \x0010  123478    #Data link escape
++#space \x0011  1234578   #Device control one
++#space \x0012  123578    #Device control two
++#space \x0013  23478   #Device control three
++#space \x0014  234578    #Device control four
++#space \x0015  13678   #Negative acknoledgement
++#space \x0016  123678    #Synchronous idle
++#space \x0017  245678    #End of transmission block
++#space \x0018  134678    #Cancel
++#space \x0019  1345678   #End of medium
++#space \x001A  135678    #Substitute
++#space \x001B  1235678   #Escape
++#space \x001C  3478    #Information separator four
++#space \x001D  2345678   #Information separator three
++#space \x001E  234678    #Information separator two
++#space \x001F  45678   #Information separator one
+ space \s  0   #blank 32
+ punctuation ! 5						#33
+ punctuation " 4						#34
+@@ -159,7 +159,7 @@ uppercase	\x00D3  2568    #O with acute
+ uppercase \x00D4  14567   #O with circumflex
+ uppercase \x00D5  267   #O with tilde
+ uppercase \x00D6  358   #O with diaeresis
+-math \x00D7  23468   #Multiplication sign \x00d7
++math \x00D7  2348   #Multiplication sign \x00d7
+ uppercase \x00D8  2467    #O with stroke
+ uppercase \x00D9 35678    #U with grave above
+ uppercase \x00DA 268    #U with acute above
+@@ -193,7 +193,7 @@ lowercase \x00F5  1358    #o with tilde
+ lowercase \x00F6  2468    #o with diaeresis
+ math \x00F7 125678    #division sign x00f7
+ lowercase \x00F8  24678   #o with stroke
+-lowercase \x00F9 234567			#u with grave above
++lowercase \x00F9 234568			#u with grave above
+ lowercase \x00FA 1568			#u with acute above
+ lowercase \x00FB  15678   #u with circumflex
+ lowercase \x00FC  12568   #u with diaeresis
+@@ -202,77 +202,77 @@ lowercase \x00FE  12348   #thorn
+ lowercase \x00FF  134568    #y with diaeresis
+ 
+ #--- Unicode Multilingual
+-uppercase \x0100    1678    #A with macron
+-lowercase	\x0101   168   #a with macron
+-uppercase	\x0102    1235678   #A with breve
+-lowercase	\x0103    123568    #a with breve
+-uppercase	\x0104    134568    #A with ogonek
+-lowercase \x0105 168    #a with ogonek
+-uppercase \x0106 14678    #C with acute
+-lowercase \x0107 1468   #c with acute
+-uppercase	\x0108    14678   #C with circumflex
+-lowercase	\x0109    1468    #c with circumflex
++#uppercase \x0100    1678    #A with macron
++#lowercase	\x0101   168   #a with macron
++#uppercase	\x0102    1235678   #A with breve
++#lowercase	\x0103    123568    #a with breve
++#uppercase	\x0104    134568    #A with ogonek
++#lowercase \x0105 168    #a with ogonek
++#uppercase \x0106 14678    #C with acute
++#lowercase \x0107 1468   #c with acute
++#uppercase	\x0108    14678   #C with circumflex
++#lowercase	\x0109    1468    #c with circumflex
+ #uppercase \x010A  0   #C with dot above
+ #lowercase  \x010B      #c with dot above
+-uppercase	\x010C    14678   #C with caron
+-lowercase	\x010D    1468    #c with caron
++#uppercase	\x010C    14678   #C with caron
++#lowercase	\x010D    1468    #c with caron
+ #uppercase	\x010E       #D with caron
+ #lowercase	\x010F       #d with caron
+-uppercase \x0110   145678    #D with stroke
+-lowercase \x0111    14568   #d with stroke
+-uppercase \x0112    15678   #E with macron
+-lowercase \x0113    1568    #e with macron
+-uppercase	\x0118    12678    #E with ogonek
++#uppercase \x0110   145678    #D with stroke
++#lowercase \x0111    14568   #d with stroke
++#uppercase \x0112    15678   #E with macron
++#lowercase \x0113    1568    #e with macron
++#uppercase	\x0118    12678    #E with ogonek
+ lowercase \x0119    1268    #e with ogonek
+-uppercase \x011C    1245678     #G with circumflex
+-lowercase \x011D    124568    #g with circumflex
+-uppercase \x0141  134568    #L with stroke
+-lowercase \x0142  1568    #l with stroke
+-uppercase \x0143  145678    #N with acute
+-lowercase \x0144  14568   #n with acute
+-uppercase \x0145 1345678   #N with cedilla
+-lowercase \x0146 134568    #n with cedilla
+-uppercase \x0150  1245678   #O with double acute
+-lowercase \x0151  124568    #o with double acute
++#uppercase \x011C    1245678     #G with circumflex
++#lowercase \x011D    124568    #g with circumflex
++#uppercase \x0141  134568    #L with stroke
++#lowercase \x0142  1568    #l with stroke
++#uppercase \x0143  145678    #N with acute
++#lowercase \x0144  14568   #n with acute
++#uppercase \x0145 1345678   #N with cedilla
++#lowercase \x0146 134568    #n with cedilla
++#uppercase \x0150  1245678   #O with double acute
++#lowercase \x0151  124568    #o with double acute
+ uppercase \x0152  237   #ligature OE
+ lowercase \x0153  467   #ligature oe
+-uppercase \x0156  1235678   #R with cedilla
+-lowercase \x0157  123568    #r with cedilla
+-lowercase \x0159 2456    #r with caron
+-uppercase \x015A  134568    #S with acute
+-lowercase \x015B  134568    #s with acute
+-uppercase \x015C  234678    #S with circumflex
+-lowercase \x015D  23468    #s with cirumflex
+-uppercase \x015E  134568    #S with cedilla
+-lowercase \x015F  123468    #s with cedilla
+-uppercase \x0160  678   #S with caron
+-lowercase \x0161  1568    #s withcaron
+-uppercase \x0162  24678   #T with cedilla
+-lowercase \x0163  23458   #t with cedilla
+-uppercase \x0164  125678    #T with caron
+-lowercase \x0165  1256    #t with caron
+-uppercase \x016A  34678   #U wtih macron
+-lowercase \x016B  3468    #u with macron
+-uppercase \x016C  34678   #U with breve
+-lowercase \x016D  3468    #u with breve
+-lowercase \x016F  23456   #u with ring above
+-uppercase \x0170  2345678   #U with double acute
+-lowercase \x0171  234568    #u with double acute
+-uppercase \x0178  12345678    #Y with diaeresis
+-uppercase \x0179  134568    #Z with acute
+-lowercase \x017A 134568    #z with acute
+-uppercase \x017B  134568    #Z with dot above
+-lowercase \x017C  123468    #z with dot above
+-uppercase \x017D  12567   #Z with caron
+-lowercase \x017E  2346    #z with caron
++#uppercase \x0156  1235678   #R with cedilla
++#lowercase \x0157  123568    #r with cedilla
++#lowercase \x0159 2456    #r with caron
++#uppercase \x015A  134568    #S with acute
++#lowercase \x015B  134568    #s with acute
++#uppercase \x015C  234678    #S with circumflex
++#lowercase \x015D  23468    #s with cirumflex
++#uppercase \x015E  134568    #S with cedilla
++#lowercase \x015F  123468    #s with cedilla
++#uppercase \x0160  678   #S with caron
++#lowercase \x0161  1568    #s withcaron
++#uppercase \x0162  24678   #T with cedilla
++#lowercase \x0163  23458   #t with cedilla
++#uppercase \x0164  125678    #T with caron
++#lowercase \x0165  1256    #t with caron
++#uppercase \x016A  34678   #U wtih macron
++#lowercase \x016B  3468    #u with macron
++#uppercase \x016C  34678   #U with breve
++#lowercase \x016D  3468    #u with breve
++#lowercase \x016F  23456   #u with ring above
++#uppercase \x0170  2345678   #U with double acute
++#lowercase \x0171  234568    #u with double acute
++#uppercase \x0178  12345678    #Y with diaeresis
++#uppercase \x0179  134568    #Z with acute
++#lowercase \x017A 134568    #z with acute
++#uppercase \x017B  134568    #Z with dot above
++#lowercase \x017C  123468    #z with dot above
++#uppercase \x017D  12567   #Z with caron
++#lowercase \x017E  2346    #z with caron
+ lowercase \x0192 78   #f with hook
+-lowercase \x025C  13567   #reversed open e
++#lowercase \x025C  13567   #reversed open e
+ sign  \x02C6  378   #circumflex accent
+-sign  \x02C7  134568    #caron
+-sign  \x02D8  134568    #breve
+-sign  \x02D9  5    #dot above
+-sign  \x02DB 134568    #ogonek
+-sign  \x02DC  2578    #small tilde
++#sign  \x02C7  134568    #caron
++#sign  \x02D8  134568    #breve
++#sign  \x02D9  5    #dot above
++#sign  \x02DB 134568    #ogonek
++#sign  \x02DC  2578    #small tilde
+ 
+ #--- Unicode Special Symbols
+ space	\x2002	0	   #EN space
+@@ -310,328 +310,328 @@ sign  \x20AF  145678    #Drachma sign
+ sign  \x2116  3456    #Number sign
+ sign  \x2122  1245678   #Trade mark sign
+ math  \x2219  48    #Bullet operator
+-math  \x221A  1467    #Square root
+-math  \x221E  234678    #Infinity
+-math  \x2229  578   #Intersection
+-math  \x2248  3578    #Almost equal to
+-math  \x2261  23568   #Identical to
+-math  \x2264  568   #Less-than or equal to
+-math  \x2265  458   #Greater-than or equal to
++#math  \x221A  1467    #Square root
++#math  \x221E  234678    #Infinity
++#math  \x2229  578   #Intersection
++#math  \x2248  3578    #Almost equal to
++#math  \x2261  23568   #Identical to
++#math  \x2264  568   #Less-than or equal to
++#math  \x2265  458   #Greater-than or equal to
+ sign  \x2310  14567   #Reversed not sign
+-math  \x2320  347   #Top half integral
+-math  \x2321  1567    #Bottom half integral
+-sign  \x2500  67    #Box drawings light horizontal
+-sign  \x2502  237   #Box drawings light horizontal
+-sign  \x250C  257   #Box drawings light down and right
+-sign  \x2510  278   #Box drawings light down and left
+-sign \x2514 378   #Box drawings light up and right
+-sign  \x2518  678   #Box drawings light up and left
+-sign  \x251C  2367    #Box drawings light vertical and right
+-sign  \x2524  13568   #Box drawings light vertical and left
+-sign  \x252C  138 #Box drawings light down and horizontal
+-sign  \x2534  27    #Box drawings light up and horizontal
+-sign  \x2550  2578    #Box drawings double horizontal
+-sign  \x2551  1234568   #Box drawings double vertical
+-sign  \x2552  123468    #Box drawings down single and right double
+-sign  \x2553  1358    #Box drawings down double and right single
+-sign  \x2554  23567   #Box drawings double down and right
+-sign  \x2555  148   #Box drawings down single and left double
+-sign  \x2556  368   #Box drawings down double and left single
+-sign  \x2557  12458   #Box drawings double down left
+-sign  \x2558  248   #Box drawings up single and right double
+-sign  \x2559  1238    #Box drawings up double and right single
+-sign  \x255A  2378    #Box drawings double up and right
+-sign  \x255B  34678   #Box drawings up single and left double
+-sign  \x255C  4678    #Box drawings up double and left single
+-sign  \x255D  2678    #Box drawings double up and left
+-sign  \x255E  68    #Box drawings vertical single and right double
+-sign  \x255F  257   #Box drawings vertical double and right single
+-sign  \x2560  1248    #Box drawings vertical double and right
+-sign  \x2561  268   #Box drawings vertical single and left double
+-sign  \x2562  24568   #Box drawings vertical double and left single
+-sign  \x2563  123567    #Box drawings double vertical and left
+-sign  \x2564  3467    #Box drawings down single and horizontal double
+-sign  \x2565  28    #Box drawings down double and horizontal single
+-sign  \x2566  123458    #Box drawings double down and horizontal
+-sign  \x2567  167   #Box drawings up single and horizontal double
+-sign  \x2568  57    #Box drawings up double and horizontal single
+-sign  \x2569  8   #Box drawings double up and horizontal
+-sign  \x256A  3567  #Box drawings vertical single and horizontal double
+-sign  \x256B  12358   #Box drawings vertical double and horizontal single
+-sign  \x256C  5678    #Box drawings double vertical and horizontal
+-sign  \x2580 234567    #Upper half block
+-sign  \x2584 1267    #Lower half block
+-sign  \x2588 12345678   #Full block
+-sign  \x258C  23678   #Left half block
+-sign  \x2590  35678   #Right half block
+-sign  \x2591  78    #Light shade
+-sign  \x2592  3678    #Medium shade
+-sign  \x2593  235678    #Dark shade
+-sign  \x25A0  1234567   #Black square
+-sign  \x25AA  5678   #black small square
+-sign  \x25B6  456-135   #Black right-pointing triangle
+-sign  \x25CF  35    #Black circle
+-sign  \x25E6  35    #White bullet
+-sign  \x2665  56-146    #heart
++#math  \x2320  347   #Top half integral
++#math  \x2321  1567    #Bottom half integral
++#sign  \x2500  67    #Box drawings light horizontal
++#sign  \x2502  237   #Box drawings light horizontal
++#sign  \x250C  257   #Box drawings light down and right
++#sign  \x2510  278   #Box drawings light down and left
++#sign \x2514 378   #Box drawings light up and right
++#sign  \x2518  678   #Box drawings light up and left
++#sign  \x251C  2367    #Box drawings light vertical and right
++#sign  \x2524  13568   #Box drawings light vertical and left
++#sign  \x252C  138 #Box drawings light down and horizontal
++#sign  \x2534  27    #Box drawings light up and horizontal
++#sign  \x2550  2578    #Box drawings double horizontal
++#sign  \x2551  1234568   #Box drawings double vertical
++#sign  \x2552  123468    #Box drawings down single and right double
++#sign  \x2553  1358    #Box drawings down double and right single
++#sign  \x2554  23567   #Box drawings double down and right
++#sign  \x2555  148   #Box drawings down single and left double
++#sign  \x2556  368   #Box drawings down double and left single
++#sign  \x2557  12458   #Box drawings double down left
++#sign  \x2558  248   #Box drawings up single and right double
++#sign  \x2559  1238    #Box drawings up double and right single
++#sign  \x255A  2378    #Box drawings double up and right
++#sign  \x255B  34678   #Box drawings up single and left double
++#sign  \x255C  4678    #Box drawings up double and left single
++#sign  \x255D  2678    #Box drawings double up and left
++#sign  \x255E  68    #Box drawings vertical single and right double
++#sign  \x255F  257   #Box drawings vertical double and right single
++#sign  \x2560  1248    #Box drawings vertical double and right
++#sign  \x2561  268   #Box drawings vertical single and left double
++#sign  \x2562  24568   #Box drawings vertical double and left single
++#sign  \x2563  123567    #Box drawings double vertical and left
++#sign  \x2564  3467    #Box drawings down single and horizontal double
++#sign  \x2565  28    #Box drawings down double and horizontal single
++#sign  \x2566  123458    #Box drawings double down and horizontal
++#sign  \x2567  167   #Box drawings up single and horizontal double
++#sign  \x2568  57    #Box drawings up double and horizontal single
++#sign  \x2569  8   #Box drawings double up and horizontal
++#sign  \x256A  3567  #Box drawings vertical single and horizontal double
++#sign  \x256B  12358   #Box drawings vertical double and horizontal single
++#sign  \x256C  5678    #Box drawings double vertical and horizontal
++#sign  \x2580 234567    #Upper half block
++#sign  \x2584 1267    #Lower half block
++#sign  \x2588 12345678   #Full block
++#sign  \x258C  23678   #Left half block
++#sign  \x2590  35678   #Right half block
++#sign  \x2591  78    #Light shade
++#sign  \x2592  3678    #Medium shade
++#sign  \x2593  235678    #Dark shade
++#sign  \x25A0  1234567   #Black square
++#sign  \x25AA  5678   #black small square
++#sign  \x25B6  456-135   #Black right-pointing triangle
++#sign  \x25CF  35    #Black circle
++#sign  \x25E6  35    #White bullet
++#sign  \x2665  56-146    #heart
+ sign  \x2713  3678    #check mark
+-sign  \x2714  235678    #Heavy check mark
+-sign  \x2794  25-25-135    #right arrow
+-sign  \x2190  25-25-246    #left arrow
+-sign  \x2192  25-25-246    #left arrow
+-sign  \x25B7  456-135    #white right-pointing triangle
+-sign  \xF0B7  35    #bullet
+-sign  \xFB00  124-124    #latin small ligature
++#sign  \x2714  235678    #Heavy check mark
++#sign  \x2794  25-25-135    #right arrow
++#sign  \x2190  25-25-246    #left arrow
++#sign  \x2192  25-25-246    #left arrow
++#sign  \x25B7  456-135    #white right-pointing triangle
++#sign  \xF0B7  35    #bullet
++#sign  \xFB00  124-124    #latin small ligature
+ 
+ 
+ #--- Unicode Greek
+-sign	\x0374	3456	#GREEK UPPER NUMERAL SIGN Dexia keraia
+-sign	\x0375	5678	#GREEK LOWER NUMERAL SIGN Aristeri keraia
+-punctuation	\x037E	26	#GREEK QUESTION MARK
+-sign	\x0384	4	#GREEK TONOS
+-sign	\x0385	45	#GREEK DIALYTIKA TONOS
+-uppercase	\x0386	34578	#Greek letter alpha with tonos
+-sign	\x0387	746	#GREEK ANO TELEIA
+-uppercase	\x0388	124678	#Greek letter epsilon with tonos
+-uppercase	\x0389	12345678	#Greek letter eta with tonos
+-uppercase	\x038A	1245678	#Greel letter iota with sonos
+-uppercase	\x038C	24678	#Greek letter omicron with tonos
+-uppercase	\x038E	125678	#Greek letter upsilon with tonos
+-uppercase	\x038F	24578	#Greek letter omega with tonos
+-lowercase	\x0390	248	#GREEK SMALL LETTER IOTA WITH DIALYTIKA AND TONOS
+-uppercase	\x0391	178	#GREEK CAPITAL LETTER ALPHA
+-uppercase	\x0392	1278	#GREEK CAPITAL LETTER BETA
+-uppercase	\x0393	124578	#GREEK CAPITAL LETTER GAMMA
+-uppercase	\x0394	14578	#GREEK CAPITAL LETTER DELTA
+-uppercase	\x0395	1578	#GREEK CAPITAL LETTER EPSILON
+-uppercase	\x0396	135678	#GREEK CAPITAL LETTER ZETA
+-uppercase	\x0397	15678	#GREEK CAPITAL LETTER ETA
+-uppercase	\x0398	145678	#GREEK CAPITAL LETTER THETA
+-uppercase	\x0399	248	#GREEK CAPITAL LETTER IOTA
+-uppercase	\x039A	1378	#GREEK CAPITAL LETTER KAPPA
+-uppercase	\x039B	12378	#GREEK CAPITAL LETTER LAMDA
+-uppercase	\x039C	13478	#GREEK CAPITAL LETTER MU
+-uppercase	\x039D	134578	#GREEK CAPITAL LETTER NU
+-uppercase	\x039E	134678	#GREEK CAPITAL LETTER XI
+-uppercase	\x039F	13578	#GREEK CAPITAL LETTER OMICRON
+-uppercase	\x03A0	123478	#GREEK CAPITAL LETTER PI
+-uppercase	\x03A1	123578	#GREEK CAPITAL LETTER RHO
+-uppercase	\x03A3	23478	#GREEK CAPITAL LETTER SIGMA
+-uppercase \x03A4	234578	#GREEK CAPITAL LETTER TAU
+-uppercase	\x03A5	13678	#GREEK CAPITAL LETTER UPSILON
+-uppercase	\x03A6	12478	#GREEK CAPITAL LETTER PHI
+-uppercase	\x03A7	1234678	#GREEK CAPITAL LETTER CHI
+-uppercase	\x03A8	1345678	#GREEK CAPITAL LETTER PSI
+-uppercase	\x03A9	245678	#GREEK CAPITAL LETTER OMEGA
+-uppercase	\x03AA	2478	#GREEK CAPITAL LETTER IOTA WITH DIALYTIKA
+-uppercase	\x03AB	1345678	#GREEK CAPITAL LETTER UPSILON WITH DIALYTIKA
+-lowercase	\x03AC	3458	#Greek letter alpha with tonos
+-lowercase	\x03AD	12468	#Greek letter epsilon with tonos
+-lowercase	\x03AE	1234568	#Greek letter eta with tonos
+-lowercase	\x03AF	124568	#Greel letter iota with sonos
+-lowercase	\x03B0	134568	#GREEK SMALL LETTER UPSILON WITH DIALYTIKA
+-lowercase	\x03B1	18	#GREEK SMALL LETTER ALPHA
+-lowercase	\x03B2	128	#GREEK SMALL LETTER BETA
+-lowercase	\x03B3	12458	#GREEK SMALL LETTER GAMMA
+-lowercase	\x03B4	1458	#GREEK SMALL LETTER DELTA
+-lowercase	\x03B5	158	#GREEK SMALL LETTER EPSILON
+-lowercase	\x03B6	13568	#GREEK SMALL LETTER ZETA
+-lowercase	\x03B7	1568	#GREEK SMALL LETTER ETA
+-lowercase	\x03B8	14568	#GREEK SMALL LETTER THETA
+-lowercase	\x03B9	248	#GREEK SMALL LETTER IOTA
+-lowercase	\x03BA	138	#GREEK SMALL LETTER KAPPA
+-lowercase	\x03BB	1238	#GREEK SMALL LETTER LAMDA
+-lowercase	\x03BC	1348	#GREEK SMALL LETTER MU
+-lowercase	\x03BD	13458	#GREEK SMALL LETTER NU
+-lowercase	\x03BE	13468	#GREEK SMALL LETTER XI
+-lowercase	\x03BF	1358	#GREEK SMALL LETTER OMICRON
+-lowercase	\x03C0	12348	#GREEK SMALL LETTER PI
+-lowercase	\x03C1	12358	#GREEK SMALL LETTER RHO
+-lowercase	\x03C2	2348	#GREEK SMALL LETTER FINAL SIGMA
+-lowercase	\x03C3	2348	#GREEK SMALL LETTER FINAL SIGMA
+-lowercase	\x03C4	23458	#GREEK SMALL LETTER TAU
+-lowercase	\x03C5	1368	#GREEK SMALL LETTER UPSILON
+-lowercase	\x03C6	1248	#GREEK SMALL LETTER PHI
+-lowercase	\x03C7	123468	#GREEK SMALL LETTER CHI
+-lowercase	\x03C8	13456	#GREEK SMALL LETTER PSI
+-lowercase	\x03C9	24568	#GREEK SMALL LETTER OMEGA
+-lowercase	\x03CA	348	#GREEK SMALL LETTER IOTA WITH DIALYTIKA
+-lowercase	\x03CB	234568	#GREEK SMALL LETTER UPSILON WITH DIALYTIKA
+-lowercase	\x03CC	2468	#Greek letter omicron with tonos
+-lowercase	\x03CD	12568	#Greek letter upsilon with tonos
+-lowercase	\x03CE	2458	#Greek letter omega with tonos
+-sign	\x03D0	1278	#GREEK BETA SYMBOL
+-sign	\x03D1	145678	#GREEK THETA SYMBOL
+-letter	\x03D2	12368	#GREEK UPSILON WITH HOOK SYMBOL
+-letter	\x03D3	23456	#GREEK UPSILON WITH ACUTE AND HOOK SYMBOL
+-letter	\x03D4	1368	#GREEK UPSILON WITH DIAERESIS AND HOOK SYMBOL
+-sign	\x03D5	12478	#GREEK PHI SYMBOL
+-sign	\x03D6	123478	#GREEK PI SYMBOL
+-sign	\x03D7	12346	#GREEK KAI SYMBOL
+-uppercase	\x03D8	1234578	#GREEK LETTER ARCHAIC KOPPA
+-lowercase	\x03D9	123458	#GREEK SMALL LETTER ARCHAIC KOPPA
+-uppercase	\x03DA	123678	#GREEK CAPITAL LETTER STIGMA
+-lowercase	\x03DB	12368	#GREEK SMALL LETTER STIGMA
+-uppercase	\x03DC	145678	#GREEK CAPITAL LETTER DIGAMMA
+-lowercase	\x03DD	12368	#GREEK SMALL LETTER DIGAMMA
+-uppercase	\x03DE	1234578	#GREEK CAPITAL LETTER KOPPA
+-lowercase	\x03DF	123458	#GREEK SMALL LETTER KOPPA
+-uppercase	\x03E0	234678	#GREEK CAPITAL LETTER SAMPI
+-lowercase	\x03E1	23468	#GREEK SMALL LETTER SAMPI
+-sign	\x03F0	1234578	#GREEK KAPPA SYMBOL
+-sign	\x03F1	123578	#GREEK RHO SYMBOL
+-sign	\x03F2	23478	#GREEK LUNATE SIGMA SYMBOL
+-sign	\x03F4	145678	#GREEK CAPITAL THETA SYMBOL
+-sign	\x03F5	1578	#GREEK LUNATE EPSILON SYMBOL
+-uppercase	\x03FA	234678	#GREEK CAPITAL LETTER SAN
+-lowercase	\x03FB	23468	#GREEK SMALL LETTER SAN
++#sign	\x0374	3456	#GREEK UPPER NUMERAL SIGN Dexia keraia
++#sign	\x0375	5678	#GREEK LOWER NUMERAL SIGN Aristeri keraia
++#punctuation	\x037E	26	#GREEK QUESTION MARK
++#sign	\x0384	4	#GREEK TONOS
++#sign	\x0385	45	#GREEK DIALYTIKA TONOS
++#uppercase	\x0386	34578	#Greek letter alpha with tonos
++#sign	\x0387	746	#GREEK ANO TELEIA
++#uppercase	\x0388	124678	#Greek letter epsilon with tonos
++#uppercase	\x0389	12345678	#Greek letter eta with tonos
++#uppercase	\x038A	1245678	#Greel letter iota with sonos
++#uppercase	\x038C	24678	#Greek letter omicron with tonos
++#uppercase	\x038E	125678	#Greek letter upsilon with tonos
++#uppercase	\x038F	24578	#Greek letter omega with tonos
++#lowercase	\x0390	248	#GREEK SMALL LETTER IOTA WITH DIALYTIKA AND TONOS
++#uppercase	\x0391	178	#GREEK CAPITAL LETTER ALPHA
++#uppercase	\x0392	1278	#GREEK CAPITAL LETTER BETA
++#uppercase	\x0393	124578	#GREEK CAPITAL LETTER GAMMA
++#uppercase	\x0394	14578	#GREEK CAPITAL LETTER DELTA
++#uppercase	\x0395	1578	#GREEK CAPITAL LETTER EPSILON
++#uppercase	\x0396	135678	#GREEK CAPITAL LETTER ZETA
++#uppercase	\x0397	15678	#GREEK CAPITAL LETTER ETA
++#uppercase	\x0398	145678	#GREEK CAPITAL LETTER THETA
++#uppercase	\x0399	248	#GREEK CAPITAL LETTER IOTA
++#uppercase	\x039A	1378	#GREEK CAPITAL LETTER KAPPA
++#uppercase	\x039B	12378	#GREEK CAPITAL LETTER LAMDA
++#uppercase	\x039C	13478	#GREEK CAPITAL LETTER MU
++#uppercase	\x039D	134578	#GREEK CAPITAL LETTER NU
++#uppercase	\x039E	134678	#GREEK CAPITAL LETTER XI
++#uppercase	\x039F	13578	#GREEK CAPITAL LETTER OMICRON
++#uppercase	\x03A0	123478	#GREEK CAPITAL LETTER PI
++#uppercase	\x03A1	123578	#GREEK CAPITAL LETTER RHO
++#uppercase	\x03A3	23478	#GREEK CAPITAL LETTER SIGMA
++#uppercase \x03A4	234578	#GREEK CAPITAL LETTER TAU
++#uppercase	\x03A5	13678	#GREEK CAPITAL LETTER UPSILON
++#uppercase	\x03A6	12478	#GREEK CAPITAL LETTER PHI
++#uppercase	\x03A7	1234678	#GREEK CAPITAL LETTER CHI
++#uppercase	\x03A8	1345678	#GREEK CAPITAL LETTER PSI
++#uppercase	\x03A9	245678	#GREEK CAPITAL LETTER OMEGA
++#uppercase	\x03AA	2478	#GREEK CAPITAL LETTER IOTA WITH DIALYTIKA
++#uppercase	\x03AB	1345678	#GREEK CAPITAL LETTER UPSILON WITH DIALYTIKA
++#lowercase	\x03AC	3458	#Greek letter alpha with tonos
++#lowercase	\x03AD	12468	#Greek letter epsilon with tonos
++#lowercase	\x03AE	1234568	#Greek letter eta with tonos
++#lowercase	\x03AF	124568	#Greel letter iota with sonos
++#lowercase	\x03B0	134568	#GREEK SMALL LETTER UPSILON WITH DIALYTIKA
++#lowercase	\x03B1	18	#GREEK SMALL LETTER ALPHA
++#lowercase	\x03B2	128	#GREEK SMALL LETTER BETA
++#lowercase	\x03B3	12458	#GREEK SMALL LETTER GAMMA
++#lowercase	\x03B4	1458	#GREEK SMALL LETTER DELTA
++#lowercase	\x03B5	158	#GREEK SMALL LETTER EPSILON
++#lowercase	\x03B6	13568	#GREEK SMALL LETTER ZETA
++#lowercase	\x03B7	1568	#GREEK SMALL LETTER ETA
++#lowercase	\x03B8	14568	#GREEK SMALL LETTER THETA
++#lowercase	\x03B9	248	#GREEK SMALL LETTER IOTA
++#lowercase	\x03BA	138	#GREEK SMALL LETTER KAPPA
++#lowercase	\x03BB	1238	#GREEK SMALL LETTER LAMDA
++#lowercase	\x03BC	1348	#GREEK SMALL LETTER MU
++#lowercase	\x03BD	13458	#GREEK SMALL LETTER NU
++#lowercase	\x03BE	13468	#GREEK SMALL LETTER XI
++#lowercase	\x03BF	1358	#GREEK SMALL LETTER OMICRON
++#lowercase	\x03C0	12348	#GREEK SMALL LETTER PI
++#lowercase	\x03C1	12358	#GREEK SMALL LETTER RHO
++#lowercase	\x03C2	2348	#GREEK SMALL LETTER FINAL SIGMA
++#lowercase	\x03C3	2348	#GREEK SMALL LETTER FINAL SIGMA
++#lowercase	\x03C4	23458	#GREEK SMALL LETTER TAU
++#lowercase	\x03C5	1368	#GREEK SMALL LETTER UPSILON
++#lowercase	\x03C6	1248	#GREEK SMALL LETTER PHI
++#lowercase	\x03C7	123468	#GREEK SMALL LETTER CHI
++#lowercase	\x03C8	13456	#GREEK SMALL LETTER PSI
++#lowercase	\x03C9	24568	#GREEK SMALL LETTER OMEGA
++#lowercase	\x03CA	348	#GREEK SMALL LETTER IOTA WITH DIALYTIKA
++#lowercase	\x03CB	234568	#GREEK SMALL LETTER UPSILON WITH DIALYTIKA
++#lowercase	\x03CC	2468	#Greek letter omicron with tonos
++#lowercase	\x03CD	12568	#Greek letter upsilon with tonos
++#lowercase	\x03CE	2458	#Greek letter omega with tonos
++#sign	\x03D0	1278	#GREEK BETA SYMBOL
++#sign	\x03D1	145678	#GREEK THETA SYMBOL
++#letter	\x03D2	12368	#GREEK UPSILON WITH HOOK SYMBOL
++#letter	\x03D3	23456	#GREEK UPSILON WITH ACUTE AND HOOK SYMBOL
++#letter	\x03D4	1368	#GREEK UPSILON WITH DIAERESIS AND HOOK SYMBOL
++#sign	\x03D5	12478	#GREEK PHI SYMBOL
++#sign	\x03D6	123478	#GREEK PI SYMBOL
++#sign	\x03D7	12346	#GREEK KAI SYMBOL
++#uppercase	\x03D8	1234578	#GREEK LETTER ARCHAIC KOPPA
++#lowercase	\x03D9	123458	#GREEK SMALL LETTER ARCHAIC KOPPA
++#uppercase	\x03DA	123678	#GREEK CAPITAL LETTER STIGMA
++#lowercase	\x03DB	12368	#GREEK SMALL LETTER STIGMA
++#uppercase	\x03DC	145678	#GREEK CAPITAL LETTER DIGAMMA
++#lowercase	\x03DD	12368	#GREEK SMALL LETTER DIGAMMA
++#uppercase	\x03DE	1234578	#GREEK CAPITAL LETTER KOPPA
++#lowercase	\x03DF	123458	#GREEK SMALL LETTER KOPPA
++#uppercase	\x03E0	234678	#GREEK CAPITAL LETTER SAMPI
++#lowercase	\x03E1	23468	#GREEK SMALL LETTER SAMPI
++#sign	\x03F0	1234578	#GREEK KAPPA SYMBOL
++#sign	\x03F1	123578	#GREEK RHO SYMBOL
++#sign	\x03F2	23478	#GREEK LUNATE SIGMA SYMBOL
++#sign	\x03F4	145678	#GREEK CAPITAL THETA SYMBOL
++#sign	\x03F5	1578	#GREEK LUNATE EPSILON SYMBOL
++#uppercase	\x03FA	234678	#GREEK CAPITAL LETTER SAN
++#lowercase	\x03FB	23468	#GREEK SMALL LETTER SAN
+ 
+ #--- Unicode Cyrillic
+-uppercase \x0401 1678   #CYRILLIC CAPITAL LETTER IO
+-uppercase \x0404 34578    #CYRILLIC CAPITAL LETTER UKRAINIAN IE
+-uppercase \x0406 1345678    #CYRILLIC CAPITAL LETTER BYELORUSSIAN-UKRAINIAN I
+-uppercase \x0407 145678   #CYRILLIC CAPITAL LETTER YI
+-uppercase \x0410 178   #CYRILLIC CAPITAL LETTER A
+-uppercase \x0411 1278  #CYRILLIC CAPITAL LETTER BE
+-uppercase \x0412 245678  #CYRILLIC CAPITAL LETTER VE
+-uppercase \x0413 124578   #CYRILLIC CAPITAL LETTER GHE
+-uppercase \x0414 14578    #CYRILLIC CAPITAL LETTER DE
+-uppercase \x0415 157    #CYRILLIC CAPITAL LETTER IE
+-uppercase \x0416 24578   #CYRILLIC CAPITAL LETTER ZHE
+-uppercase \x0417 135678   #CYRILLIC CAPITAL LETTER ZE
+-uppercase \x0418 2478    #CYRILLIC CAPITAL LETTER I
+-uppercase \x0419 1234678    #CYRILLIC CAPITAL LETTER SHORT I
+-uppercase \x041A 1378   #CYRILLIC CAPITAL LETTER KA
+-uppercase \x041B 12378    #CYRILLIC CAPITAL LETTER EL
+-uppercase \x041C 13478    #CYRILLIC CAPITAL LETTER EM
+-uppercase \x041D 134578   #CYRILLIC CAPITAL LETTER EN
+-uppercase \x041E 13578    #CYRILLIC CAPITAL LETTER O
+-uppercase \x041F 123478   #CYRILLIC CAPITAL LETTER PE
+-uppercase \x0420 123578   #CYRILLIC CAPITAL LETTER ER
+-uppercase \x0421 23478   #CYRILLIC CAPITAL LETTER ES
+-uppercase \x0422 234578   #CYRILLIC CAPITAL LETTER TE
+-uppercase \x0423 13678    #CYRILLIC CAPITAL LETTER U
+-uppercase \x0424 12478    #CYRILLIC CAPITAL LETTER EF
+-uppercase \x0425 12578    #CYRILLIC CAPITAL LETTER HA
+-uppercase \x0426 1478   #CYRILLIC CAPITAL LETTER TSE
+-uppercase \x0427 1234578    #CYRILLIC CAPITAL LETTER CHE
+-uppercase \x0428 15678    #CYRILLIC CAPITAL LETTER SHA
+-uppercase \x0429 134678   #CYRILLIC CAPITAL LETTER SHCHA
+-uppercase \x042A 1235678    #CYRILLIC CAPITAL LETTER HARD SIGN
+-uppercase \x042B 234678   #CYRILLIC CAPITAL LETTER YERU
+-uppercase \x042C 2345678    #CYRILLIC CAPITAL LETTER SOFT SIGN
+-uppercase \x042D 24678    #CYRILLIC CAPITAL LETTER E
+-uppercase \x042E 125678     #CYRILLIC CAPITAL LETTER YU
+-uppercase \x042F 124678   #CYRILLIC CAPITAL LETTER YA
+-lowercase \x0430 18   #CYRILLIC SMALL LETTER A
+-lowercase \x0431 128    #CYRILLIC SMALL LETTER BE
+-lowercase \x0432 24568   #CYRILLIC SMALL LETTER VE
+-lowercase \x0433 12458    #CYRILLIC SMALL LETTER GHE
+-lowercase \x0434 1458   #CYRILLIC SMALL LETTER DE
+-lowercase \x0435 158    #CYRILLIC SMALL LETTER IE
+-lowercase \x0436 2458   #CYRILLIC SMALL LETTER ZHE
+-lowercase \x0437 13568   #CYRILLIC SMALL LETTER ZE
+-lowercase \x0438 248    #CYRILLIC SMALL LETTER I
+-lowercase \x0439 123468   #CYRILLIC SMALL LETTER SHORT I
+-lowercase \x043A 138   #CYRILLIC SMALL LETTER KA
+-lowercase \x043B 1238   #CYRILLIC SMALL LETTER EL
+-lowercase \x043C 1348   #CYRILLIC SMALL LETTER EM
+-lowercase \x043D 13458   #CYRILLIC SMALL LETTER EN
+-lowercase \x043E 1358   #CYRILLIC SMALL LETTER O
+-lowercase \x043F 12348   #CYRILLIC SMALL LETTER PE
+-lowercase \x0440 12358    #CYRILLIC SMALL LETTER ER
+-lowercase \x0441 2348   #CYRILLIC SMALL LETTER ES
+-lowercase \x0442 23458   #CYRILLIC SMALL LETTER TE
+-lowercase \x0443 1368   #CYRILLIC SMALL LETTER U
+-lowercase \x0444 1248   #CYRILLIC SMALL LETTER EF
+-lowercase \x0445 1258   #CYRILLIC SMALL LETTER HA
+-lowercase \x0446 148   #CYRILLIC SMALL LETTER TSE
+-lowercase \x0447 123458   #CYRILLIC SMALL LETTER CHE
+-lowercase \x0448 1568   #CYRILLIC SMALL LETTER SHA
+-lowercase \x0449 13468    #CYRILLIC SMALL LETTER SHCHA
+-lowercase \x044A 123568   #CYRILLIC SMALL LETTER HARD SIGN
+-lowercase \x044B 23468    #CYRILLIC SMALL LETTER YERU
+-lowercase \x044C 234568   #CYRILLIC SMALL LETTER SOFT SIGN
+-lowercase \x044D 2468   #CYRILLIC SMALL LETTER E
+-lowercase \x044E 12568    #CYRILLIC SMALL LETTER YU
+-lowercase \x044F 12468    #CYRILLIC SMALL LETTER YA
+-lowercase \x0451 168    #CYRILLIC SMALL LETTER IO
+-lowercase \x0452 1468   #CYRILLIC SMALL LETTER DJE Serbocroatian
+-lowercase \x0454 3458   #CYRILLIC SMALL LETTER UKRAINIAN IE
+-lowercase \x0455 12368    #CYRILLIC SMALL LETTER DZE
+-lowercase \x0456 134568   #CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I
+-lowercase \x0457 14568    #CYRILLIC SMALL LETTER YI
+-lowercase \x0458 3458   #CYRILLIC SMALL LETTER JE
+-lowercase \x0459 1268   #CYRILLIC SMALL LETTER LJE
+-lowercase \x045A 12468    #CYRILLIC SMALL LETTER NJE
+-lowercase \x045B 1468   #CYRILLIC SMALL LETTER TSHE Serbocroatian
+-lowercase \x045E 3468   #CYRILLIC SMALL LETTER SHORT U
+-uppercase \x0462 3457		#CYRILLIC CAPITAL LETTER YAT
+-lowercase \x0463 3458   #CYRILLIC SMALL LETTER YAT
+-lowercase \x0467 18   #CYRILLIC SMALL LETTER LITTLE YUS
+-uppercase \x046A 2467		#CYRILLIC CAPITAL LETTER BIG YUS
+-lowercase \x046B 124568   #CYRILLIC SMALL LETTER BIG YUS
+-lowercase \x0479 3468   #CYRILLIC SMALL LETTER UK DIGRAPH
+-sign \x0484 478    #CYRILLIC NON-SPACING PALATALIZATION
+-uppercase \x0490 1245678    #CYRILLIC CAPITAL LETTER GHE WITH UPTURN
+-lowercase \x0491 124568   #CYRILLIC SMALL LETTER GHE WITH UPTURN
+-lowercase \x04A3 13458    #CYRILLIC SMALL LETTER EN WITH DESCENDER
+-lowercase \x04AF 12568    #CYRILLIC SMALL LETTER STRAIGHT U
+-lowercase \x04BB 128    #CYRILLIC SMALL LETTER SHHA
+-lowercase \x04D9 2468   #CYRILLIC SMALL LETTER SCHWA
++#uppercase \x0401 1678   #CYRILLIC CAPITAL LETTER IO
++#uppercase \x0404 34578    #CYRILLIC CAPITAL LETTER UKRAINIAN IE
++#uppercase \x0406 1345678    #CYRILLIC CAPITAL LETTER BYELORUSSIAN-UKRAINIAN I
++#uppercase \x0407 145678   #CYRILLIC CAPITAL LETTER YI
++#uppercase \x0410 178   #CYRILLIC CAPITAL LETTER A
++#uppercase \x0411 1278  #CYRILLIC CAPITAL LETTER BE
++#uppercase \x0412 245678  #CYRILLIC CAPITAL LETTER VE
++#uppercase \x0413 124578   #CYRILLIC CAPITAL LETTER GHE
++#uppercase \x0414 14578    #CYRILLIC CAPITAL LETTER DE
++#uppercase \x0415 157    #CYRILLIC CAPITAL LETTER IE
++#uppercase \x0416 24578   #CYRILLIC CAPITAL LETTER ZHE
++#uppercase \x0417 135678   #CYRILLIC CAPITAL LETTER ZE
++#uppercase \x0418 2478    #CYRILLIC CAPITAL LETTER I
++#uppercase \x0419 1234678    #CYRILLIC CAPITAL LETTER SHORT I
++#uppercase \x041A 1378   #CYRILLIC CAPITAL LETTER KA
++#uppercase \x041B 12378    #CYRILLIC CAPITAL LETTER EL
++#uppercase \x041C 13478    #CYRILLIC CAPITAL LETTER EM
++#uppercase \x041D 134578   #CYRILLIC CAPITAL LETTER EN
++#uppercase \x041E 13578    #CYRILLIC CAPITAL LETTER O
++#uppercase \x041F 123478   #CYRILLIC CAPITAL LETTER PE
++#uppercase \x0420 123578   #CYRILLIC CAPITAL LETTER ER
++#uppercase \x0421 23478   #CYRILLIC CAPITAL LETTER ES
++#uppercase \x0422 234578   #CYRILLIC CAPITAL LETTER TE
++#uppercase \x0423 13678    #CYRILLIC CAPITAL LETTER U
++#uppercase \x0424 12478    #CYRILLIC CAPITAL LETTER EF
++#uppercase \x0425 12578    #CYRILLIC CAPITAL LETTER HA
++#uppercase \x0426 1478   #CYRILLIC CAPITAL LETTER TSE
++#uppercase \x0427 1234578    #CYRILLIC CAPITAL LETTER CHE
++#uppercase \x0428 15678    #CYRILLIC CAPITAL LETTER SHA
++#uppercase \x0429 134678   #CYRILLIC CAPITAL LETTER SHCHA
++#uppercase \x042A 1235678    #CYRILLIC CAPITAL LETTER HARD SIGN
++#uppercase \x042B 234678   #CYRILLIC CAPITAL LETTER YERU
++#uppercase \x042C 2345678    #CYRILLIC CAPITAL LETTER SOFT SIGN
++#uppercase \x042D 24678    #CYRILLIC CAPITAL LETTER E
++#uppercase \x042E 125678     #CYRILLIC CAPITAL LETTER YU
++#uppercase \x042F 124678   #CYRILLIC CAPITAL LETTER YA
++#lowercase \x0430 18   #CYRILLIC SMALL LETTER A
++#lowercase \x0431 128    #CYRILLIC SMALL LETTER BE
++#lowercase \x0432 24568   #CYRILLIC SMALL LETTER VE
++#lowercase \x0433 12458    #CYRILLIC SMALL LETTER GHE
++#lowercase \x0434 1458   #CYRILLIC SMALL LETTER DE
++#lowercase \x0435 158    #CYRILLIC SMALL LETTER IE
++#lowercase \x0436 2458   #CYRILLIC SMALL LETTER ZHE
++#lowercase \x0437 13568   #CYRILLIC SMALL LETTER ZE
++#lowercase \x0438 248    #CYRILLIC SMALL LETTER I
++#lowercase \x0439 123468   #CYRILLIC SMALL LETTER SHORT I
++#lowercase \x043A 138   #CYRILLIC SMALL LETTER KA
++#lowercase \x043B 1238   #CYRILLIC SMALL LETTER EL
++#lowercase \x043C 1348   #CYRILLIC SMALL LETTER EM
++#lowercase \x043D 13458   #CYRILLIC SMALL LETTER EN
++#lowercase \x043E 1358   #CYRILLIC SMALL LETTER O
++#lowercase \x043F 12348   #CYRILLIC SMALL LETTER PE
++#lowercase \x0440 12358    #CYRILLIC SMALL LETTER ER
++#lowercase \x0441 2348   #CYRILLIC SMALL LETTER ES
++#lowercase \x0442 23458   #CYRILLIC SMALL LETTER TE
++#lowercase \x0443 1368   #CYRILLIC SMALL LETTER U
++#lowercase \x0444 1248   #CYRILLIC SMALL LETTER EF
++#lowercase \x0445 1258   #CYRILLIC SMALL LETTER HA
++#lowercase \x0446 148   #CYRILLIC SMALL LETTER TSE
++#lowercase \x0447 123458   #CYRILLIC SMALL LETTER CHE
++#lowercase \x0448 1568   #CYRILLIC SMALL LETTER SHA
++#lowercase \x0449 13468    #CYRILLIC SMALL LETTER SHCHA
++#lowercase \x044A 123568   #CYRILLIC SMALL LETTER HARD SIGN
++#lowercase \x044B 23468    #CYRILLIC SMALL LETTER YERU
++#lowercase \x044C 234568   #CYRILLIC SMALL LETTER SOFT SIGN
++#lowercase \x044D 2468   #CYRILLIC SMALL LETTER E
++#lowercase \x044E 12568    #CYRILLIC SMALL LETTER YU
++#lowercase \x044F 12468    #CYRILLIC SMALL LETTER YA
++#lowercase \x0451 168    #CYRILLIC SMALL LETTER IO
++#lowercase \x0452 1468   #CYRILLIC SMALL LETTER DJE Serbocroatian
++#lowercase \x0454 3458   #CYRILLIC SMALL LETTER UKRAINIAN IE
++#lowercase \x0455 12368    #CYRILLIC SMALL LETTER DZE
++#lowercase \x0456 134568   #CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I
++#lowercase \x0457 14568    #CYRILLIC SMALL LETTER YI
++#lowercase \x0458 3458   #CYRILLIC SMALL LETTER JE
++#lowercase \x0459 1268   #CYRILLIC SMALL LETTER LJE
++#lowercase \x045A 12468    #CYRILLIC SMALL LETTER NJE
++#lowercase \x045B 1468   #CYRILLIC SMALL LETTER TSHE Serbocroatian
++#lowercase \x045E 3468   #CYRILLIC SMALL LETTER SHORT U
++#uppercase \x0462 3457		#CYRILLIC CAPITAL LETTER YAT
++#lowercase \x0463 3458   #CYRILLIC SMALL LETTER YAT
++#lowercase \x0467 18   #CYRILLIC SMALL LETTER LITTLE YUS
++#uppercase \x046A 2467		#CYRILLIC CAPITAL LETTER BIG YUS
++#lowercase \x046B 124568   #CYRILLIC SMALL LETTER BIG YUS
++#lowercase \x0479 3468   #CYRILLIC SMALL LETTER UK DIGRAPH
++#sign \x0484 478    #CYRILLIC NON-SPACING PALATALIZATION
++#uppercase \x0490 1245678    #CYRILLIC CAPITAL LETTER GHE WITH UPTURN
++#lowercase \x0491 124568   #CYRILLIC SMALL LETTER GHE WITH UPTURN
++#lowercase \x04A3 13458    #CYRILLIC SMALL LETTER EN WITH DESCENDER
++#lowercase \x04AF 12568    #CYRILLIC SMALL LETTER STRAIGHT U
++#lowercase \x04BB 128    #CYRILLIC SMALL LETTER SHHA
++#lowercase \x04D9 2468   #CYRILLIC SMALL LETTER SCHWA
+ 
+ #---- Hebrew Unicode
+-punctuation	\x05B0	3	#HEBREW POINT SHEVA
+-punctuation	\x05B1	26	#HEBREW POINT HATAF SEGOL
+-punctuation	\x05B2	25	#HEBREW POINT HATAF PATAH
+-punctuation	\x05B3	345	#HEBREW POINT HATAF QAMATS
+-punctuation	\x05B4	24	#HEBREW POINT HIRIQ
+-punctuation	\x05B5	34	#HEBREW POINT TSERE
+-punctuation	\x05B6	15	#HEBREW POINT SEGOL
+-punctuation	\x05B7	14	#HEBREW POINT PATAH
+-punctuation	\x05B8	126	#HEBREW POINT QAMATS
+-punctuation	\x05B9	135	#HEBREW POINT HOLAM
+-punctuation	\x05BB	136	#HEBREW POINT QUBUTS
+-punctuation	\x05BC	5	#HEBREW POINT DAGESH OR MAPIQ 
+-punctuation	\x05BD	4	#HEBREW POINT METEG
+-punctuation	\x05C1	1568	#HEBREW POINT SHIN DOT
+-punctuation	\x05C2	2348	#HEBREW POINT SIN DOT
+-letter	\x05D0	1	#HEBREW LETTER ALEF
+-letter	\x05D1	1236	#HEBREW LETTER BET
+-letter	\x05D2	1245	#HEBREW LETTER GIMEL
+-letter	\x05D3	145	#HEBREW LETTER DALET
+-letter	\x05D4	125	#HEBREW LETTER HE
+-letter	\x05D5	2456	#HEBREW LETTER VAV
+-letter	\x05D6	1356	#HEBREW LETTER ZAYIN
+-letter	\x05D7	1346	#HEBREW LETTER HET
+-letter	\x05D8	2345	#HEBREW LETTER TET
+-letter	\x05D9	245	#HEBREW LETTER YOD
+-letter	\x05DA	16	#HEBREW LETTER FINAL KAF
+-letter	\x05DB	16	#HEBREW LETTER KAF
+-letter	\x05DC	123	#HEBREW LETTER LAMED
+-letter	\x05DD	134	#HEBREW LETTER FINAL MEM
+-letter	\x05DE	134	#HEBREW LETTER MEM
+-letter	\x05DF	1345	#HEBREW LETTER FINAL NUN
+-letter	\x05E0	1345	#HEBREW LETTER NUN
+-letter	\x05E1	234	#HEBREW LETTER SAMEKH
+-letter	\x05E2	1246	#HEBREW LETTER AYIN
+-letter	\x05E3	124	#HEBREW LETTER FINAL PE
+-letter	\x05E4	124	#HEBREW LETTER PE
+-letter	\x05E5	2346	#HEBREW LETTER FINAL TSADI
+-letter	\x05E6	2346	#HEBREW LETTER TSADI
+-letter	\x05E7	12345	#HEBREW LETTER QOF
+-letter	\x05E8	1235	#HEBREW LETTER RESH
+-letter	\x05E9	146	#HEBREW LETTER SHIN
+-letter	\x05EA	1456	#HEBREW LETTER TAV
+-letter	\xFB1D	35   #HEBREW LETTER YOD WITH HIRIQ
+-letter	\xFB2A	146	  #HEBREW LETTER SHIN WITH SHIN DOT
+-letter	\xFB2B	156	  #HEBREW LETTER SHIN WITH SIN DOT
+-letter	\xFB31	12	#HEBREW LETTER BET WITH DAGESH
+-letter	\xFB35	346	#HEBREW LETTER VAV WITH DAGESH
+-letter	\xFB3A	13	#HEBREW LETTER FINAL KAF WITH DAGESH
+-letter	\xFB3B	13	#HEBREW LETTER KAF WITH DAGESH
+-letter	\xFB43	1234	#HEBREW LETTER FINAL PE WITH DAGESH
+-letter	\xFB44	1234	#HEBREW LETTER PE WITH DAGESH
+-letter	\xFB4A	1256	#HEBREW LETTER TAV WITH DAGESH
++#punctuation	\x05B0	3	#HEBREW POINT SHEVA
++#punctuation	\x05B1	26	#HEBREW POINT HATAF SEGOL
++#punctuation	\x05B2	25	#HEBREW POINT HATAF PATAH
++#punctuation	\x05B3	345	#HEBREW POINT HATAF QAMATS
++#punctuation	\x05B4	24	#HEBREW POINT HIRIQ
++#punctuation	\x05B5	34	#HEBREW POINT TSERE
++#punctuation	\x05B6	15	#HEBREW POINT SEGOL
++#punctuation	\x05B7	14	#HEBREW POINT PATAH
++#punctuation	\x05B8	126	#HEBREW POINT QAMATS
++#punctuation	\x05B9	135	#HEBREW POINT HOLAM
++#punctuation	\x05BB	136	#HEBREW POINT QUBUTS
++#punctuation	\x05BC	5	#HEBREW POINT DAGESH OR MAPIQ 
++#punctuation	\x05BD	4	#HEBREW POINT METEG
++#punctuation	\x05C1	1568	#HEBREW POINT SHIN DOT
++#punctuation	\x05C2	2348	#HEBREW POINT SIN DOT
++#letter	\x05D0	1	#HEBREW LETTER ALEF
++#letter	\x05D1	1236	#HEBREW LETTER BET
++#letter	\x05D2	1245	#HEBREW LETTER GIMEL
++#letter	\x05D3	145	#HEBREW LETTER DALET
++#letter	\x05D4	125	#HEBREW LETTER HE
++#letter	\x05D5	2456	#HEBREW LETTER VAV
++#letter	\x05D6	1356	#HEBREW LETTER ZAYIN
++#letter	\x05D7	1346	#HEBREW LETTER HET
++#letter	\x05D8	2345	#HEBREW LETTER TET
++#letter	\x05D9	245	#HEBREW LETTER YOD
++#letter	\x05DA	16	#HEBREW LETTER FINAL KAF
++#letter	\x05DB	16	#HEBREW LETTER KAF
++#letter	\x05DC	123	#HEBREW LETTER LAMED
++#letter	\x05DD	134	#HEBREW LETTER FINAL MEM
++#letter	\x05DE	134	#HEBREW LETTER MEM
++#letter	\x05DF	1345	#HEBREW LETTER FINAL NUN
++#letter	\x05E0	1345	#HEBREW LETTER NUN
++#letter	\x05E1	234	#HEBREW LETTER SAMEKH
++#letter	\x05E2	1246	#HEBREW LETTER AYIN
++#letter	\x05E3	124	#HEBREW LETTER FINAL PE
++#letter	\x05E4	124	#HEBREW LETTER PE
++#letter	\x05E5	2346	#HEBREW LETTER FINAL TSADI
++#letter	\x05E6	2346	#HEBREW LETTER TSADI
++#letter	\x05E7	12345	#HEBREW LETTER QOF
++#letter	\x05E8	1235	#HEBREW LETTER RESH
++#letter	\x05E9	146	#HEBREW LETTER SHIN
++#letter	\x05EA	1456	#HEBREW LETTER TAV
++#letter	\xFB1D	35   #HEBREW LETTER YOD WITH HIRIQ
++#letter	\xFB2A	146	  #HEBREW LETTER SHIN WITH SHIN DOT
++#letter	\xFB2B	156	  #HEBREW LETTER SHIN WITH SIN DOT
++#letter	\xFB31	12	#HEBREW LETTER BET WITH DAGESH
++#letter	\xFB35	346	#HEBREW LETTER VAV WITH DAGESH
++#letter	\xFB3A	13	#HEBREW LETTER FINAL KAF WITH DAGESH
++#letter	\xFB3B	13	#HEBREW LETTER KAF WITH DAGESH
++#letter	\xFB43	1234	#HEBREW LETTER FINAL PE WITH DAGESH
++#letter	\xFB44	1234	#HEBREW LETTER PE WITH DAGESH
++#letter	\xFB4A	1256	#HEBREW LETTER TAV WITH DAGESH
+ 
+ #---- Special Signs
+ sign \xFEFF 0   #Zero width no-break Space
+diff --git a/tables/pt-pt-g1.utb b/tables/pt-pt-g1.utb
+index def33a0..ffbe9f1 100644
+--- a/tables/pt-pt-g1.utb
++++ b/tables/pt-pt-g1.utb
+@@ -31,25 +31,27 @@ space \s 0 blank					# 32
+ 
+ punctuation ! 235				exclamation mark	33
+ punctuation " 236				double quote			34
+-sign # 3456-13					number sign				35
++sign # 3456-3456					number sign				35
+ sign $ 56								dollar						36						x0024
+ sign % 456-356					percent						37
+-sign & 12346						ampersand					38
+-punctuation ' 3					apostrophe				39
++sign & 3456-12346						ampersand					38
++punctuation ' 3456-3					apostrophe				39
+ punctuation ( 126-3			left parenthesis  40
+ punctuation ) 6-345			right parenthesis	41
+ punctuation * 35				asterisk					42
+-math + 235							plus							43
++math + 3456-235							plus							43
+ punctuation , 2					coma							44
+ punctuation - 36				hyphen-minus			45
+ punctuation . 3					point							46
+ math / 6-2							solidus						47
+-include digits6Dots.uti
++
++include litdigits6Dots.uti
++
+ punctuation : 25			colon					58		x003A
+ punctuation ;	23			semicolon			59		x003B
+-math < 246													60		x003C
++math < 3456-246													60		x003C
+ math = 2356						equal sign		61		x003D
+-math > 135													62		x003E
++math > 3456-135													62		x003E
+ punctuation ? 26										63		x003F
+ sign @ 156						commercial at	64		x0040
+ 
+@@ -71,24 +73,24 @@ sign ~ 5						tilde										x007E
+ sign \x0080 15-136-1235-135										x0080
+ 
+ space \X00A0 0				# no-break space													x00A0
+-sign ¢ 4-14						cent sign																	x00A2
+-sign £ 4-123					pound sign																x00A3
+-sign ¤ 45-15					currency sign															x00A4
+-sign ¥ 45-13456				yen	sign																	x00A5
+-sign § 234-234				paragraph	sign														x00A7
++sign ¢ 3456-4-14						cent sign																	x00A2
++sign £ 3456-4-123					pound sign																x00A3
++sign ¤ 3456-45-15					currency sign															x00A4
++sign ¥ 3456-45-13456				yen	sign																	x00A5
++sign § 3456-234-234				paragraph	sign														x00A7
+ sign © 6-14-135-1234-13456-1235-24-1245-125-2345		copyright		x00A9
+-sign \x00AA 1					feminine ordinal indicator
+-punctuation « 6-236		left-pointing double quotation mark			x00AB
++sign \x00AA 3-1					feminine ordinal indicator
++#begword « 236-3		left-pointing double quotation mark			x00AB
+ sign ° 356						degree sign																x00B0
+ sign ² 16-3456-12				superscript 2 sign												x00B2
+ sign ³ 16-3456-14				superscript 3 sign												x00B3
+ # sign \x00B4 35			acute accent
+ sign \x00B4 35					acute accent
+-sign \x00B5 46-134		# 181				µ micro sign									x00B5
+-sign \x00B6 346				#						¶ pilcrow sign								x00B6
++# sign \x00B5 4-134		# 181				µ micro sign									x00B5
++sign \x00B6 3456-346				#						¶ pilcrow sign								x00B6
+ sign ¹ 16-3456-1					superscript 1 sign												x00B9
+-sign \x00BA 135				masculine ordinal indicator
+-punctuation » 6-236		right-pointing double quotation mark		x00BB
++sign \x00BA 3-135				masculine ordinal indicator
++punctuation » 6-356		right-pointing double quotation mark		x00BB
+ sign ¼ 3456-2-145			vulgar fraction one quarter								x00BC
+ sign ½ 3456-2-12			vulgar fraction one half									x00BD
+ sign ¾ 3456-25-145		vulgar fraction 3 quarters				x00BE
+@@ -102,14 +104,16 @@ uplow Ää 345								A with diaeresis				x00C4 / 00E4
+ uplow Çç 12346							letter c with cedilla		x00C7 / 00E7
+ uplow \x00C8\x00E8 2346		e with grave è					x00C8 / 00E8
+ uplow \x00C9\x00E9 123456		e with acute é					x00C9 / 00E9
++uplow \x00C9\x00E9 12345-6		e with acute é					x00C9 / 00E9
+ uplow \x00CA\x00EA 126			e with circumflex				x00CA /	00EA
+ uplow \x00CC\x00EC 146				i with grave						x00CC	/ 00EC
+ uplow \x00CD\x00ED 34				i with acute						x00CD	/ 00ED
+-uplow \x00D2\x00F2 2456			o with grave ò					x00D2 / 00F2
++uplow \x00D2\x00F2 3456-2456			o with grave ò					x00D2 / 00F2
+ uplow \x00D3\x00F3 346			o with acute ó					x00D3 / 00F3
+ uplow \x00D4\x00F4 1456			o with circumflex ô			x00D4 / 00F4
+ uplow \x00D5\x00F5 246			o with tilde						x00D5 / 00F5
+ uplow Öö 246								O with diaeresis				x00D6 / 00F6
++uplow \x00D9\x00F9 3456-156			u with grave					x00D9 / 00F9
+ uplow \X00DA\x00FA 23456		u with acute						x00DA / 00FA
+ uplow \x00DC\x00FC 1256			u with diaeresis				x00FC
+ 
+@@ -117,11 +121,11 @@ uplow \x00D1\x00F1 12456			n with tilde
+ 
+ 
+ math ÷ 256			division sign															x00F7
+-math × 236			multiplication sign												x00D7
++math × 3456-236			multiplication sign												x00D7
+ 
+ # this is for compiler
+-uplow \x0104\x0105 6			# a with ogonek
+-uplow \x0118\x0119 3456		# the letter e with ogonek
++# uplow \x0104\x0105 6			# a with ogonek
++# uplow \x0118\x0119 3456		# the letter e with ogonek
+ 
+ 
+ punctuation	\x2010 36						# 8208			hyphen
+@@ -132,12 +136,12 @@ punctuation	\x2013 36-36				# 8211			en dash (smart minus sign)
+ punctuation	\x2014 36-36										em dash
+ sign \x2015 4-14														horizontal bar
+ punctuation	\x2018 56-236						# 8216			smart single left quotation mark
+-punctuation	\x2019 56-236						# 8217			smart single right quotation mark
+-sign \x20AC 4-15														Euro sign				x0080
++punctuation	\x2019 356-23						# 8217			smart single right quotation mark
++sign \x20AC 3456-4-15														Euro sign				x0080
+ punctuation	\x201C 56-236					# 8220			smart opening double quote
+-punctuation	\x201D 56-236					# 8221			smart closing double quote
++punctuation	\x201D 356-23					# 8221			smart closing double quote
+ punctuation	\x201E 56-236					# 8222			smart double low quotation mark
+-punctuation	\x201F 56-236					# 8223			double high reverse quotation mark
++punctuation	\x201F 356-23					# 8223			double high reverse quotation mark
+ 
+ sign \x2022 246-135											bullet
+ punctuation \x2026 35-26-35	# 8230	smart ellipsis
+@@ -153,21 +157,21 @@ capsign 46
+ # begcaps 46-46-136			# uncomment if you don't want capitalization
+ begcaps 46-46
+ 
+-begital 35
+-begbold 35
+-begunder 35
+-endital 35
+-endbold 35
+-endunder 35
++begital 3456-35
++begbold 3456-35
++begunder 3456-35
++endital 3456-35
++endbold 3456-35
++endunder 3456-35
+ begcomp 5-2
+ endcomp 5-2
+ 
+-begnum ( 126
+-endnum ) 345
+-begnum [ 12356
+-endnum ] 23456
+-endnum \x00AA 1
+-endnum \x00BA 135
++begnum ( 126-3
++endnum ) 6-345
++begnum [ 12356-3
++endnum ] 6-23456
++endnum \x00AA 3-1
++endnum \x00BA 3-135
+ numsign 3456
+ midnum , 2
+ midnum . 3
+@@ -176,11 +180,174 @@ midnum - 36-3456
+ midnum / 6-2-3456
+ midnum : 25-3456
+ 
+-endnum # 56-3456
++# Letters a-j after numbers:
++endnum a 5-1
++endnum b 5-12
++endnum c 5-14
++endnum d 5-145
++endnum e 5-15
++endnum f 5-124
++endnum g 5-1245
++endnum h 5-125
++endnum i 5-24
++endnum j 5-245
++
++endword á. 12356-3
++endword ê. 126-3
++
++# Greek alphabet:
++uppercase \x0391 45-1 ALPHA
++uppercase \x0392 45-12 BETA
++uppercase \x0393 45-1245 GAMMA
++uppercase \x0394 45-145 DELTA
++uppercase \x0395 45-15 EPSILON
++uppercase \x0396 45-1356 ZETA
++uppercase \x0397 45-126 ETA
++uppercase \x0398 45-1456 THETA
++uppercase \x0399 45-24 IOTA
++uppercase \x039A 45-13 KAPPA
++uppercase \x039B 45-123 LAMBDA
++uppercase \x039C 45-134 MU
++uppercase \x039D 45-1345 NU
++uppercase \x039E 45-1346 XI
++uppercase \x039F 45-135 OMICRON
++uppercase \x03A0 45-1234 PI
++uppercase \x03A1 45-1235 RHO
++uppercase \x03A3 45-234 SIGMA
++uppercase \x03A4 45-136 TAU
++uppercase \x03A5 45-136 UPSILON
++uppercase \x03A6 45-124 PHI
++uppercase \x03A7 45-12346 CHI
++uppercase \x03A8 45-1246 PSI
++uppercase \x03A9 45-2456 OMEGA
++lowercase \x03B1 4-1 ALPHA
++lowercase \x03B2 4-12 BETA
++lowercase \x03B3 4-1245 GAMMA
++lowercase \x03B4 4-145 DELTA
++lowercase \x03B5 4-15 EPSILON
++lowercase \x03B6 4-1356 ZETA
++lowercase \x03B7 4-156 ETA
++lowercase \x03B8 4-1456 THETA
++lowercase \x03B9 4-24 IOTA
++lowercase \x03BA 4-13 KAPPA
++lowercase \x03BB 4-123 LAMBDA
++lowercase \x03BC 4-134 MU
++lowercase \x03BD 4-1345 NU
++lowercase \x03BE 4-1346 XI
++lowercase \x03BF 4-135 OMICRON
++lowercase \x03C0 4-1234 PI
++lowercase \x03C1 4-1235 RHO
++lowercase \x03C3 4-234 SIGMA
++lowercase \x03C4 4-2345 TAU
++lowercase \x03C5 4-136 UPSILON
++lowercase \x03C6 4-124 PHI
++lowercase \x03C7 4-12346 CHI
++lowercase \x03C8 4-13456 PSI
++lowercase \x03C9 4-2456 OMEGA
++
++# Hebrew Alphabet:
++letter	\x05d0	456-1	# HEBREW LETTER ALEF
++letter	\x05d1	456-12	# HEBREW LETTER BET
++letter	\x05d2	456-1245	# HEBREW LETTER GIMEL
++letter	\x05d3	456-145	# HEBREW LETTER DALET
++letter	\x05d4	456-125	# HEBREW LETTER HE
++letter	\x05d5	456-2456	# HEBREW LETTER VAV
++letter	\x05d6	456-1356	# HEBREW LETTER ZAYIN
++letter	\x05d7	456-1346	# HEBREW LETTER HET
++letter	\x05d8	456-2345	# HEBREW LETTER TET
++letter	\x05d9	456-245	# HEBREW LETTER YOD
++# letter	\x05da	456-168	# HEBREW LETTER FINAL KAF
++letter	\x05db	456-13	# HEBREW LETTER KAF
++letter	\x05dc	456-123	# HEBREW LETTER LAMED
++# letter	\x05dd	456-1348	# HEBREW LETTER FINAL MEM
++letter	\x05de	456-134	# HEBREW LETTER MEM
++# letter	\x05df	456-13458	# HEBREW LETTER FINAL NUN
++letter	\x05e0	456-1345	# HEBREW LETTER NUN
++letter	\x05e1	456-234	# HEBREW LETTER SAMEKH
++letter	\x05e2	456-1246	# HEBREW LETTER AYIN
++# letter	\x05e3	456-1248	# HEBREW LETTER FINAL PE
++letter	\x05e4	456-1234	# HEBREW LETTER PE
++# letter	\x05e5	456-23468	# HEBREW LETTER FINAL TSADI
++letter	\x05e6	456-2346	# HEBREW LETTER TSADI
++letter	\x05e7	456-12345	# HEBREW LETTER QOF
++letter	\x05e8	456-1235	# HEBREW LETTER RESH
++letter	\x05e9	456-146	# HEBREW LETTER SHIN
++letter	\x05ea	456-1456	# HEBREW LETTER TAV
++
++# Cylliric Alphabet
++uppercase \x0401 56-16
++uppercase \x0410 56-1
++uppercase \x0411 56-12
++uppercase \x0412 56-2456
++uppercase \x0413 56-1245
++uppercase \x0414 56-145
++uppercase \x0415 56-15
++uppercase \x0416 56-245
++uppercase \x0417 56-1356
++uppercase \x0418 56-24
++uppercase \x0419 56-12346
++uppercase \x041A 56-13
++uppercase \x041B 56-123
++uppercase \x041C 56-134
++uppercase \x041D 56-1345
++uppercase \x041E 56-135
++uppercase \x041F 56-1234
++uppercase \x0420 56-1235
++uppercase \x0421 56-234
++uppercase \x0422 56-2345
++uppercase \x0423 56-136
++uppercase \x0424 56-124
++uppercase \x0425 56-125
++uppercase \x0426 56-14
++uppercase \x0427 56-12345
++uppercase \x0428 56-156
++uppercase \x0429 56-1346
++uppercase \x042A 56-12356
++uppercase \x042B 56-2346
++uppercase \x042C 56-23456
++uppercase \x042D 56-246
++uppercase \x042E 56-1256
++uppercase \x042F 56-1246
++lowercase \x0430 6-16
++lowercase \x0431 6-1
++lowercase \x0432 6-12
++lowercase \x0433 6-2456
++lowercase \x0434 6-1245
++lowercase \x0435 6-145
++lowercase \x0436 6-15
++lowercase \x0437 6-245
++lowercase \x0438 6-1356
++lowercase \x0439 6-24
++lowercase \x043A 6-12346
++lowercase \x043B 6-13
++lowercase \x043C 6-123
++lowercase \x043D 6-134
++lowercase \x043E 6-1345
++lowercase \x043F 6-135
++lowercase \x0440 6-1234
++lowercase \x0441 6-1235
++lowercase \x0442 6-234
++lowercase \x0443 6-2345
++lowercase \x0444 6-136
++lowercase \x0445 6-124
++lowercase \x0446 6-125
++lowercase \x0447 6-14
++lowercase \x0448 6-12345
++lowercase \x0449 6-156
++lowercase \x044A 6-1346
++lowercase \x044B 6-12356
++lowercase \x044C 6-2346
++lowercase \x044D 6-23456
++lowercase \x044E 6-246
++lowercase \x044F 6-1256
++lowercase \x0451 6-1246
++
++
++
++# repeated ... 3-3-3		points de suite
++# repeated --- 36-36-36
++# repeated ___ 46-36
+ 
+-repeated ... 3-3-3		points de suite
+-repeated --- 36-36-36
+-repeated ___ 46-36
++# always \s--\s 36-36	tiret
+ 
+-always \s--\s 36-36	tiret
+ 
+diff --git a/tables/ru-ru-g1.utb b/tables/ru-ru-g1.utb
+index 619da78..a002f4b 100644
+--- a/tables/ru-ru-g1.utb
++++ b/tables/ru-ru-g1.utb
+@@ -1,334 +1,326 @@
+-# Russian Braille Table for TSS
+-# by Mike Sivill <mike.sivill@viewplus.com>
+-
+-#include text_nabcc.dis All display opcodes
+-include ru-ru.dis All display opcodes	#replace text_nabcc.dis Yuemei Sun 03/12/08
+-
+-
+-# ----------- define all chars --------------------------------------
+-
+-space \t 0
+-space \x000A 0
+-space \x000D 0
+-space \s 0 blank	
+-replace \x0007
+-punctuation ! 2346				# 33
+-punctuation " 5						# 34
+-sign # 3456								# 35
+-sign $ 1246								# 36
+-sign % 146		# 37
+-sign & 12346							# 38
+-punctuation ' 3						# 39 apostrophe
+-punctuation ( 12356				# 40
+-punctuation ) 23456				# 41
+-sign * 16									# 42
+-math + 346								# 43
+-punctuation , 6						# 44
+-punctuation - 36					# 45
+-punctuation . 46					# 46
+-math / 34									# 47
+-punctuation \x00AB 236
+-punctuation \x00BB 356
+-include loweredDigits6Dots.uti
+-punctuation : 156					# 58
+-punctuation ; 56					# 59
+-math < 126								# 60
+-math = 123456							# 61
+-math > 345								# 62
+-punctuation ? 1456				# 63
+-sign @ 47									# 64
+-
+-
+-# The Alphabet
+-uplow \x0410\x0430 1
+-uplow \x0411\x0431 12
+-uplow \x0412\x0432 2456
+-uplow \x0413\x0433 1245
+-uplow \x0414\x0434 145
+-uplow \x0415\x0435 15
+-uplow \x0416\x0436 245
+-uplow \x0417\x0437 1356
+-uplow \x0418\x0438 24
+-uplow \x0419\x0439 12346
+-uplow \x041A\x043A 13
+-uplow \x041B\x043B 123
+-uplow \x041C\x043C 134
+-uplow \x041D\x043D 1345
+-uplow \x041E\x043E 135
+-uplow \x041F\x043F 1234
+-uplow \x0420\x0440 1235
+-uplow \x0421\x0441 234
+-uplow \x0422\x0442 2345
+-uplow \x0423\x0443 136
+-uplow \x0424\x0444 124
+-uplow \x0425\x0445 125
+-uplow \x0426\x0446 14
+-uplow \x0427\x0447 12345
+-uplow \x0428\x0448 156
+-uplow \x0429\x0449 1346
+-uplow \x042A\x044A 12356
+-uplow \x042B\x044B 2346
+-uplow \x042C\x044C 23456
+-uplow \x042D\x044D 246
+-uplow \x042E\x044E 1256
+-uplow \x042F\x044F 1246 
+-uplow \x0401\x0451 16 
+-
+-punctuation [ 2467				# 91
+-sign \\ 12567							# 92
+-punctuation ] 124567			# 93
+-sign ^ 457								# 94 circumflex accent
+-sign _ 456								# 95 underscore
+-sign ` 4									# 96 grave accent
+-# a - z										# 97 - 122
+-punctuation { 246					# 123
+-sign | 1256								# 124
+-punctuation } 12456				# 125
+-math ~ 45									# 126
+-
+-space \X00A0 0						# 160 no-break space
+-sign \x00A2 4-14					# 162 ¢ cents sign
+-sign \x00A3 4-123					# 163 £ pounds sign
+-
+-sign \x00A5 4-13456				#	165 ¥ yen sign
+-
+-sign § 4-234-3						# 167 section sign \x00A7
+-
+-sign \x00A9 2356-6-14-2356 # 169	© copyright sign
+-sign \x00AE 2356-6-1235-2356	# Registered
+-sign \X2116 1345 NUMERO SIGN 
+-punctuation \x00Ad 36			# 173	  soft hyphen
+-sign \x00B0 356 degrees
+-sign \x00B4 4
+-always \x00B4 4 # acute accent sign
+-sign \x00B5 2-134 # micro sign, (mu)
+-sign \x00B6 4-1234-345		#	182	  ¶ pilcrow sign
+-math \x00D7 56-236				# 215		× multiplication sign
+-
+-math \x00F7 56-256				# 247		÷ division sign
+-
+-punctuation \x2010 36			# 8208  hyphen
+-punctuation \x2011 23478	# 8209  non-breaking hyphen
+-
+-punctuation \x2013 36-36		# 8211	en dash
+-punctuation \x2014 36-36		# em dash
+-punctuation	\x2018 6-236			# 8216	smart single left quotation mark
+-punctuation	\x2019 356-3			# 8217	smart single right quotation mark
+-
+-punctuation	\x201C 236		# 8220	smart opening double quote
+-punctuation	\x201D 356		# 8221	smart closing double quote
+-punctuation	\x201E 236		# 8222	smart double low quotation mark
+-punctuation	\x201F 356		# 8223	smart double high reverse quotation mark
+-
+-punctuation \x2026 256-256-256 	# 8230 smart ellipsis
+-sign \x20AC 4-15					# 8364 Euro sign anywhere else
+-
+-# --------------------------- end definitions ---------------------------------
+-
+-
+-# Braille indicators
+-numsign 3456  number sign, just a dots operand
+-capsign 45
+-begital 456 
+-firstwordital 456
+-
+-# the decimal digits
+-include litdigits6Dots.uti
+-
+-# Letters are defined in en-chardefs
+-include chardefs.cti
+-
+-
+-# accented letters
+-
+-uplow \x00C0\x00E0 1				# a with grave
+-uplow \x00C1\x00E1 1				# a with acute
+-uplow \x00C2\x00E2 1				# a with circumflex
+-uplow \x00C3\x00E3 1				# a with tilde
+-uplow \x00C4\x00E4 1				# a with dieresis
+-uplow \x00C5\x00E5 1				# a with ring above
+-uplow \x00C6\x00E6 1				# letter ae
+-uplow \x00C7\x00E7 14				# c with cedilla
+-uplow \x00C8\x00E8 15				# e with grave
+-uplow \x00C9\x00E9 15				# e with acute
+-uplow \x00CA\x00EA 15				# e with circumflex
+-uplow \x00CB\x00EB 15				# e with dieresis
+-uplow \x00CC\x00EC 24				# i with grave above
+-uplow \x00CD\x00ED 24				# i with acute above
+-uplow \x00CE\x00EE 24				# i with circumflex
+-uplow \x00CF\x00EF 24				# i with dieresis
+-uplow \x00D0\x00F0 15				# letter eth
+-uplow \x00D1\x00F1 1345			# n with tilde
+-uplow \x00D2\x00F2 135			# o with grave above
+-uplow \x00D3\x00F3 135			# o with acute above
+-uplow \x00D4\x00F4 135			# o with circumflex
+-uplow \x00D5\x00F5 135			# o with tilde
+-uplow \x00D6\x00F6 135			# o with dieresis
+-# \x00D7	× multiplication sign	----------------------
+-uplow \x00D8\x00F8 135			# o with stroke
+-uplow \x00D9\x00F9 136			# u with grave above
+-uplow \x00DA\x00FA 136			# u with acute above
+-uplow \x00DB\x00FB 136			# u with circumflex above
+-uplow \x00DC\x00FC 136				# u with dieeresis
+-uplow \x00DD\x00FD 13456		# y with acute above
+-uplow \x00DE\x00FE 4-1456                 # letter thorn
+-letter \x00DF 2346		# small sharp s
+-uplow \x0174\x0175 4-2456 w with circumflex
+-uplow \x0176\x0177 4-13456 # y with circumflex
+-uplow \x0178\x00ff 4-13456 # y with diaeresis
+-uplow \x1ef2\x1ef3 4-13456 # y with grave
+-largesign \x00C0 4-1      [C0] upper a grave
+-largesign \x00E0   4-1      [E0] lower a grave
+-largesign \x00C1 4-1      [C1] upper a acute
+-largesign \x00E1   4-1      [E1] lower a acute
+-largesign \x00C2 4-1      [C2] upper a circumflex
+-largesign \x00E2   4-1      [E2] lower a circumflex
+-largesign \x00C3 4-1      [C3] upper a tilde
+-largesign \x00E3   4-1      [E3] lower a tilde
+-largesign \x00C4 4-1      [C4] upper a dieresis
+-largesign \x00E4   4-1      [E4] lower a dieresis
+-
+-largesign \x00C5 4-1      [C5] upper a ring
+-largesign \x00E5   4-1      [E5] lower a ring
+-
+-largesign \x00C6 1-15     [C6] upper ae
+-largesign \x00E6   1-15			[E6] lower ae
+-
+-largesign \x00C7 4-14     [C7] upper c cedilla
+-largesign \x00E7   4-14     [E7] lower c cedilla
+-
+-largesign \x00C8 4-15     [C8] upper e grave
+-largesign \x00E8   4-15     [E8] lower e grave
+-
+-largesign \x00C9 4-15     [C9] upper e acute
+-largesign \x00E9   4-15     [E9] lower e acute
+-
+-largesign \x00CA 4-15     [CA] upper e circumflex
+-largesign \x00EA   4-15     [EA] lower e circumflex
+-
+-largesign \x00CB 4-15     [CB] upper e dieresis
+-largesign \x00EB   4-15     [EB] lower e dieresis
+-
+-largesign \x00CC 4-24     [CC] upper i grave
+-largesign \x00EC   4-24     [EC] lower i grave
+-
+-largesign \x00CD 4-24     [CD] upper i acute
+-largesign \x00ED   4-24     [ED] lower i acute
+-
+-largesign \x00CE 4-24     [CE] upper i circumflex
+-largesign \x00EE   4-24     [EE] lower i circumflex
+-
+-largesign \x00CF 4-24     [CF] upper i dieresis
+-largesign \x00EF   4-24     [EF] lower i dieresis
+-
+-largesign \x00D0 4-15     [D0] upper eth
+-largesign \x00F0   4-15     [F0] lower eth
+-
+-largesign \x00D1 4-1345   [D1] upper n tilde
+-largesign \x00F1   4-1345   [F1] lower n tilde
+-
+-largesign \x00D2 4-135    [D2] upper o grave
+-largesign \x00F2   4-135    [F2] lower o grave
+-
+-largesign \x00D3 4-135    [D3] upper o acute
+-largesign \x00F3   4-135    [F3] lower o acute
+-
+-largesign \x00D4 4-135    [D4] upper o circumflex
+-largesign \x00F4   4-135    [F4] lower o circumflex
+-
+-largesign \x00D5 4-135    [D5] upper o tilde
+-largesign \x00F5   4-135    [F5] lower o tilde
+-
+-largesign \x00D6 4-135    [D6] upper o dieresis
+-largesign \x00F6   4-135			[F6] lower o dieresis
+-
+-largesign \x00D8 4-135    [D8] upper o slash
+-largesign \x00f8   4-135    [F8] lower o slash
+-
+-largesign \x00D9 4-136    [D9] upper u grave
+-largesign \x00F9   4-136    [F9] lower u grave
+-
+-largesign \x00DA 4-136    [DA] upper u acute
+-largesign \x00FA   4-136    [FA] lower u acute
+-
+-largesign \x00DB 4-136    [DB] upper u circumflex
+-largesign \x00FB   4-136    [FB] lower u circumflex
+-
+-largesign \x00DC 4-136    [DC] upper u dieresis
+-largesign \x00FC   4-136    [FC] lower u dieresis
+-
+-largesign \x00DD 4-13456  [DD] upper y acute
+-largesign \x00FD   4-13456  [FD] lower y acute
+-
+-largesign \x00DE 4-2345   [DE] upper t horn
+-largesign \x00FE   4-2345   [FE] lower t horn
+-
+-largesign \x00DF 234-234 (DF) lower ss
+-
+-largesign \x0174 4-2456 lower w circumflex
+-largesign \x0175 4-2456 upper w circumflex
+-
+-largesign \x0176 4-13456 upper y circumflex
+-largesign \x0177 4-13456 lower y circumflex
+-
+-largesign \x0178 4-13456 upper y with dieresis
+-largesign \x00FF 4-13456 lower y with dieresis
+-
+-largesign \x1EF2 4-13456 upper y with grave
+-largesign \x1EF3 4-13456 lower y with grave
+-
+-# punctuation
+-punctuation \x2013 36-36		# 8211	en dash
+-punctuation \x2014 36-36		# em dash
+-prepunc ( 126
+-postpunc ) 345
+-begword ` 6-236
+-prepunc " 236
+-postpunc " 356
+-always \x00AB 236 (opening quotation mark) 
+-always \x00BB 356 (closing quotation mark)
+-prepunc ' 6-236
+-postpunc ' 356-3
+-word 'em = 
+-word 'tis =
+-word 'twas =
+-begnum # 1345 print number sign before number
+-begnum ° 145-1245 degrees sign
+-endnum ° 56-145-1245 ;dg degrees sign
+-begnum  \x20AC 15       # euro sign at beginning of number
+-endnum  \x20AC 4-15       # euro sign atend  of number
+-postpunc , 2
+-hyphen - 36
+-#capsnocont
+-postpunc . 256
+-postpunc ; 23
+-postpunc : 25
+-postpunc ! 235
+-always / 34
+-always < 5-13
+-always > 46-2
+-postpunc ? 26
+-midnum + 0-235-3456
+-always + 235
+-endnum % 3456-245-356 
+-always ^ 4
+-always ~ 12456
+-always & 12346
+-always * 35
+-midword \x2019 3	# stupid smart apostrophe
+-always [ 45
+-always ] 3456
+-always { 46
+-always } 6
+-prepunc ` 6-236
+-always @ 146
+-always \\ 456-16
+-always | 456
+-always ... 256-256-256
+-always .\s.\s. 256-256-256 . . .
+-always $ 256-3456
+-
+-# special character sequences
+-sign \x00BD 3456-1-34-12	# 1/2 fraction
+-sign \x00BC 3456-1-34-145	# 1/4 fraction
+-sign \x00BE 3456-14-34-145	# 3/4 fraction
++# Russian Braille Table for TSS
++# by Mike Sivill <mike.sivill@viewplus.com>
++
++#include text_nabcc.dis All display opcodes
++#include ru-ru.dis All display opcodes	#replace text_nabcc.dis Yuemei Sun 03/12/08
++
++# ----------- define all chars --------------------------------------
++
++punctuation ! 235				# 33
++punctuation " 236						# 34
++sign # 4-1345								# 35
++sign $ 4-145								# 36
++sign % 3456-245-356		# 37
++sign & 6-12346							# 38
++punctuation ' 3						# 39 apostrophe
++punctuation ( 126				# 40
++punctuation ) 345				# 41
++sign * 6-16									# 42
++math + 6-235								# 43
++punctuation , 2						# 44
++punctuation - 36					# 45
++punctuation . 256					# 46
++math / 34									# 47
++punctuation \x00AB 236
++punctuation \x00BB 356
++punctuation : 25					# 58
++punctuation ; 23					# 59
++math < 25-246								# 60
++math = 2356							# 61
++math > 135-25								# 62
++punctuation ? 26				# 63
++sign @ 4-1									# 64
++
++# The Alphabet
++uplow \x0410\x0430 1
++uplow \x0411\x0431 12
++uplow \x0412\x0432 2456
++uplow \x0413\x0433 1245
++uplow \x0414\x0434 145
++uplow \x0415\x0435 15
++uplow \x0416\x0436 245
++uplow \x0417\x0437 1356
++uplow \x0418\x0438 24
++uplow \x0419\x0439 12346
++uplow \x041A\x043A 13
++uplow \x041B\x043B 123
++uplow \x041C\x043C 134
++uplow \x041D\x043D 1345
++uplow \x041E\x043E 135
++uplow \x041F\x043F 1234
++uplow \x0420\x0440 1235
++uplow \x0421\x0441 234
++uplow \x0422\x0442 2345
++uplow \x0423\x0443 136
++uplow \x0424\x0444 124
++uplow \x0425\x0445 125
++uplow \x0426\x0446 14
++uplow \x0427\x0447 12345
++uplow \x0428\x0448 156
++uplow \x0429\x0449 1346
++uplow \x042A\x044A 12356
++uplow \x042B\x044B 2346
++uplow \x042C\x044C 23456
++uplow \x042D\x044D 246
++uplow \x042E\x044E 1256
++uplow \x042F\x044F 1246 
++uplow \x0401\x0451 16 
++include chardefs.cti
++capsign 45
++
++punctuation [ 6-12356				# 91
++sign \\ 4-16							# 92
++punctuation ] 6-23456			# 93
++sign ^ 56-25								# 94 circumflex accent
++sign _ 1456								# 95 underscore
++sign ` 4									# 96 grave accent
++# a - z										# 97 - 122
++punctuation { 46-126					# 123
++sign | 456-3								# 124
++punctuation } 46-345				# 125
++math ~ 5-26									# 126
++
++space \X00A0 0						# 160 no-break space
++sign \x00A2 4-14					# 162 ¢ cents sign
++sign \x00A3 4-123					# 163 £ pounds sign
++
++sign \x00A5 4-13456				#	165 ¥ yen sign
++
++sign § 4-234-3						# 167 section sign \x00A7
++
++sign \x00A9 2356-6-14-2356 # 169	© copyright sign
++sign \x00AE 2356-6-1235-2356	# Registered
++sign \X2116 5-1345 NUMERO SIGN 
++punctuation \x00Ad 6-36			# 173	  soft hyphen
++sign \x00B0 46-356 degrees
++sign \x00B4 4
++always \x00B4 4 # acute accent sign
++sign \x00B5 4-134 # micro sign, (mu)
++sign \x00B6 4-1234-345		#	182	  ¶ pilcrow sign
++math \x00D7 56-236				# 215		× multiplication sign
++
++math \x00F7 56-256				# 247		÷ division sign
++
++punctuation \x2010 56-36			# 8208  hyphen
++punctuation \x2011 456-36	# 8209  non-breaking hyphen
++
++punctuation \x2013 36-36		# 8211	en dash
++punctuation \x2014 6-36-36		# em dash
++punctuation	\x2018 6-236			# 8216	smart single left quotation mark
++punctuation	\x2019 356-3			# 8217	smart single right quotation mark
++
++punctuation	\x201C 56-236		# 8220	smart opening double quote
++punctuation	\x201D 56-356		# 8221	smart closing double quote
++punctuation	\x201E 46-236		# 8222	smart double low quotation mark
++punctuation	\x201F 46-356		# 8223	smart double high reverse quotation mark
++
++punctuation \x2026 256-256-256 	# 8230 smart ellipsis
++sign \x20AC 4-15					# 8364 Euro sign anywhere else
++
++# --------------------------- end definitions ---------------------------------
++
++
++# Braille indicators
++numsign 3456  number sign, just a dots operand
++begital 456 
++#firstwordital 146
++
++# the decimal digits
++include litdigits6Dots.uti
++
++# Letters are defined in en-chardefs
++
++
++# accented letters
++
++uplow \x00C0\x00E0 1				# a with grave
++uplow \x00C1\x00E1 1				# a with acute
++uplow \x00C2\x00E2 1				# a with circumflex
++uplow \x00C3\x00E3 1				# a with tilde
++uplow \x00C4\x00E4 1				# a with dieresis
++uplow \x00C5\x00E5 1				# a with ring above
++uplow \x00C6\x00E6 1				# letter ae
++uplow \x00C7\x00E7 14				# c with cedilla
++uplow \x00C8\x00E8 15				# e with grave
++uplow \x00C9\x00E9 15				# e with acute
++uplow \x00CA\x00EA 15				# e with circumflex
++uplow \x00CB\x00EB 15				# e with dieresis
++uplow \x00CC\x00EC 24				# i with grave above
++uplow \x00CD\x00ED 24				# i with acute above
++uplow \x00CE\x00EE 24				# i with circumflex
++uplow \x00CF\x00EF 24				# i with dieresis
++uplow \x00D0\x00F0 15				# letter eth
++uplow \x00D1\x00F1 1345			# n with tilde
++uplow \x00D2\x00F2 135			# o with grave above
++uplow \x00D3\x00F3 135			# o with acute above
++uplow \x00D4\x00F4 135			# o with circumflex
++uplow \x00D5\x00F5 135			# o with tilde
++uplow \x00D6\x00F6 135			# o with dieresis
++# \x00D7	× multiplication sign	----------------------
++uplow \x00D8\x00F8 135			# o with stroke
++uplow \x00D9\x00F9 136			# u with grave above
++uplow \x00DA\x00FA 136			# u with acute above
++uplow \x00DB\x00FB 136			# u with circumflex above
++uplow \x00DC\x00FC 136				# u with dieeresis
++uplow \x00DD\x00FD 13456		# y with acute above
++uplow \x00DE\x00FE 4-1456                 # letter thorn
++letter \x00DF 2346		# small sharp s
++uplow \x0174\x0175 4-2456 w with circumflex
++uplow \x0176\x0177 4-13456 # y with circumflex
++uplow \x0178\x00ff 4-13456 # y with diaeresis
++uplow \x1ef2\x1ef3 4-13456 # y with grave
++largesign \x00C0 4-1      [C0] upper a grave
++largesign \x00E0   4-1      [E0] lower a grave
++largesign \x00C1 4-1      [C1] upper a acute
++largesign \x00E1   4-1      [E1] lower a acute
++largesign \x00C2 4-1      [C2] upper a circumflex
++largesign \x00E2   4-1      [E2] lower a circumflex
++largesign \x00C3 4-1      [C3] upper a tilde
++largesign \x00E3   4-1      [E3] lower a tilde
++largesign \x00C4 4-1      [C4] upper a dieresis
++largesign \x00E4   4-1      [E4] lower a dieresis
++
++largesign \x00C5 4-1      [C5] upper a ring
++largesign \x00E5   4-1      [E5] lower a ring
++
++largesign \x00C6 1-15     [C6] upper ae
++largesign \x00E6   1-15			[E6] lower ae
++
++largesign \x00C7 4-14     [C7] upper c cedilla
++largesign \x00E7   4-14     [E7] lower c cedilla
++
++largesign \x00C8 4-15     [C8] upper e grave
++largesign \x00E8   4-15     [E8] lower e grave
++
++largesign \x00C9 4-15     [C9] upper e acute
++largesign \x00E9   4-15     [E9] lower e acute
++
++largesign \x00CA 4-15     [CA] upper e circumflex
++largesign \x00EA   4-15     [EA] lower e circumflex
++
++largesign \x00CB 4-15     [CB] upper e dieresis
++largesign \x00EB   4-15     [EB] lower e dieresis
++
++largesign \x00CC 4-24     [CC] upper i grave
++largesign \x00EC   4-24     [EC] lower i grave
++
++largesign \x00CD 4-24     [CD] upper i acute
++largesign \x00ED   4-24     [ED] lower i acute
++
++largesign \x00CE 4-24     [CE] upper i circumflex
++largesign \x00EE   4-24     [EE] lower i circumflex
++
++largesign \x00CF 4-24     [CF] upper i dieresis
++largesign \x00EF   4-24     [EF] lower i dieresis
++
++largesign \x00D0 4-15     [D0] upper eth
++largesign \x00F0   4-15     [F0] lower eth
++
++largesign \x00D1 4-1345   [D1] upper n tilde
++largesign \x00F1   4-1345   [F1] lower n tilde
++
++largesign \x00D2 4-135    [D2] upper o grave
++largesign \x00F2   4-135    [F2] lower o grave
++
++largesign \x00D3 4-135    [D3] upper o acute
++largesign \x00F3   4-135    [F3] lower o acute
++
++largesign \x00D4 4-135    [D4] upper o circumflex
++largesign \x00F4   4-135    [F4] lower o circumflex
++
++largesign \x00D5 4-135    [D5] upper o tilde
++largesign \x00F5   4-135    [F5] lower o tilde
++
++largesign \x00D6 4-135    [D6] upper o dieresis
++largesign \x00F6   4-135			[F6] lower o dieresis
++
++largesign \x00D8 4-135    [D8] upper o slash
++largesign \x00f8   4-135    [F8] lower o slash
++
++largesign \x00D9 4-136    [D9] upper u grave
++largesign \x00F9   4-136    [F9] lower u grave
++
++largesign \x00DA 4-136    [DA] upper u acute
++largesign \x00FA   4-136    [FA] lower u acute
++
++largesign \x00DB 4-136    [DB] upper u circumflex
++largesign \x00FB   4-136    [FB] lower u circumflex
++
++largesign \x00DC 4-136    [DC] upper u dieresis
++largesign \x00FC   4-136    [FC] lower u dieresis
++
++largesign \x00DD 4-13456  [DD] upper y acute
++largesign \x00FD   4-13456  [FD] lower y acute
++
++largesign \x00DE 4-2345   [DE] upper t horn
++largesign \x00FE   4-2345   [FE] lower t horn
++
++noback largesign \x00DF 234-234 (DF) lower ss
++
++largesign \x0174 4-2456 lower w circumflex
++largesign \x0175 4-2456 upper w circumflex
++
++largesign \x0176 4-13456 upper y circumflex
++largesign \x0177 4-13456 lower y circumflex
++
++largesign \x0178 4-13456 upper y with dieresis
++largesign \x00FF 4-13456 lower y with dieresis
++
++largesign \x1EF2 4-13456 upper y with grave
++largesign \x1EF3 4-13456 lower y with grave
++
++# punctuation
++punctuation \x2013 36-36		# 8211	en dash
++punctuation \x2014 6-36-36		# em dash
++prepunc ( 126
++postpunc ) 345
++begword ` 6-236
++prepunc " 236
++postpunc " 356
++always \x00AB 236 (opening quotation mark) 
++always \x00BB 356 (closing quotation mark)
++prepunc ' 6-236
++postpunc ' 356-3
++word 'em = 
++word 'tis =
++word 'twas =
++noback begnum # 1345 print number sign before number
++begnum ° 145-1245 degrees sign
++endnum ° 56-145-1245 ;dg degrees sign
++noback begnum  \x20AC 15       # euro sign at beginning of number
++endnum  \x20AC 4-15       # euro sign atend  of number
++postpunc , 2
++hyphen - 36
++#capsnocont
++postpunc . 256
++postpunc ; 23
++postpunc : 25
++postpunc ! 235
++always / 34
++always < 5-13
++always > 46-2
++postpunc ? 26
++midnum + 0-235-3456
++always + 235
++endnum % 3456-245-356 
++always ^ 4
++always ~ 12456
++always & 12346
++always * 35
++midword \x2019 3	# stupid smart apostrophe
++always [ 45
++always ] 3456
++always { 46
++always } 6
++prepunc ` 6-236
++always @ 146
++always \\ 456-16
++always | 456
++always ... 256-256-256
++always .\s.\s. 256-256-256 . . .
++always $ 256-3456
++
++# special character sequences
++sign \x00BD 3456-1-34-12	# 1/2 fraction
++sign \x00BC 3456-1-34-145	# 1/4 fraction
++sign \x00BE 3456-14-34-145	# 3/4 fraction
+diff --git a/tables/sk-sk.utb b/tables/sk-sk.utb
+index 5554f90..3b106c3 100644
+--- a/tables/sk-sk.utb
++++ b/tables/sk-sk.utb
+@@ -12,10 +12,11 @@ include litdigits6Dots.uti
+ 
+ include latinLetterDef6Dots.uti
+ 
+-uplow \x00C1\x00E1 16
++uplow \x00C1\x00E1 16 a with acute
+ uplow \x010C\x010D 146 c with caron
+ uplow \x010E\x010F 1456 D with caron
+ uplow \x00C9\x00E9 345 e with acute
++uplow \x011A\x011B 126 e with caron
+ uplow \x00C4\x00E4 4 a with daeresis
+ uplow \x00CD\x00ED 34 I with acute
+ uplow \X0139\X013A 46 l with acute
+@@ -42,24 +43,24 @@ punctuation ' 3
+ punctuation ( 236
+ punctuation ) 356
+ midnum * 35
+-math + 235
++math + 56-235
+ punctuation , 2
+ punctuation - 36
+ punctuation . 256
+-punctuation / 25
++punctuation / 12456
+ punctuation : 25
+ punctuation * 0-3
+ punctuation ; 23
+-math < 126
+-math > 345
+-math = 2356
++math < 56-126
++math > 56-345
++math = 123456
+ punctuation ? 26
+ punctuation [ 6-236
+ punctuation  ] 6-356
+ always \\ 3456-1256
+ punctuation { 5-236
+ punctuation } 5-356
+-always _ 456
++always _ 56-456
+ always | 3456-123
+ always ~ 56-26
+ always # 56-3456
+@@ -67,4 +68,13 @@ always $ 3456-1246
+ always & 3456-12346
+ always @ 3456-12456
+ always % 3456-1234
++math \x00D7 56-3 times
++math \x00F7 45 divided by
++math \x00B1 235-36 plus or minus
++math \x2264 126-2356 less than or equal to
++math \x2265 345-2356 greater than or equal to
++math \x2260 4-2356 not equal to
++math \x2248 5-2356 almost equal to
++punctuation \x2030 3456-1235 promile
++punctuation \x00B0 3456-234 degrees celsius
+ 
