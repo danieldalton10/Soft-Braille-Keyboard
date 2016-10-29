@@ -99,8 +99,6 @@
     <string name="pref_switch_tables_title">Włącz tablice brajlowskie do przełączania w locie.</string>
     <string name="pref_text_to_speech_engine_title">Silnik Syntezy Mowy</string>
     <string name="pref_text_to_speech_title">Ustawienia Syntezy Mowy</string>
-    <string name="pref_two_hand_calibration_summary">Gdy włączone  pozwala na kalibrację klawiatury dwoma osobnymi dotknięciami</string>
-    <string name="pref_two_hand_calibration_title">Kalibracja dwoma dotknięciami</string>
     <string name="pref_use_eight_dots_summary">Gdy włączone, pokazuj punkty 7 i 8.</string>
     <string name="pref_use_eight_dots_title">Pokazuj 8-punktową klawiaturę</string>
     <string name="pref_vibrate_on_exit_title">Wibracja przy zamykaniu klawiatury</string>

@@ -99,8 +99,6 @@
     <string name="pref_switch_tables_title">Активировать Брайлевские таблицы для переключения между ними в реальном времени.</string>
     <string name="pref_text_to_speech_engine_title">Синтезатор речи</string>
     <string name="pref_text_to_speech_title">Настройки преобразования текста в речь</string>
-    <string name="pref_two_hand_calibration_summary">При выборе этой настройки клавиатура калибруется двумя отдельными прикосновениями</string>
-    <string name="pref_two_hand_calibration_title">Калибровка двумя прикосновениями</string>
     <string name="pref_use_eight_dots_summary">При выборе этой настройки появляются точки 7 и 8.</string>
     <string name="pref_use_eight_dots_title">Показать восьмиточечную клавиатуру</string>
     <string name="pref_vibrate_on_exit_title">Вибрация при закрытии клавиатуры</string>

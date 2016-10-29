@@ -99,8 +99,6 @@
     <string name="pref_switch_tables_title">啟用可以臨時切換的點字對照表.</string>
     <string name="pref_text_to_speech_engine_title">文字轉語音引擎</string>
     <string name="pref_text_to_speech_title">文字轉語音設定</string>
-    <string name="pref_two_hand_calibration_summary">啟用後允許用觸碰兩次的方式校正鍵盤</string>
-    <string name="pref_two_hand_calibration_title">雙觸校正</string>
     <string name="pref_use_eight_dots_summary">啟用後會顯示7,8點.</string>
     <string name="pref_use_eight_dots_title">顯示八點鍵盤</string>
     <string name="pref_vibrate_on_exit_title">鍵盤關閉十振動</string>

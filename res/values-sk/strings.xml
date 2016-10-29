@@ -99,8 +99,6 @@
     <string name="pref_switch_tables_title">Nastaviť tabuľky Braillovho písma na rýchle prepínanie.</string>
     <string name="pref_text_to_speech_engine_title">Hlasový výstup</string>
     <string name="pref_text_to_speech_title">Nastavenia prevodu textu na reč</string>
-    <string name="pref_two_hand_calibration_summary">Keď je zapnuté, ručnú kalibráciu rozloženia klávesov je možné vykonať priložením prstov každej ruky zvlášť.</string>
-    <string name="pref_two_hand_calibration_title">Dvoj-dotyková kalibrácia</string>
     <string name="pref_use_eight_dots_summary">Ak je zapnuté, pod bodmi 3 a 6 sa zobrazia body 7 a 8.</string>
     <string name="pref_use_eight_dots_title">Zobraziť 8 bodovú klávesnicu</string>
     <string name="pref_vibrate_on_exit_title">Vybrovať pri zatvorení klávesnice</string>

@@ -57,8 +57,6 @@
     <string name="pref_switch_tables_key">SWITCH_TABLES</string>
     <string name="pref_text_to_speech_engine_key">TEXT_TO_SPEECH</string>
     <string name="pref_trial_end_time_key">TRIAL_END_TIME</string>
-    <string name="pref_two_hand_calibration_default">true</string>
-    <string name="pref_two_hand_calibration_key">TWO_HAND_CALIBRATE</string>
     <string name="pref_use_eight_dots_default">false</string>
     <string name="pref_use_eight_dots_key">USE_EIGHT_DOT</string>
     <string name="pref_vibrate_on_exit_default">true</string>
@@ -166,8 +164,6 @@
     <string name="pref_switch_tables_title">Enable Braille tables for on the fly switching.</string>
     <string name="pref_text_to_speech_engine_title">Text To Speech Engine</string>
     <string name="pref_text_to_speech_title">Text To Speech Settings</string>
-    <string name="pref_two_hand_calibration_summary">When enabled allows the keyboard to be calibrated with two separate touches</string>
-    <string name="pref_two_hand_calibration_title">Two touch calibration</string>
     <string name="pref_use_eight_dots_summary">When enabled shows dots 7 and 8.</string>
     <string name="pref_use_eight_dots_title">Show eight dot keyboard</string>
     <string name="pref_vibrate_on_exit_title">Vibrate when keyboard closes</string>

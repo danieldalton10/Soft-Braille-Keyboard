@@ -142,11 +142,6 @@
          android:summary="@string/pref_privacy_summary"
          android:defaultValue="@string/pref_privacy_default" />
          <CheckBoxPreference
-         android:key="@string/pref_two_hand_calibration_key"
-         android:title="@string/pref_two_hand_calibration_title"
-         android:summary="@string/pref_two_hand_calibration_summary"
-         android:defaultValue="@string/pref_two_hand_calibration_default" />
-         <CheckBoxPreference
          android:key="@string/pref_voice_shortcut_key"
          android:title="@string/pref_voice_shortcut_title"
          android:summary="@string/pref_voice_shortcut_summary"

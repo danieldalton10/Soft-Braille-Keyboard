@@ -99,8 +99,6 @@
     <string name="pref_switch_tables_title">Habilitar tablas de braille para accederlas sobre la marcha.</string>
     <string name="pref_text_to_speech_engine_title">Motor de texto a voz</string>
     <string name="pref_text_to_speech_title">Ajustes de texto a voz</string>
-    <string name="pref_two_hand_calibration_summary">Al habilitarlo, se puede calibrar el teclado con dos toques por separado.</string>
-    <string name="pref_two_hand_calibration_title">Calibración por toques separados</string>
     <string name="pref_use_eight_dots_summary">Al habilitarlo, se muestran los puntos 7 y 8.</string>
     <string name="pref_use_eight_dots_title">Mostrar teclado de 8 puntos</string>
     <string name="pref_vibrate_on_exit_title">Vibrar al ocultar el teclado</string>

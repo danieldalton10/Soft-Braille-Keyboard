@@ -454,7 +454,7 @@ public class BrailleView extends View {
         final int ONE_SIDE = 3;
         // For whatever reason we won't be able to set a pad
         if (requiredTouchTime > System.currentTimeMillis()
-                || (countDotsDown(dotsDown) != ONE_SIDE && countDotsDown(dotsDown) != TOTAL_DOTS)) {
+                || countDotsDown(dotsDown) != ONE_SIDE) {
             return false;
         }
         if (lastDotList.size() != ONE_SIDE && lastDotList.size() != 0) {
@@ -462,7 +462,6 @@ public class BrailleView extends View {
             return false;
         }
 
-        // For two phase calibration eg. < six finger multi-touch devices.
         // Add the first three dots to the current dot list.
         for (int i = 0; i < lastDotList.size(); i++) {
             Coords coord = lastDotList.get(i);
@@ -494,11 +493,7 @@ public class BrailleView extends View {
             lastDotList.clear();
             resetDots();
             return result;
-        } else if (Options.getBooleanPreference(
-                getContext(),
-                R.string.pref_two_hand_calibration_key,
-                Boolean.parseBoolean(getContext().getString(
-                        R.string.pref_two_hand_calibration_default)))) {
+        } else {
             // Add the first three dots that have been tuched to a member
             // variable for reference on the second touch of three fingers
             for (int i = 0; i < dotsDown.length; i++) {
@@ -513,7 +508,6 @@ public class BrailleView extends View {
             vibrator.vibrate(MEDIUM_VIBRATION);
             return true;
         }
-        return false;
     }
 
     // Set the pad using a default pad.

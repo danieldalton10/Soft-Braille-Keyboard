@@ -99,8 +99,6 @@
     <string name="pref_switch_tables_title">Abilita tabelle Braille per consentire il passaggio al volo dall\'una all\'altra.</string>
     <string name="pref_text_to_speech_engine_title">Motore di sintesi vocale</string>
     <string name="pref_text_to_speech_title">Impostazioni di sintesi vocale</string>
-    <string name="pref_two_hand_calibration_summary">Se abilitato consente di calibrare la  tastiera con due tocchi distinti</string>
-    <string name="pref_two_hand_calibration_title">Calibrazione a due tocchi</string>
     <string name="pref_use_eight_dots_summary">Se abilitato mostra i punti 7 e 8.</string>
     <string name="pref_use_eight_dots_title">Mostra Tastiera a otto punti</string>
     <string name="pref_vibrate_on_exit_title">Vibrazione alla chiusura della tastiera</string>

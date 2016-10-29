@@ -99,8 +99,6 @@
     <string name="pref_switch_tables_title">Nastavit braillské tabulky pro rychlé přepínání.</string>
     <string name="pref_text_to_speech_engine_title">Syntezátor převodu textu na řeč</string>
     <string name="pref_text_to_speech_title">Nastavení převodu textu na řeč</string>
-    <string name="pref_two_hand_calibration_summary">Je-li zaškrtnuto, klávesnice může být nastavena dvěma oddělenými doteky</string>
-    <string name="pref_two_hand_calibration_title">Kalibrace pomocí dvou doteků</string>
     <string name="pref_use_eight_dots_summary">Je-li zaškrtnuto, pod body 3 a 6 se zobrazují body 7 a 8.</string>
     <string name="pref_use_eight_dots_title">Zobrazit osmibodovou klávesnici</string>
     <string name="pref_vibrate_on_exit_title">Vibrovat při zavření klávesnice</string>

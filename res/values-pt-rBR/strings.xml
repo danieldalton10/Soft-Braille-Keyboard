@@ -99,8 +99,6 @@
     <string name="pref_switch_tables_title">Selecione tabelas Braille para alternar</string>
     <string name="pref_text_to_speech_engine_title">Escolha o sintetizador</string>
     <string name="pref_text_to_speech_title">Configurações do sintetizador de voz</string>
-    <string name="pref_two_hand_calibration_summary">Quando ativado, permite que o teclado seja calibrado em duas etapas</string>
-    <string name="pref_two_hand_calibration_title">Dois toques para calibrar</string>
     <string name="pref_use_eight_dots_summary">Quando ativado, mostra os pontos 7 e 8.</string>
     <string name="pref_use_eight_dots_title">Mostrar teclado de oito pontos</string>
     <string name="pref_vibrate_on_exit_title">Vibrar quando fechar o teclado</string>
