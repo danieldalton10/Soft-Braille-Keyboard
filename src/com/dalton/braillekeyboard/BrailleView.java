@@ -442,7 +442,7 @@ public class BrailleView extends View {
     private void loadDefaultPad(int w, int h) {
         int width = displayParams.autoRotate ? w : Math.max(w, h);
         int height = displayParams.autoRotate ? h : Math.min(w, h);
-        if (!setPad(w, h, width, height)) {
+        if (!setDefaultPad(w, h, width, height)) {
             speech.speak(getContext(),
                     getContext().getString(R.string.keyboard_error),
                     Speech.QUEUE_FLUSH);
@@ -517,7 +517,7 @@ public class BrailleView extends View {
     }
 
     // Set the pad using a default pad.
-    private boolean setPad(int w, int h, int padWidth, int padHeight) {
+    private boolean setDefaultPad(int w, int h, int padWidth, int padHeight) {
         boolean useEightDots = Options.getBooleanPreference(
                 getContext(),
                 R.string.pref_use_eight_dots_key,
