@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- User interface strings go below here -->
+    <string name="action_settings">Postavke</string>
+    <string name="app_name">Soft Braille Keyboard</string>
+    <string name="auto_caps_disabled">Bez automatskog velikog početnog slova</string>
+    <string name="auto_caps_enabled">Automatsko veliko početno slovo</string>
+    <string name="blank">Prazno</string>
+    <string name="braille_ime">Soft Braille Keyboard</string>
+    <string name="button_choose_default_keyboard">Postaviti Soft Braille Keyboard kao zadanu tipkovnicu</string>
+    <string name="button_keyboard_settings">Omogućiti Soft Braille Keyboard</string>
+    <string name="button_more_info">Pročitati brze upute</string>
+    <string name="capital">Veliko %s</string>
+    <string name="closing_keyboard">Zatvaranje tipkovnice</string>
+    <string name="copied">Kopirano</string>
+    <string name="copy_error">Greška prilikom kopiranja</string>
+    <string name="cut_error">Greška prilikom premiještanja</string>
+    <string name="deleted">Izbrisano %s</string>
+    <string name="delete_selection">Izbriši odabir</string>
+    <string name="end_of_text">Kraj teksta</string>
+    <string name="expand_keyboard_talkback">Dvaput dotaknite ovdje da biste proširili tipkovnicu</string>
+    <string name="expand_keyboard">Dotaknite ovdje da biste proširili tipkovnicu</string>
+    <string name="grade_computer">Kompjutorska brajica</string>
+    <string name="grade">Zadani stupanj brajice</string>
+    <string name="grade_literary">Literarna brajica</string>
+    <string name="grade_table">Stupanj %s</string>
+    <string name="hide_keyboard">Skrivanje tipkovnice.</string>
+    <string name="high">Visoko</string>
+    <string name="info_url">https://docs.google.com/document/d/1OX6yFjkK61VfROdU9uQNxjEZ_QNWxiMnUY_1ECnIyRQ/pub</string>
+    <string name="keyboard_auto">Automatski</string>
+    <string name="keyboard_echo_all">Znakovi i riječi</string>
+    <string name="keyboard_echo_character">Znakovi</string>
+    <string name="keyboard_echo_none">Ništa</string>
+    <string name="keyboard_echo_word">Riječi</string>
+    <string name="keyboard_error">Nije moguće postaviti tipkovnicu.</string>
+    <string name="keyboard_feedback_all">Zvuk i vibracija</string>
+    <string name="keyboard_feedback_none">Ništa</string>
+    <string name="keyboard_feedback_sound">Samo zvuk</string>
+    <string name="keyboard_feedback_vibrate">Samo vibracija</string>
+    <string name="keyboard_full_screen">Tipkovnica proširena</string>
+    <string name="keyboard_horizontal">Vodoravno</string>
+    <string name="keyboard_next_three">Sada, molimo držite tri prsta druge ruke na zaslonu.</string>
+    <string name="keyboard_not_set">Molimo položite svih 6 prstiju na zaslon da biste namjestili brajičnu tipkovnicu</string>
+    <string name="keyboard_shrink">Tipkovnica skrivena</string>
+    <string name="keyboard_style_normal">Normalno</string>
+    <string name="keyboard_style_slate">Način tablice i šila</string>
+    <string name="keyboard_style_top_bottom">Zamijeni točkice 1 i 4 s točkicama 3 i 6</string>
+    <string name="keyboard_vertical">Okomito</string>
+    <string name="low">Nisko</string>
+    <string name="mark_not_set">Oznaka nije postavljena</string>
+    <string name="medium">Srednje</string>
+    <string name="newline">Novi redak</string>
+    <string name="no_braille_table">Nema tablica</string>
+    <string name="no_more_misspellings">Nema više pravopisnih grešaka</string>
+    <string name="no_password_echo">Ne izgovaraj lozinke</string>
+    <string name="no_rotate_keyboard">Nemoj zaokrenuti tipkovnicu</string>
+    <string name="no_suggestions">Nema mogućih prijedloga</string>
+    <string name="nothing_to_delete">Nema ničega za izbrisati</string>
+    <string name="pad_horizontal">Postavi tipkovnicu na vodoravan izgled</string>
+    <string name="pad_vertical">Postavi tipkovnicu na okomit izgled</string>
+    <string name="pasted">Zalijepljeno</string>
+    <string name="paste_error">Dogodila se pogreška prilikom lijepljenja teksta</string>
+    <string name="pref_app_version_title">Inačica aplikacije: %s.</string>
+    <string name="pref_auto_caps_summary">Veliko početno slovo za prvu riječ u svakoj rečenici.</string>
+    <string name="pref_auto_caps_title">Automatsko veliko početno slovo</string>
+    <string name="pref_auto_match_keyboard_summary">Kada je uključeno, tipkovnica će se odabrati ovisno o položaju vaših prstiju kada ručno kalibrirate tipkovnicu.</string>
+    <string name="pref_auto_match_keyboard_title">Automatski odabir izgleda tipkovnice ovisno o položaju vaših prstiju</string>
+    <string name="pref_braille_grade_summary">Namiješta željeni stupanj brajice.</string>
+    <string name="pref_category_braille_title">Postavke brajične tablice</string>
+    <string name="pref_category_feedback_title">Postavke odziva tipkovnice</string>
+    <string name="pref_category_keyboard_title">Postavke tipkovnice</string>
+    <string name="pref_category_misc_title">Razne postavke</string>
+    <string name="pref_default_computer_braille_table_summary"></string>
+    <string name="pref_default_computer_braille_table_title">Tablica za kompjutorsku brajicu</string>
+    <string name="pref_default_keyboard_summary">Odaberite izgled tipkovnice koji će se prikazati prema zadanoj vrijednosti.</string>
+    <string name="pref_default_keyboard_title">Zadani izgled tipkovnice</string>
+    <string name="pref_default_literary_braille_table_summary"></string>
+    <string name="pref_default_literary_braille_table_title">Tablica za literarnu brajicu</string>
+    <string name="pref_double_space_period_summary">Dvostruki prijelaz prstom po razmaku umetnut će točku pa zatim razmak.</string>
+    <string name="pref_double_space_period_title">Dvostruki razmak točka</string>    
+    <string name="pref_echo_feedback_summary">Odaberite vrstu odjeka tipkovnice.</string>
+    <string name="pref_echo_feedback_title">Odjek tipkovnice</string>
+    <string name="pref_echo_misspellings_summary">Kada je uključeno, najavit će se pravopisne pogreške kada utipkate razmak.</string>
+    <string name="pref_echo_misspellings_title">Odjek pravopisnih grešaka za vrijeme tipkanja</string>
+    <string name="pref_echo_passwords_summary">Kada je uključeno, tipkovnica će govoriti za vrijeme unošenja lozinki.</string>
+    <string name="pref_keyboard_feedback_summary">Odaberite vrstu odziva tipkovnice kao što je vibracija i zvuk.</string>
+    <string name="pref_keyboard_feedback_title">Odziv tipkovnice</string>
+    <string name="pref_keyboard_invert_summary">Kada se tipkovnica ne okreće zajedno s telefonom, koristite ovu postavku kako biste zaokrenuli orijentaciju tipkovnice za 180 stupnjeva.</string>
+    <string name="pref_keyboard_invert_title">Obrni tipkovnicu</string>
+    <string name="pref_keyboard_style_summary">Namiještanje izgleda točkica na tipkovnici.</string>
+    <string name="pref_keyboard_style_title">Stil tipkovnice</string>
+    <string name="pref_privacy_summary">Kada je uključeno, zaslon će se zacrniti dok tipkate radi privatnosti.</string>
+    <string name="pref_privacy_title">Zaslon privatnosti</string>
+    <string name="pref_show_circles_summary">Kada je uključeno, prikazat će se mali kružići koji označavaju položaj svake brajične točkice na zaslonu.</string>
+    <string name="pref_show_circles_title">Prikaži kružiće na zaslonu?</string>
+    <string name="pref_swipe_sensitivity_summary">Izbor osjetljivosti kliznih pokreta.</string>
+    <string name="pref_swipe_sensitivity_title">Osjetljivost klizanja</string>
+    <string name="pref_switch_tables_summary">Odabir određenih jezika između kojih se možete prebacivati za vrijeme tipkanja.</string>
+    <string name="pref_switch_tables_title">Omogući brajične tablice za brzinsko prebacivanje.</string>
+    <string name="pref_text_to_speech_engine_title">Sintetizator govora</string>
+    <string name="pref_text_to_speech_title">Postavke pretvaranja teksta u govor</string>
+    <string name="pref_use_eight_dots_summary">Kada je uključeno, prikazuje točkice 7 i 8.</string>
+    <string name="pref_use_eight_dots_title">Prikaži osmotočkastu tipkovnicu</string>
+    <string name="pref_vibrate_on_exit_title">Vibracija pri zatvaranju tipkovnice</string>
+    <string name="pref_voice_shortcut_summary">Kada je uključeno, dvaput dotaknite i držite kako biste pokrenuli glasovno diktiranje kada je talkback uključen.</string> 
+    <string name="pref_voice_shortcut_title">Prečac glasovnog unosa</string>
+    <string name="privacy_disabled">Zaslon privatnosti je isključen</string>
+    <string name="privacy_enabled">Zaslon privatnosti je uključen</string>
+    <string name="ready">tipkovnica spremna</string>
+    <string name="return_key">Kraj retka</string>
+    <string name="rotate_keyboard">Zaokreni tipkovnicu sa uređajem</string>
+    <string name="rotate_summary">Kada je uključeno, tipkovnica će se orijentirati prema orijentaciji uređaja.</string>
+    <string name="select_all">Odaberi sve</string>
+    <string name="selected_all">Cjelokupan tekst je odabran</string>
+    <string name="set_mark">Oznaka je postavljena</string>
+    <string name="settings_name">Postavke za Soft Braille Keyboard</string>
+    <string name="show_input_switcher">Prikazivanje prebacivača metode unosa</string>
+    <string name="show_settings">Prikazivanje postavki za soft braille keyboard</string>
+    <string name="space">Razmak</string>
+    <string name="speak_passwords">Izgovori lozinke</string>
+    <string name="speak_selection">Izgovori odabir</string>
+    <string name="spellcheck_not_supported">Provjera pravopisa nije podržana u ovoj inačici sustava Android.</string>
+    <string name="start_of_text">Početak teksta</string>
+    <string name="swipe_confirm_input">Kliznite prstom ponovo za prikazivanje izbora tipkovnice</string>
+    <string name="swipe_confirm_settings">Kliznite prstom ponovo za prikazivanje postavki za Soft Braille Keyboard</string>
+    <string name="swipe_confirm">Kliznite prstom ponovo za potvrdu</string>
+    <string name="switch_off_talkback">Molimo isključite Talkback. To možete učiniti tako da napravite pokret u L na način da kliznete dolje pa zatim desno te istražite kružni izbornik kako biste pronašli opciju Pauziraj povratne informacije na gornjem lijevom dijelu. Talkback je moguće ponovno pokrenuti u bilo kojem trenutku dvostrukim pritiskom tipke Power.</string>
+    <string name="translator_error">Došlo je do problema sa brajičnim servisom</string>
+    <string name="trial_buy">Kupi</string>
+    <string name="trial_expired_message">Ova beta inačica je upravo istekla. Ako želite nastaviti s korištenjem aplikacije, molimo preuzmite je sa Google play trgovine, ili kontaktirajte razvojnog programera Daniela Daltona na daniel.dalton10@gmail.com kako biste dobili ažuriranu testnu inačicu.\nHvala vam što sudjelujete u beta testiranju tipkovnice!</string>
+    <string name="trial_expired_title">Probni rok je istekao</string>
+    <string name="try_box">Ovdje probajte tipkati s tipkovnicom.</string>
+    <string name="unknown_character">Nepoznat znak</string>
+    <string name="unset_mark">Oznaka uklonjena</string>
+    <string name="voice_input_enable">Molimo izvršite ovaj pokret dvaput brzo. Tada će se pojaviti dijaloški okvir u kojem onda prihvatite dozvolu koristeći Talkback, kako bi glasovni unos mogao raditi.</string>
+    <string name="voice_input_error">Dogodila se pogreška u sustavu za glasovni unos, kod: %d</string>
+    <string name="voice_input_is_not_available">Glasovni unos nije dostupan na uređaju.</string>
+    <string name="voice_input_permission_message">Trebat ćete omogućiti dozvolu za snimanje zvuka kako bi glasovni unos mogao raditi.</string>
+    <string name="voice_input_permission_title">Dozvola za glasovni unos</string>
+    <string name="word_correction_misspelled">%s pravopisna pogreška</string>
+    <string name="word_correct">Riječ je ispravna</string>
+    <string name="word_count">%1$d redaka, %2$d riječi, %3$d znakova</string>
+    <string name="word_misspelled">Pravopisna pogreška</string>
+    <!-- PUNCTUATION -->
+
+    <!--
+      Source: A value for announcing a question mark.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_questionmark">Upitnik</string>
+
+    <!--
+      Source: A value for announcing a space.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_space">Razmak</string>
+
+    <!--
+      Source: A value for announcing a comma.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_comma">Zarez</string>
+
+    <!--
+      Source: A value for announcing a dot.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_dot">Točka</string>
+
+    <!--
+      Source: A value for announcing an exclamation.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_exclamation">Uskličnik</string>
+
+    <!--
+      Source: A value for announcing an opening parenthesis.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_open_paren">Lijeva zagrada</string>
+
+    <!--
+      Source: A value for announcing a closing parenthesis.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_close_paren">Desna zagrada</string>
+
+    <!--
+      Source: A value for announcing a double quote.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_double_quote">Navodnik</string>
+
+    <!--
+      Source: A value for announcing a single quote.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_single_quote">Izostavnik</string>
+
+    <!--
+      Source: A value for announcing a slash.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_slash">Kosa crta</string>
+
+    <!--
+      Source: A value for announcing a backslash.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_backslash">Obrnuta kosa crta</string>
+
+    <!--
+      Source: A value for announcing a semicolon.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_semicolon">Točka zarez</string>
+
+    <!--
+      Source: A value for announcing a colon.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_colon">Dvotočka</string>
+    
+    <!--
+      Source: A value for announcing a left brace.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_left_brace">Lijeva vitičasta zagrada</string>
+    
+    <!--
+      Source: A value for announcing a right brace.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_right_brace">Desna vitičasta zagrada</string>
+</resources>
