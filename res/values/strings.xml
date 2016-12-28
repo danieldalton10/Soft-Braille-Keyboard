@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Do not translate the following preference strings-->
-    <string name="action_expired">ACTION_EXPIRED</string>
     <string name="action_record_audio_permission">ACTION_RECORD_AUDIO_PERMISSION</string>
     <string name="btn_id_default_keyboard">BTN_DEFAULT_KEYBOARD</string>
     <string name="btn_id_enable">BTN_ENABLED</string>
@@ -56,7 +55,6 @@
     <string name="pref_swipe_sensitivity_key">SWIPE_SENSITIVITY_KEY</string>
     <string name="pref_switch_tables_key">SWITCH_TABLES</string>
     <string name="pref_text_to_speech_engine_key">TEXT_TO_SPEECH</string>
-    <string name="pref_trial_end_time_key">TRIAL_END_TIME</string>
     <string name="pref_use_eight_dots_default">false</string>
     <string name="pref_use_eight_dots_key">USE_EIGHT_DOT</string>
     <string name="pref_vibrate_on_exit_default">true</string>
@@ -189,11 +187,8 @@
     <string name="swipe_confirm_input">Swipe again to display the keyboard chooser</string>
     <string name="swipe_confirm_settings">Swipe again to show Soft Braille Keyboard settings</string>
     <string name="swipe_confirm">Swipe again to confirm</string>
-    <string name="switch_off_talkback">Please disable talkback. You can do this by performing the l gesture, swipe down and then two the right, and explore the circle to find the pause feedback option at the top left. Talkback can be restarted at any time by double pressing the power button</string>
+    <string name="switch_off_talkback">Please disable talkback. You can do this by performing the l gesture, swipe down and then to the right, and explore the circle to find the pause feedback option at the top left. Talkback can be restarted at any time by double pressing the power button</string>
     <string name="translator_error">There is a problem with the Braille service</string>
-    <string name="trial_buy">Buy</string>
-    <string name="trial_expired_message">This beta version has now expired. If you would like to continue using the app, please download it from the Google play store, or contact the developer Daniel Dalton at daniel.dalton10@gmail.com for an updated test version.\nThanks for beta testing the keyboard!</string>
-    <string name="trial_expired_title">Trial has expired</string>
     <string name="try_box">Try typing with the keyboard here.</string>
     <string name="unknown_character">Unknown character</string>
     <string name="unset_mark">Mark unset</string>
