@@ -126,9 +126,6 @@
     <string name="swipe_confirm">Kliznite prstom ponovo za potvrdu</string>
     <string name="switch_off_talkback">Molimo isključite Talkback. To možete učiniti tako da napravite pokret u L na način da kliznete dolje pa zatim desno te istražite kružni izbornik kako biste pronašli opciju Pauziraj povratne informacije na gornjem lijevom dijelu. Talkback je moguće ponovno pokrenuti u bilo kojem trenutku dvostrukim pritiskom tipke Power.</string>
     <string name="translator_error">Došlo je do problema sa brajičnim servisom</string>
-    <string name="trial_buy">Kupi</string>
-    <string name="trial_expired_message">Ova beta inačica je upravo istekla. Ako želite nastaviti s korištenjem aplikacije, molimo preuzmite je sa Google play trgovine, ili kontaktirajte razvojnog programera Daniela Daltona na daniel.dalton10@gmail.com kako biste dobili ažuriranu testnu inačicu.\nHvala vam što sudjelujete u beta testiranju tipkovnice!</string>
-    <string name="trial_expired_title">Probni rok je istekao</string>
     <string name="try_box">Ovdje probajte tipkati s tipkovnicom.</string>
     <string name="unknown_character">Nepoznat znak</string>
     <string name="unset_mark">Oznaka uklonjena</string>

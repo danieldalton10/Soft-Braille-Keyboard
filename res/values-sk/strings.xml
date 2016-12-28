@@ -126,9 +126,6 @@
     <string name="swipe_confirm_settings">Švihnite ešte raz ak si želáte zobraziť nastavenia Soft Braille Keyboard</string>
     <string name="switch_off_talkback">Prosím pozastavte Talkback. Môžete to urobiť vykonaním gesta pripomínajúceho písmeno L, švihnite dolu a hneď vpravo, zobrazí sa kontextová ponuka, v ktorej vľavo hore nájdete položku Pozastaviť spätnú väzbu. Spätnú väzbu Talkback obnovíte dvojitým stlačením tlačidla určeného na zapínanie a vypýnanie zariadenia.</string>
     <string name="translator_error">Vyskytla sa chyba v súvislosti s prekladovou službou z Braillovho písma</string>
-    <string name="trial_buy">Kúpiť</string>
-    <string name="trial_expired_message">Platnosť tejto beta verzie vypršala. Ak si naďalej želáte používať túto aplikáciu, prosím stiahnite si aktuálnu verziu z obchodu Google Play, alebo kontaktujte vývojára Daniel Dalton na adrese daniel.dalton10@gmail.com aby ste získali aktualizovanú skúšobnú verziu.\nVďaka za odskúšanie klávesnice!</string>
-    <string name="trial_expired_title">Skúšobná doba vypršala</string>
     <string name="try_box">Klávesnicu odskúšajte písaním do tohoto poľa.</string>
     <string name="unknown_character">Neznámy znak</string>
     <string name="unset_mark">Nastavená značka zrušená</string>

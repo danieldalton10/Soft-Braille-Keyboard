@@ -126,9 +126,6 @@
     <string name="swipe_confirm_settings">Scorri di nuovo per mostrare le impostazioni della tastiera</string>
     <string name="switch_off_talkback">Sospendi TalkBack. Per farlo, esegui il gesto a L. Striscia col dito verso il basso e poi verso destra, poi esplora il menù circolare per trovare l\'opzione Sospendi Feedback in alto a sinistra.   TalkBack può essere riattivato in qualunque momento prendendo due volte il tasto di accensione</string>
     <string name="translator_error">Si è verificato un problema nel servizio Braille</string>
-    <string name="trial_buy">Acquista</string>
-    <string name="trial_expired_message">Questa versione beta è scaduta. Se desideri continuare a utilizzare l\'app, puoi scaricarla dal Google Play Store, o contattare lo sviluppatore, Daniel Dalton, all\'indirizzo daniel.dalton10@gmail.com per ottenere una versione di prova aggiornata..\nGrazie per aver fatto da beta tester per questa tastiera!</string>
-    <string name="trial_expired_title">Demo scaduta</string>
     <string name="try_box">Prova a scrivere con la tastiera qui.</string>
     <string name="unknown_character">Carattere sconosciuto</string>
     <string name="unset_mark">Marcatore non impostato</string>

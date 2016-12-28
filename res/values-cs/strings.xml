@@ -126,9 +126,6 @@
     <string name="swipe_confirm">Švihněte znovu pro potvrzení</string>
     <string name="switch_off_talkback">Prosím pozastavte TalkBack. Toto je možné udělat gestem ve tvaru písmene L, přesunutím dolů a doprava, následně najděte v menu položku Pozastavit zpětnou vazbu. Talkback můžete kdykoli obnovit dvojitým stiskem vypínače</string>
     <string name="translator_error">Nastala chyba s Braillovým písmem</string>
-    <string name="trial_buy">Zakoupit</string>
-    <string name="trial_expired_message">Licence této beta verze vypršela. Chcete-li používat aplikaci i dále, stáhněte ji prosím z obchodu Google Play nebo kontaktujte autora Daniela Daltona na adrese daniel.dalton10@gmail.com pro novou testovací verzi. \nDěkujeme za testování klávesnice!</string>
-    <string name="trial_expired_title">Licence beta verze vypršela</string>
     <string name="try_box">Vyzkoušejte si klávesnici zde.</string>
     <string name="unknown_character">Neznámý znak</string>
     <string name="unset_mark">Značka odstraněna</string>

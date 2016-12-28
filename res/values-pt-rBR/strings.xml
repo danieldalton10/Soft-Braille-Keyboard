@@ -126,9 +126,6 @@
     <string name="swipe_confirm_settings">Repita o gesto para mostrar as configurações do Soft Braille Keyboard</string>
     <string name="switch_off_talkback">Por favor, suspenda o talkback. Você pode fazer isso executando o gesto em l, deslizando o dedo para baixo e para a direita e explorar o círculo para encontrar a opção de pausar feedback no canto superior esquerdo. Talkback pode ser reiniciado a qualquer momento, pressionando duas vezes o botão liga\/desliga</string>
     <string name="translator_error">Há um problema com o serviço de Braille</string>
-    <string name="trial_buy">Comprar</string>
-    <string name="trial_expired_message">Esta versão beta expirou. Se você gostaria de continuar utilizando o aplicativo, por favor baixe diretamente da Google play store ou contate o desenvolvedor Daniel Dalton pelo e-mail daniel.dalton10@gmail.com para uma versão atualizada de testes. Obrigado por ser beta tester do teclado!</string>
-    <string name="trial_expired_title">Versão Trial expirou</string>
     <string name="try_box">Tente digitar com o teclado aqui.</string>
     <string name="unknown_character">Caracter desconhecido</string>
     <string name="unset_mark">Sem marca de seleção</string>

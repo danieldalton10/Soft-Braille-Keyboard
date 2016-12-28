@@ -126,9 +126,6 @@
     <string name="swipe_confirm">再滑一次確認</string>
     <string name="switch_off_talkback">請停用 talkback. 要這麼做可以畫 l 的手勢, 先往下再往右滑，然後觸摸螢幕左上角的暫停回應。Talkback 可以隨時按兩次電源鍵來重啟。</string>
     <string name="translator_error">點字服務有一個問題</string>
-    <string name="trial_buy">購買</string>
-    <string name="trial_expired_message">這個測試版已經過期. 如果您想繼續使用本軟體請從 Google play 商店下載, 或聯絡開發者 Daniel Dalton 的信箱 daniel.dalton10@gmail.com 索取更新的測試版本.\n感謝您的 beta 測試!</string>
-    <string name="trial_expired_title">是用版過期</string>
     <string name="try_box">請在這裡打字.</string>
     <string name="unknown_character">未知的字元</string>
     <string name="unset_mark">標記取消</string>

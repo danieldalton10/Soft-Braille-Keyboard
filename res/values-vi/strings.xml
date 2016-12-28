@@ -138,9 +138,6 @@
     <string name="swipe_confirm_settings">Vuốt lần nữa để hiển thị cài đặt bàn phím chữ Braille</string>
     <string name="switch_off_talkback">Hãy tạm ngưng Talkback: vuốt xuống rồi qua phải như hình chữ l ngược,  lướt ngón tay theo hình tròn tìm mục tạm dừng phản hồi. Nhấn nút nguồn hai lần để bật lại Talkback</string>
     <string name="translator_error">Có sự cố với dịch vụ Braille</string>
-    <string name="trial_buy">Mua</string>
-        <string name="trial_expired_message">Bản thử nghiệm này đã hết hạn. Nếu bạn muốn tiếp tục sử dụng, mời tải tại CH Play hoặc liên hệ nhà phát triển Daniel Dalton theo daniel.dalton10@gmail.com để có bản thử nghiệm nâng cấp.\nCảm ơn đã thử nghiệm ứng dụng!</string>
-    <string name="trial_expired_title">Bản dùng thử đã hết hạn</string>
     <string name="try_box">Thử nhập liệu tại đây.</string>
     <string name="unknown_character">Ký tự không xác định</string>
     <string name="unset_mark">Dấu chọn chưa xác lập</string>

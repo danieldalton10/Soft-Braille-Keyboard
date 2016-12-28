@@ -16,8 +16,6 @@
 
 package com.dalton.braillekeyboard;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -52,11 +50,6 @@ import com.googlecode.eyesfree.braille.translate.TableInfo;
  * 
  */
 public class BrailleIME extends InputMethodService implements KeyboardListener {
-    // Quick and dirty way to lock down apks for trial
-    private static final String EXPIREY_DATE = "March 31, 2016";
-    private static boolean isTrial = false;
-    private static long endDate = getEndDate();
-
     private final List<Byte> cells = new ArrayList<Byte>();
     private final StringBuilder composingText = new StringBuilder();
 
@@ -67,18 +60,6 @@ public class BrailleIME extends InputMethodService implements KeyboardListener {
     private int mark = -1;
     private boolean predictionOn;
     private boolean selectAll = false;
-
-    private static long getEndDate() {
-        try {
-            return (new SimpleDateFormat("MMMM d, yyyy", Locale.ENGLISH))
-                    .parse(EXPIREY_DATE).getTime();
-        } catch (ParseException PE) {
-            // Never get here because the data is static.
-            // If we mess up though, set the end date to 0 so the app can't be
-            // used if in doubt.
-            return 0;
-        }
-    }
 
     @Override
     public void onCreate() {
@@ -98,18 +79,10 @@ public class BrailleIME extends InputMethodService implements KeyboardListener {
     @Override
     public View onCreateInputView() {
         super.onCreateInputView();
-        if (!isTrial || System.currentTimeMillis() < endDate) {
-            // passed the trial expiry check or it's a full version.
-            brailleView = (BrailleView) getLayoutInflater().inflate(
-                    R.layout.keyboard, null);
-        }
+        brailleView = (BrailleView) getLayoutInflater().inflate(
+                R.layout.keyboard, null);
 
-        if (isTrial && System.currentTimeMillis() > endDate) {
-            Intent intent = new Intent(this, IntentActivity.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            intent.setAction(getString(R.string.action_expired));
-            startActivity(intent);
-        } else if (!Options.getBooleanPreference(this,
+        if (!Options.getBooleanPreference(this,
                 R.string.pref_has_asked_record_audio_key, false)) {
             Options.switchBooleanPreference(this,
                     R.string.pref_has_asked_record_audio_key, false);

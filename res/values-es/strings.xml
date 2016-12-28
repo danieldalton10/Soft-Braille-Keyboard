@@ -126,9 +126,6 @@
     <string name="swipe_confirm_settings">Deslizar otra vez para mostrar los ajustes de Soft Braille Keyboard</string>
     <string name="switch_off_talkback">Deshabilite talkback por favor. Para hacer esto, deslice en forma de L, moviendo el dedo hacia abajo y luego hacia la derecha, y explore el círculo hasta localizar la opción pausar Notificaciones en el ángulo superior izquierdo. Puede habilitar Talkback en cualquier momento con dos apretones del botón de encendido</string>
     <string name="translator_error">Hay un problema con el servicio de Braille</string>
-    <string name="trial_buy">comprar</string>
-    <string name="trial_expired_message">Se ha caducado esta versión beta. Si desea seguir usando esta aplicación, favor de descargarla de la Google play store, o contacte al desarrollador Daniel Dalton a daniel.dalton10@gmail.com para pedir una versión de prueba actualizada!</string>
-    <string name="trial_expired_title">La versión de prueba ha caducado</string>
     <string name="try_box">Intente escribir aquí con el teclado.</string>
     <string name="unknown_character">Caracter desconocido</string>
     <string name="unset_mark">Marca eliminada</string>

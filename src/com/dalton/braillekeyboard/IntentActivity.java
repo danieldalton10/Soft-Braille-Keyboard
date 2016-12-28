@@ -41,9 +41,7 @@ public class IntentActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Intent intent = getIntent();
-        if (getString(R.string.action_expired).equals(intent.getAction())) {
-            trialExpired(); // Show a dialog that the trial has finished.
-        } else if (getString(R.string.action_record_audio_permission).equals(
+        if (getString(R.string.action_record_audio_permission).equals(
                 intent.getAction())) {
             if (intent.getExtras() != null) {
                 // If the intent has extras indicating that we should show a
@@ -88,19 +86,5 @@ public class IntentActivity extends Activity {
         ActivityCompat.requestPermissions(this,
                 new String[] { Manifest.permission.RECORD_AUDIO },
                 PERMISSION_RECORD_AUDIO_REQUEST);
-    }
-
-    // Show the trial expired alert dialog.
-    private void trialExpired() {
-        new AlertDialog.Builder(this)
-                .setTitle(getString(R.string.trial_expired_title))
-                .setMessage(getString(R.string.trial_expired_message))
-                .setPositiveButton(android.R.string.yes,
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog,
-                                    int which) {
-                                finish();
-                            }
-                        }).setIcon(android.R.drawable.ic_dialog_alert).show();
     }
 }

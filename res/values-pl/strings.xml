@@ -126,9 +126,6 @@
     <string name="swipe_confirm_settings">Przesuń ponownie, aby wyświetlić ustawienia Soft Braille Keyboard</string>
     <string name="switch_off_talkback">Wyłącz Talkback. Możesz to zrobić wykonując gest w kształcie litery L, przesuń w dół, a następnie w prawo; , na ekranie znajdź opcję "Wstrzymaj reagowanie" w lewym górnym rogu. Talkback może zosta wznowiony w każdej chwili poprzez podwójne wciśnięcie przycisku zasilania</string>
     <string name="translator_error">Wystąpił błąd usługi brajla</string>
-    <string name="trial_buy">Kup</string>
-    <string name="trial_expired_message">Ta wersja beta już wygasła. Jeżeli chciałbyś nadal korzystać z aplikacji, pobierz ją ze sklepu Play lub skontaktuj się z twórcą Danielem Daltonem pod adresem daniel.dalton10@gmail.com, aby otrzymać uaktualnioną wersję testową.\nDzięki za testowanie klawiatury!</string>
-    <string name="trial_expired_title">Wersja próbna wygasła</string>
     <string name="try_box">Tutaj spróbuj pisać za pomocą klawiatury.</string>
     <string name="unknown_character">Nieznany znak</string>
     <string name="unset_mark">Zaznaczenie usunięte</string>    
