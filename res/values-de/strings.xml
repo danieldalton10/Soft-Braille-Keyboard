@@ -1,57 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Do not translate the following preference strings-->
-    <string name="btn_id_default_keyboard">BTN_DEFAULT_KEYBOARD</string>
-    <string name="btn_id_enable">BTN_ENABLED</string>
-    <string name="default_swipe_sensitivity">50</string>
-    <string name="txt_id_practice">TXT_PRACTICE</string>
-    <string name="pref_app_version_key">APP_VERSION</string>
-    <string name="pref_auto_caps_default">true</string>
-    <string name="pref_auto_caps_key">AUTO_CAPS</string>
-    <string name="pref_auto_match_keyboard_default">true</string>
-    <string name="pref_auto_match_keyboard_key">Auto_MATCH_KEYBOARD</string>
-    <string name="pref_auto_rotate_keyboard_default">false</string>
-    <string name="pref_auto_rotate_keyboard_key">Auto_ROTATE_KEYBOARD</string>
-    <string name="pref_braille_grade_default">0</string>
-    <string name="pref_braille_grade_key">BRAILLE_GRADE_KEY</string>
-    <string name="pref_braille_computer_table_default">en-US-comp8</string>
-    <string name="pref_braille_computer_table_key">BRAILLE_TABLE_0</string>
-    <string name="pref_braille_grade_1_table_default">en-ueb-g1</string>
-    <string name="pref_braille_grade_1_table_key">BRAILLE_TABLE_1</string>
-    <string name="pref_category_braille_key">BRAILLE_CATEGORY_KEY</string>
-    <string name="pref_category_feedback_key">KEYBOARD_FEEDBACK_Category</string>
-    <string name="pref_category_keyboard_key">KEYBOARD_CATEGORY</string>
-    <string name="pref_category_misc_key">MISC</string>
-    <string name="pref_default_keyboard_default">0</string>
-    <string name="pref_default_keyboard_key">DEFAULT_KEYBOARD</string>
-    <string name="pref_double_space_period_default">true</string>
-    <string name="pref_double_space_period_key">DOUBLE_SPACE_PERIOD</string>
-    <string name="pref_echo_feedback_key">KEYBOARD_ECHO</string>
-    <string name="pref_echo_passwords_default">false</string>
-    <string name="pref_echo_passwords_key">PASSWORD_ECHO</string>
-    <string name="pref_keyboard_feedback_key">KEYBOARD_FEEDBACK</string>
-    <string name="pref_keyboard_invert_default">false</string>
-    <string name="pref_keyboard_invert_key">KEYBOARD_INVERT</string>
-    <string name="pref_keyboard_save_horizontal_landscape_key">KEYBOARD_SAVE_HORIZONTAL_LANDSCAPE</string>
-    <string name="pref_keyboard_save_horizontal_portrait_key">KEYBOARD_SAVE_HORIZONTAL_PORTRAIT</string>
-    <string name="pref_keyboard_save_horizontal_landscape_invert_key">KEYBOARD_SAVE_HORIZONTAL_LANDSCAPE_INVERT</string>
-    <string name="pref_keyboard_save_horizontal_portrait_invert_key">KEYBOARD_SAVE_HORIZONTAL_PORTRAIT_INVERT</string>
-    <string name="pref_keyboard_save_vertical_landscape_key">KEYBOARD_SAVE_VERTICAL_LANDSCAPE</string>
-    <string name="pref_keyboard_save_vertical_portrait_key">KEYBOARD_SAVE_VERTICAL_PORTRAIT</string>
-    <string name="pref_keyboard_save_vertical_landscape_invert_key">KEYBOARD_SAVE_VERTICAL_LANDSCAPE_INVERT</string>
-    <string name="pref_keyboard_save_vertical_portrait_invert_key">KEYBOARD_SAVE_VERTICAL_PORTRAIT_INVERT</string>
-    <string name="pref_privacy_default">false</string>
-    <string name="pref_privacy_key">PRIVACY</string>
-    <string name="pref_show_circles_default">true</string>
-    <string name="pref_show_circles_key">SHOW_CIRCLE_KEY</string>
-    <string name="pref_swipe_sensitivity_key">SWIPE_SENSITIVITY_KEY</string>
-    <string name="pref_switch_tables_key">SWITCH_TABLES</string>
-    <string name="pref_two_hand_calibration_default">true</string>
-    <string name="pref_two_hand_calibration_key">TWO_HAND_CALIBRATE</string>
-    <string name="pref_trial_end_time_key">TRIAL_END_TIME</string>
-    <string name="pref_use_eight_dots_default">false</string>
-    <string name="pref_use_eight_dots_key">USE_EIGHT_DOT</string>
-    <string name="action_expired">ACTION_EXPIRED</string>
     <!-- User interface strings go below here -->
     <string name="action_settings">Einstellungen</string>
     <string name="app_name">Soft Braille Tastatur</string>	<!-- ANNI: Do you want to translate "keyboard"? -->
