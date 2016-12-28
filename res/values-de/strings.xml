@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Do not translate the following preference strings-->
+    <string name="btn_id_default_keyboard">BTN_DEFAULT_KEYBOARD</string>
+    <string name="btn_id_enable">BTN_ENABLED</string>
+    <string name="default_swipe_sensitivity">50</string>
+    <string name="txt_id_practice">TXT_PRACTICE</string>
+    <string name="pref_app_version_key">APP_VERSION</string>
+    <string name="pref_auto_caps_default">true</string>
+    <string name="pref_auto_caps_key">AUTO_CAPS</string>
+    <string name="pref_auto_match_keyboard_default">true</string>
+    <string name="pref_auto_match_keyboard_key">Auto_MATCH_KEYBOARD</string>
+    <string name="pref_auto_rotate_keyboard_default">false</string>
+    <string name="pref_auto_rotate_keyboard_key">Auto_ROTATE_KEYBOARD</string>
+    <string name="pref_braille_grade_default">0</string>
+    <string name="pref_braille_grade_key">BRAILLE_GRADE_KEY</string>
+    <string name="pref_braille_computer_table_default">en-US-comp8</string>
+    <string name="pref_braille_computer_table_key">BRAILLE_TABLE_0</string>
+    <string name="pref_braille_grade_1_table_default">en-ueb-g1</string>
+    <string name="pref_braille_grade_1_table_key">BRAILLE_TABLE_1</string>
+    <string name="pref_category_braille_key">BRAILLE_CATEGORY_KEY</string>
+    <string name="pref_category_feedback_key">KEYBOARD_FEEDBACK_Category</string>
+    <string name="pref_category_keyboard_key">KEYBOARD_CATEGORY</string>
+    <string name="pref_category_misc_key">MISC</string>
+    <string name="pref_default_keyboard_default">0</string>
+    <string name="pref_default_keyboard_key">DEFAULT_KEYBOARD</string>
+    <string name="pref_double_space_period_default">true</string>
+    <string name="pref_double_space_period_key">DOUBLE_SPACE_PERIOD</string>
+    <string name="pref_echo_feedback_key">KEYBOARD_ECHO</string>
+    <string name="pref_echo_passwords_default">false</string>
+    <string name="pref_echo_passwords_key">PASSWORD_ECHO</string>
+    <string name="pref_keyboard_feedback_key">KEYBOARD_FEEDBACK</string>
+    <string name="pref_keyboard_invert_default">false</string>
+    <string name="pref_keyboard_invert_key">KEYBOARD_INVERT</string>
+    <string name="pref_keyboard_save_horizontal_landscape_key">KEYBOARD_SAVE_HORIZONTAL_LANDSCAPE</string>
+    <string name="pref_keyboard_save_horizontal_portrait_key">KEYBOARD_SAVE_HORIZONTAL_PORTRAIT</string>
+    <string name="pref_keyboard_save_horizontal_landscape_invert_key">KEYBOARD_SAVE_HORIZONTAL_LANDSCAPE_INVERT</string>
+    <string name="pref_keyboard_save_horizontal_portrait_invert_key">KEYBOARD_SAVE_HORIZONTAL_PORTRAIT_INVERT</string>
+    <string name="pref_keyboard_save_vertical_landscape_key">KEYBOARD_SAVE_VERTICAL_LANDSCAPE</string>
+    <string name="pref_keyboard_save_vertical_portrait_key">KEYBOARD_SAVE_VERTICAL_PORTRAIT</string>
+    <string name="pref_keyboard_save_vertical_landscape_invert_key">KEYBOARD_SAVE_VERTICAL_LANDSCAPE_INVERT</string>
+    <string name="pref_keyboard_save_vertical_portrait_invert_key">KEYBOARD_SAVE_VERTICAL_PORTRAIT_INVERT</string>
+    <string name="pref_privacy_default">false</string>
+    <string name="pref_privacy_key">PRIVACY</string>
+    <string name="pref_show_circles_default">true</string>
+    <string name="pref_show_circles_key">SHOW_CIRCLE_KEY</string>
+    <string name="pref_swipe_sensitivity_key">SWIPE_SENSITIVITY_KEY</string>
+    <string name="pref_switch_tables_key">SWITCH_TABLES</string>
+    <string name="pref_two_hand_calibration_default">true</string>
+    <string name="pref_two_hand_calibration_key">TWO_HAND_CALIBRATE</string>
+    <string name="pref_trial_end_time_key">TRIAL_END_TIME</string>
+    <string name="pref_use_eight_dots_default">false</string>
+    <string name="pref_use_eight_dots_key">USE_EIGHT_DOT</string>
+    <string name="action_expired">ACTION_EXPIRED</string>
+    <!-- User interface strings go below here -->
+    <string name="action_settings">Einstellungen</string>
+    <string name="app_name">Soft Braille Tastatur</string>	<!-- ANNI: Do you want to translate "keyboard"? -->
+    <string name="auto_caps_disabled">Keine automatische Großschreibung</string>
+    <string name="auto_caps_enabled">Automatische Großschreibung</string>
+    <string name="blank">Leerzeichen</string>
+    <string name="braille_ime">Soft Braille Tastatur</string>
+    <string name="button_choose_default_keyboard">Soft Braille Tastatur als Standard-Tastatur festlegen</string>
+    <string name="button_keyboard_settings">Soft Braille Tastatur einschalten</string>
+    <string name="button_more_info">Schnellstart-Hilfe lesen</string>
+    <string name="capital">Großes %s</string>
+    <string name="closing_keyboard">Tastatur wird geschlossen</string>
+    <string name="copied">Kopiert</string>
+    <string name="copy_error">Fehler beim Kopieren</string>
+    <string name="cut_error">Fehler beim Ausschneiden</string>
+    <string name="deleted">%s gelöscht</string>
+    <string name="delete_selection">Auswahl löschen</string>
+    <string name="end_of_text">Textende</string>
+    <string name="expand_keyboard">Hier tippen um die Tastatur auszuklappen</string>
+    <string name="expand_keyboard_talkback">Hier zwei mal tippen um die Tastatur auszuklappen</string>
+    <string name="grade">Standard Braille Typ</string>
+    <string name="grade_computer">Computer Braille</string>
+    <string name="grade_literary">Literary Braille</string>	<!-- ANNI: Can't find any braille related translation for this -->
+    <string name="grade_table">Typ %s</string>	<!-- ANNI: Same here, not sure if those "grades" exist in German? -->
+    <string name="hide_keyboard">Tastatur wird eingeklappt</string>
+    <string name="high">Oben</string>	<!-- ANNI: To what does high refer? -->
+    <string name="info_url">https://docs.google.com/document/d/1OX6yFjkK61VfROdU9uQNxjEZ_QNWxiMnUY_1ECnIyRQ/pub</string>
+    <string name="keyboard_auto">Automatisch</string>
+    <string name="keyboard_echo_all">Buchstaben und Worte</string>
+    <string name="keyboard_echo_character">Nur Buchstaben</string>
+    <string name="keyboard_echo_none">Keine</string>
+    <string name="keyboard_echo_word">Nur Worte</string>
+    <string name="keyboard_error">Tastatur konnte nicht festgelegt werden</string>
+    <string name="keyboard_feedback_none">Keines</string>
+    <string name="keyboard_feedback_vibrate">Nur Vibration</string>
+    <string name="keyboard_feedback_sound">Nur Ton</string>
+    <string name="keyboard_feedback_all">Ton und Vibration</string>
+    <string name="keyboard_full_screen">Tastatur ausgeklappt</string>
+    <string name="keyboard_horizontal">Horizontal</string>
+    <string name="keyboard_next_three">Nun bitte die anderen drei Finger auf dem Bildschirm platzieren.</string>
+    <string name="keyboard_not_set">Bitte alle sechs Finger auf dem Bildschirm platzieren um die Braille Tastatur einzustellen.</string>
+    <string name="keyboard_shrink">Tastatur eingeklappt</string>
+    <string name="keyboard_vertical">Vertikal</string>
+    <string name="low">Unten</string>	<!-- ANNI: To what does low refer? -->
+    <string name="mark_not_set">Die Markierung wurde nicht gesetzt</string>	<!-- ANNI: What kind of mark? -->
+    <string name="medium">Medium</string>	<!-- ANNI: Same as low and high - what does this refer to? -->
+    <string name="newline">Neue Zeile</string>
+    <string name="no_password_echo">Passwörter nicht vorlesen</string>
+    <string name="no_braille_table">Keine Tabellen</string>
+    <string name="no_rotate_keyboard">Tastatur nicht rotieren</string>
+    <string name="no_suggestions">Keine Vorschläge verfügbar</string>
+    <string name="nothing_to_delete">Nichts zu löschen</string>
+    <string name="pad_horizontal">Horizontales Tastatur-Layout einstellen</string>
+    <string name="pad_vertical">Vertikales Tastatur-Layout einstellen</string>
+    <string name="paste_error">Fehler beim Einfügen des Textes</string>
+    <string name="pasted">Eingefügt</string>
+    <string name="pref_app_version_title">App Version: %s.</string>
+    <string name="pref_auto_caps_summary">Erstes Wort im Satz groß schreiben</string>
+    <string name="pref_auto_caps_title">Automatische Großschreibung</string>
+    <string name="pref_auto_match_keyboard_summary">Tastatur wird anhand der Position der Finger ausgewählt wenn die Tastatur manuell kalibriert wird.</string>
+    <string name="pref_auto_match_keyboard_title">Tastatur-Layout wird automatisch anhand der Position der Finger ausgewählt.</string>
+    <string name="pref_braille_grade_summary">Legt den bevorzugten Braille Typ fest.</string> 	<!-- ANNI: Again, not sure what the grade is in German -->
+    <string name="pref_category_braille_title">Braille Tabellen</string>
+    <string name="pref_category_feedback_title">Tastatur-Feedback Einstellungen</string>
+    <string name="pref_category_keyboard_title">Tastatur Einstellungen</string>
+    <string name="pref_category_misc_title">Sonstige Einstellungen</string>
+    <string name="pref_default_computer_braille_table_summary"></string>
+    <string name="pref_default_computer_braille_table_title">Computer Braille Tabelle</string>
+    <string name="pref_default_keyboard_summary">Standard Tastatur-Layout auswählen</string>
+    <string name="pref_default_keyboard_title">Standard Tastatur-Layout</string>
+    <string name="pref_default_literary_braille_table_summary"></string>
+    <string name="pref_default_literary_braille_table_title">Literary Braille table</string>	<!-- ANNI: Same as above -->
+    <string name="pref_double_space_period_summary">Doppeltes Wischen des Leerzeichens fügt Punkt und Leerzeichen ein</string>
+    <string name="pref_double_space_period_title">Doppeltes Leerzeichen für Punkt</string>    
+    <string name="pref_echo_feedback_summary">Art der Tastatur-Wiedergabe auswählen</string>
+    <string name="pref_echo_feedback_title">Tastatur-Wiedergabe</string>
+    <string name="pref_keyboard_feedback_summary">Art des haptischen und klanglichen Tastatur-Feedbacks wählen.</string>
+    <string name="pref_keyboard_feedback_title">Tastatur-Feedback</string>
+    <string name="pref_keyboard_invert_summary">Wenn die Tastatur nicht automatisch mit der Orientierung des Gerätes rotiert, diese Einstellung nutzen um die Tastatur um 180 Grad zu drehen.</string>
+    <string name="pref_keyboard_invert_title">Tastatur umdrehen</string>
+    <string name="pref_echo_passwords_summary">Eingabe von Passwörtern wird wiedergegeben.</string>
+    <string name="pref_privacy_summary">Schaltet den Bildschirm zum Schutz der Privatsphähre während des Tippens aus.</string>
+    <string name="pref_privacy_title">Privatsphähre</string>
+    <string name="pref_show_circles_summary">Es werden kleine Kreise an den Positionen der Braille-Punkte angezeigt.</string>
+    <string name="pref_show_circles_title">Kreise anzeigen?</string>
+    <string name="pref_swipe_sensitivity_summary">Empfindlichkeit von Wisch-Gesten auswählen</string>
+    <string name="pref_swipe_sensitivity_title">Wisch-Empfindlichkeit</string>
+    <string name="pref_switch_tables_summary">Sprachen wählen, zwischen denen während des Tippens gewechselt werden kann.</string>
+    <string name="pref_switch_tables_title">Direktes Wechseln von Braille Tabellen anschalten.</string>
+    <string name="pref_two_hand_calibration_summary">Tastatur kann mit zwei einzelnen Berührungen kalibriert werden.</string>
+    <string name="pref_two_hand_calibration_title">Zweimaliges Berühren zur Kalibrierung</string>
+    <string name="pref_use_eight_dots_summary">Punkte 7 und 8 anzeigen.</string>
+    <string name="pref_use_eight_dots_title">Acht-Punkt-Tastatur nutzen</string>
+    <string name="privacy_disabled">Privatsphähre-Bildschirm aus</string>
+    <string name="privacy_enabled">Privatsphähre-Bildschirm an</string>
+    <string name="ready">Tastatur bereit</string>
+    <string name="return_key">Enter</string> <!-- Return as in "Return key" on a keyboard? -->
+    <string name="rotate_keyboard">Tastatur nach Gerät-Orientierung ausrichten</string>
+    <string name="rotate_summary">Die Tastatur wird anhand der Orientierung des Gerätes rotiert.</string>
+    <string name="select_all">Alles auswählen</string>
+    <string name="selected_all">Alles ausgewählt</string>
+    <string name="set_mark">Markierung gesetzt</string>
+    <string name="settings_name">Soft Braille Tastatur Einstellungen</string>
+    <string name="show_input_switcher">Eingabe-Einstellungen werden angezeigt</string>
+    <string name="show_settings">Soft Braille Tastatur Einstellungen werden angezeigt</string>
+    <string name="space">Leerzeichen</string>
+    <string name="speak_passwords">Passwörter wiedergeben</string>
+    <string name="speak_selection">Auswahl wiedergeben</string>
+    <string name="start_of_text">Beginn des Textes</string>
+    <string name="swipe_confirm">Zum Bestätigen erneut wischen</string>
+    <string name="swipe_confirm_input">Erneut wischen um den Bildschirm zur Tastatur-Auswahl anzuzeigen</string>
+    <string name="swipe_confirm_settings">Erneut wischen um Soft Braille Tastatur Einstellungen anzuzeigen</string>
+    <string name="switch_off_talkback">Bitte die Wiedergabe (Talkback) deaktivieren. Hierzu die 1 Geste vollführen, dann nach unten und zuletzt nach rechts wischen. Sie finden dann die Option zum Pausieren der Wiedergabe im Kreis links oben. Die Wiedergabe (Talkback) kann jederzeit durch doppeltes Drücken der Einschalttaste wieder gestartet werden.</string> <!-- ANNI: I think you have a typo in your English version: "two" should be "to" -->
+    <string name="translator_error">Es ist ein Problem bezüglich des Braille-Services aufgetreten</string>
+    <string name="trial_buy">Kaufen</string>
+    <string name="trial_expired_message">Test-Phase ist abgelaufen. Wenn Sie die App weiterhin nutzen möchten, laden Sie sie aus dem Google Play Store herunter oder kontaktieren Sie den App-Entwickler Daniel Dalton per Email: daniel.dalton10@gmail.com, um eine verbesserte Test-Versioin zu erhalten.\nVielen Dank für das Testen der Beta-Version!</string>
+    <string name="trial_expired_title">Test-Phase abgelaufen</string>
+    <string name="try_box">Probieren Sie das Tippen mit der Tastatur hier aus.</string>
+    <string name="unknown_character">Unbekanntes Zeichen</string>
+    <string name="unset_mark">Markierung nicht gesetzt</string>
+    <string name="word_count">%1$d Zeilen, %2$d Wörter, %3$d Zeichen</string>
+
+    <!-- PUNCTUATION -->
+
+    <!--
+      Source: A value for announcing a question mark.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_questionmark">Fragezeichen</string>
+
+    <!--
+      Source: A value for announcing a space.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_space">Leerzeichen</string>
+
+    <!--
+      Source: A value for announcing a comma.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_comma">Komma</string>
+
+    <!--
+      Source: A value for announcing a dot.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_dot">Punkt</string>
+
+    <!--
+      Source: A value for announcing an exclamation.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_exclamation">Ausrufezeichen</string>
+
+    <!--
+      Source: A value for announcing an opening parenthesis.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_open_paren">Öffnende runde Klammer</string>
+
+    <!--
+      Source: A value for announcing a closing parenthesis.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_close_paren">Schließende runde Klammer</string>
+
+    <!--
+      Source: A value for announcing a double quote.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_double_quote">Anführungszeichen</string>
+
+    <!--
+      Source: A value for announcing a single quote.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_single_quote">Hochkomma</string>
+
+    <!--
+      Source: A value for announcing a slash.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_slash">Schrägstrich</string>
+
+    <!--
+      Source: A value for announcing a backslash.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_backslash">Rückstrich</string>
+
+    <!--
+      Source: A value for announcing a semicolon.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_semicolon">Semikolon</string>
+
+    <!--
+      Source: A value for announcing a colon.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_colon">Doppelpunkt</string>
+    
+    <!--
+      Source: A value for announcing a left brace.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_left_brace">Linke Klammer</string>	<!-- ANNI: Not sure what the difference is between this and paren above -->
+    
+    <!--
+      Source: A value for announcing a right brace.
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <string name="punctuation_right_brace">Rechte Klammer</string>
+</resources>
